@@ -33,7 +33,16 @@ def main():
     try:
         # 2. 데이터 로드
         print("\n2️⃣ 데이터 로드 중...")
-        X, y, timestamps = detector.load_csv_files(data_dir)
+        
+        # 하위 폴더까지 검색할지 선택
+        recursive_search = True  # False로 바꾸면 현재 폴더만 검색
+        
+        if recursive_search:
+            print("   📁 하위 폴더까지 재귀적으로 검색합니다...")
+            X, y, timestamps = detector.load_csv_files(data_dir, recursive=True)
+        else:
+            print("   📁 현재 폴더만 검색합니다...")
+            X, y, timestamps = detector.load_csv_files(data_dir, recursive=False)
         
         # 라벨 분포 확인
         fall_count = np.sum(y == 1)
