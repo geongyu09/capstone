@@ -18,13 +18,22 @@ def main():
         print("# 그 다음 CSV 파일들을 csi_data 폴더에 복사")
         return
     
-    # CSV 파일 개수 확인
-    csv_files = glob.glob(os.path.join(data_dir, "*.csv"))
+    # CSV 파일 개수 확인 (재귀 검색 포함)
+    csv_files = glob.glob(os.path.join(data_dir, "**", "*.csv"), recursive=True)
     print(f"📁 발견된 CSV 파일 수: {len(csv_files)}")
     
     if len(csv_files) == 0:
         print("❌ CSV 파일이 없습니다! csi_data 폴더에 CSV 파일들을 넣어주세요.")
+        print("   혹시 하위 폴더에 파일이 있다면 재귀 검색이 활성화되었는지 확인하세요.")
         return
+    
+    # 발견된 파일들 출력
+    print("발견된 파일들:")
+    for file_path in csv_files[:10]:  # 처음 10개만 출력
+        relative_path = os.path.relpath(file_path, data_dir)
+        print(f"  - {relative_path}")
+    if len(csv_files) > 10:
+        print(f"  ... 그 외 {len(csv_files) - 10}개 파일")
     
     # 1. 모델 초기화
     print("\n1️⃣ 모델 초기화...")
@@ -33,24 +42,12 @@ def main():
     try:
         # 2. 데이터 로드
         print("\n2️⃣ 데이터 로드 중...")
-        
-        # 하위 폴더까지 검색할지 선택
-        recursive_search = True  # False로 바꾸면 현재 폴더만 검색
-        
-        if recursive_search:
-            print("   📁 하위 폴더까지 재귀적으로 검색합니다...")
-            X, y, timestamps = detector.load_csv_files(data_dir, recursive=True)
-        else:
-            print("   📁 현재 폴더만 검색합니다...")
-            X, y, timestamps = detector.load_csv_files(data_dir, recursive=False)
+        print("   📁 하위 폴더까지 재귀적으로 검색합니다...")
+        X, y, timestamps = detector.load_csv_files(data_dir, recursive=True)
         
         # 라벨 분포 확인
         fall_count = np.sum(y == 1)
         normal_count = np.sum(y == 0)
-        
-        print(f"📊 라벨 분포:")
-        print(f"   - 낙상 데이터: {fall_count}개")
-        print(f"   - 정상 데이터: {normal_count}개")
         
         if fall_count == 0:
             print("⚠️  경고: 낙상 데이터가 없습니다! 일부 CSV 파일의 label을 1로 설정해주세요.")
@@ -76,8 +73,9 @@ def main():
                 stratify=y_seq,
                 random_state=42
             )
+            print("   ✅ 계층 분할(stratify) 적용")
         else:  # 라벨이 1종류뿐
-            print("⚠️  라벨이 한 종류뿐입니다. stratify 없이 분할합니다.")
+            print("   ⚠️  라벨이 한 종류뿐입니다. stratify 없이 분할합니다.")
             X_train, X_test, y_train, y_test = train_test_split(
                 X_seq, y_seq, 
                 test_size=0.2, 
@@ -86,8 +84,8 @@ def main():
         
         print(f"   - 훈련 세트: {X_train.shape}")
         print(f"   - 테스트 세트: {X_test.shape}")
-        print(f"   - 훈련 라벨 분포: {np.bincount(y_train)}")
-        print(f"   - 테스트 라벨 분포: {np.bincount(y_test)}")
+        print(f"   - 훈련 라벨 분포: {dict(zip(*np.unique(y_train, return_counts=True)))}")
+        print(f"   - 테스트 라벨 분포: {dict(zip(*np.unique(y_test, return_counts=True)))}")
         
         # 6. 모델 구축
         print("\n6️⃣ 모델 구축 중...")
@@ -96,10 +94,10 @@ def main():
         # 특징 수에 따라 모델 타입 자동 선택
         if X_train.shape[2] > 100:
             model_type = 'lightweight'
-            print(f"   특징 수가 많아 경량 모델을 사용합니다. ({X_train.shape[2]}개 특징)")
+            print(f"   💡 특징 수가 많아 경량 모델을 사용합니다. ({X_train.shape[2]}개 특징)")
         else:
             model_type = 'standard'
-            print(f"   표준 모델을 사용합니다. ({X_train.shape[2]}개 특징)")
+            print(f"   💡 표준 모델을 사용합니다. ({X_train.shape[2]}개 특징)")
         
         detector.build_model(input_shape, model_type=model_type)
         
@@ -137,8 +135,8 @@ def main():
         print("\n" + "=" * 50)
         print("📋 학습 결과 요약:")
         print(f"   - 사용된 CSV 파일: {len(csv_files)}개")
-        print(f"   - 총 데이터 포인트: {X.shape[0]}개")
-        print(f"   - 생성된 시퀀스: {X_seq.shape[0]}개")
+        print(f"   - 총 데이터 포인트: {X.shape[0]:,}개")
+        print(f"   - 생성된 시퀀스: {X_seq.shape[0]:,}개")
         print(f"   - 특징 수: {X_train.shape[2]}개")
         print(f"   - 모델 타입: {model_type}")
         print(f"   - 저장된 모델: {model_name}")
@@ -164,6 +162,9 @@ def main():
         print("2. 메모리 부족 시 window_size를 줄이거나 stride를 늘려보세요")
         print("3. 필요한 라이브러리가 설치되어 있는지 확인:")
         print("   pip install tensorflow pandas scikit-learn numpy matplotlib")
+        print("4. CSV 파일이 올바른 형식인지 확인:")
+        print("   - 첫 번째 행이 컬럼명(헤더)인지 확인")
+        print("   - timestamp, label, feat_0, feat_1, ... 컬럼이 있는지 확인")
 
 if __name__ == "__main__":
     main()
