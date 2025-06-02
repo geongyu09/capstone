@@ -58,8 +58,24 @@ class CSIFallDetection:
             print(f"\n로딩 중: {os.path.basename(file_path)}")
             
             try:
-                # CSV 파일 읽기
-                df = pd.read_csv(file_path)
+                # CSV 파일 읽기 (다양한 인코딩 시도)
+                df = None
+                encodings = ['utf-8', 'cp949', 'euc-kr', 'latin-1', 'utf-8-sig']
+                
+                for encoding in encodings:
+                    try:
+                        df = pd.read_csv(file_path, encoding=encoding)
+                        print(f"     ✅ 인코딩 성공: {encoding}")
+                        break
+                    except UnicodeDecodeError:
+                        continue
+                    except Exception as e:
+                        print(f"     ⚠️  {encoding} 인코딩 실패: {str(e)[:50]}...")
+                        continue
+                
+                if df is None:
+                    print(f"  ❌ 모든 인코딩 실패: {file_path}")
+                    continue
                 
                 # 컬럼 확인
                 if 'timestamp' not in df.columns or 'label' not in df.columns:
