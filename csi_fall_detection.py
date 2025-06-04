@@ -423,7 +423,7 @@ class CSIFallDetection:
         model.compile(
             optimizer=Adam(learning_rate=learning_rate),
             loss='binary_crossentropy',
-            metrics=['accuracy', 'precision', 'recall']
+            metrics=['accuracy']
         )
         
         print(f"✅ 모델 구축 완료!")
