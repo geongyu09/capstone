@@ -18,7 +18,7 @@ from tensorflow.keras.optimizers import Adam
 
 # 전역 설정값
 DEFAULT_TEST_CSV = 'case32.csv'         # 기본 테스트 CSV 파일
-DEFAULT_DATA_DIR = './capstone/csi_data'         # 기본 데이터 디렉토리
+DEFAULT_DATA_DIR = 'capstone/csi_data'         # 기본 데이터 디렉토리
 DEFAULT_WINDOW_SIZE = 30                # 기본 윈도우 크기 (테스트용)
 DEFAULT_STRIDE = 5                      # 기본 스트라이드
 DEFAULT_OVERLAP_THRESHOLD = 0.3         # 기본 임계값
