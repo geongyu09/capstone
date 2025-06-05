@@ -1,0 +1,43 @@
+# 머신러닝 및 데이터 분석 라이브러리
+tensorflow==2.13.0
+keras==2.13.1
+numpy==1.24.3
+pandas==2.2.3
+scikit-learn==1.6.1
+scipy==1.15.3
+matplotlib==3.10.0
+seaborn
+
+# Jupyter 환경
+jupyter
+jupyterlab
+ipykernel
+ipython
+notebook
+
+# 웹 관련
+requests
+beautifulsoup4
+flask
+fastapi
+uvicorn
+
+# 유틸리티
+pillow
+pyyaml
+python-dateutil
+pytz
+
+# GUI (필요한 경우만)
+# PyQt6==6.7.1
+
+# 기타 유틸리티
+joblib
+tqdm
+colorama
+rich==14.0.0
+
+# 개발 도구 (선택사항)
+# pytest
+# black
+# flake8
