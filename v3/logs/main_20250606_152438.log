@@ -1,0 +1,135 @@
+2025-06-06 15:24:38,451 - INFO - 🚀 CSI 낙상 감지 모델 훈련 시작
+2025-06-06 15:24:38,451 - INFO - 📋 로그 파일: ./logs/csi_training_20250606_152438.log
+2025-06-06 15:24:38,452 - INFO - 🚀 CSI 트레이너 초기화 완료
+2025-06-06 15:24:38,452 - INFO -    데이터 디렉토리: ../csi_data
+2025-06-06 15:24:38,452 - INFO -    모델 타입: cnn_lstm_hybrid
+2025-06-06 15:24:38,452 - INFO - 🎓 전체 학습 모드
+2025-06-06 15:24:38,452 - INFO - 🚀 모델 학습 시작!
+2025-06-06 15:24:38,452 - INFO - ============================================================
+2025-06-06 15:24:38,452 - INFO - 🔬 데이터 특성 분석 시작...
+2025-06-06 15:24:38,452 - INFO - 🔍 CSV 파일 탐지 중...
+2025-06-06 15:24:38,453 - INFO - 📁 발견된 CSV 파일: 206개
+2025-06-06 15:24:38,453 - INFO -    1. 11_labeled.csv (1402.7 KB)
+2025-06-06 15:24:38,453 - INFO -    2. 12_labeled.csv (1405.2 KB)
+2025-06-06 15:24:38,453 - INFO -    3. 13_labeled.csv (1402.2 KB)
+2025-06-06 15:24:38,453 - INFO -    4. 15_labeled.csv (1403.3 KB)
+2025-06-06 15:24:38,453 - INFO -    5. 16_labeled.csv (1402.8 KB)
+2025-06-06 15:24:38,453 - INFO -    ... 외 201개 파일
+2025-06-06 15:24:38,581 - INFO - 📊 데이터 특성 분석 결과:
+2025-06-06 15:24:38,581 - INFO -    분석 파일: 10개
+2025-06-06 15:24:38,581 - INFO -    총 샘플: 5,000개
+2025-06-06 15:24:38,581 - INFO -    낙상 비율: 78.4%
+2025-06-06 15:24:38,581 - INFO -    평균 샘플링 주파수: 4Hz
+2025-06-06 15:24:38,581 - INFO -    평균 활성 특성: 242개
+2025-06-06 15:24:38,581 - INFO -    총 측정 시간: 612.0초 (10.2분)
+2025-06-06 15:24:38,581 - INFO - 🔧 스케일러 준비 중...
+2025-06-06 15:24:38,581 - INFO - 🔍 CSV 파일 탐지 중...
+2025-06-06 15:24:38,582 - INFO - 📁 발견된 CSV 파일: 206개
+2025-06-06 15:24:38,582 - INFO -    1. 11_labeled.csv (1402.7 KB)
+2025-06-06 15:24:38,582 - INFO -    2. 12_labeled.csv (1405.2 KB)
+2025-06-06 15:24:38,582 - INFO -    3. 13_labeled.csv (1402.2 KB)
+2025-06-06 15:24:38,582 - INFO -    4. 15_labeled.csv (1403.3 KB)
+2025-06-06 15:24:38,582 - INFO -    5. 16_labeled.csv (1402.8 KB)
+2025-06-06 15:24:38,582 - INFO -    ... 외 201개 파일
+2025-06-06 15:24:38,807 - INFO - ✅ 스케일러 학습 완료: (8400, 245) 샘플
+2025-06-06 15:24:38,808 - INFO -    특성 범위: [0.000, 3127.858]
+2025-06-06 15:24:38,809 - INFO - 📊 데이터 제너레이터 생성...
+2025-06-06 15:24:38,809 - INFO - 🔍 CSV 파일 탐지 중...
+2025-06-06 15:24:38,809 - INFO - 📁 발견된 CSV 파일: 206개
+2025-06-06 15:24:38,809 - INFO -    1. 11_labeled.csv (1402.7 KB)
+2025-06-06 15:24:38,809 - INFO -    2. 12_labeled.csv (1405.2 KB)
+2025-06-06 15:24:38,809 - INFO -    3. 13_labeled.csv (1402.2 KB)
+2025-06-06 15:24:38,809 - INFO -    4. 15_labeled.csv (1403.3 KB)
+2025-06-06 15:24:38,809 - INFO -    5. 16_labeled.csv (1402.8 KB)
+2025-06-06 15:24:38,809 - INFO -    ... 외 201개 파일
+2025-06-06 15:24:38,810 - INFO - 📈 데이터 분할:
+2025-06-06 15:24:38,810 - INFO -    훈련 파일: 145개
+2025-06-06 15:24:38,810 - INFO -    검증 파일: 41개
+2025-06-06 15:24:38,810 - INFO -    테스트 파일: 20개
+2025-06-06 15:24:39,150 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case2/16_labeled.csv - 'utf-8' codec can't decode byte 0x93 in position 10: invalid start byte
+2025-06-06 15:24:39,259 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case2/11_labeled.csv - 'utf-8' codec can't decode byte 0xab in position 11: invalid start byte
+2025-06-06 15:24:39,439 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/14_labeled.csv - 'utf-8' codec can't decode byte 0xb0 in position 11: invalid start byte
+2025-06-06 15:24:39,530 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/20_labeled.csv - 'utf-8' codec can't decode byte 0xb1 in position 11: invalid start byte
+2025-06-06 15:24:39,640 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/15_labeled.csv - 'utf-8' codec can't decode byte 0xb0 in position 11: invalid start byte
+2025-06-06 15:24:39,680 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/10_labeled.csv - 'utf-8' codec can't decode byte 0xc1 in position 12: invalid start byte
+2025-06-06 15:24:40,153 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/17_labeled.csv - 'utf-8' codec can't decode byte 0xa3 in position 10: invalid start byte
+2025-06-06 15:24:40,425 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case2/12_labeled.csv - 'utf-8' codec can't decode byte 0xbc in position 10: invalid start byte
+2025-06-06 15:24:40,531 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/9_labeled.csv - 'utf-8' codec can't decode byte 0xb5 in position 10: invalid start byte
+2025-06-06 15:24:40,772 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case2/18_labeled.csv - 'utf-8' codec can't decode byte 0xc1 in position 12: invalid start byte
+2025-06-06 15:24:40,772 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/11_labeled.csv - 'utf-8' codec can't decode byte 0xaf in position 11: invalid start byte
+2025-06-06 15:24:40,772 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case2/14_labeled.csv - 'utf-8' codec can't decode byte 0xac in position 11: invalid start byte
+2025-06-06 15:24:40,894 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/18_labeled.csv - 'utf-8' codec can't decode byte 0xb8 in position 10: invalid start byte
+2025-06-06 15:24:41,114 - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-06 15:24:41,114 - INFO -    파일 수: 145
+2025-06-06 15:24:41,115 - INFO -    총 시퀀스: 5,931개
+2025-06-06 15:24:41,115 - INFO -    배치 수: 186개
+2025-06-06 15:24:41,445 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/6_labeled.csv - 'utf-8' codec can't decode byte 0xae in position 11: invalid start byte
+2025-06-06 15:24:41,537 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/13_labeled.csv - 'utf-8' codec can't decode byte 0xb0 in position 11: invalid start byte
+2025-06-06 15:24:41,537 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/16_labeled.csv - 'utf-8' codec can't decode byte 0xb0 in position 11: invalid start byte
+2025-06-06 15:24:41,576 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/8_labeled.csv - 'utf-8' codec can't decode byte 0x89 in position 10: invalid start byte
+2025-06-06 15:24:41,576 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case2/15_labeled.csv - 'utf-8' codec can't decode byte 0xac in position 11: invalid start byte
+2025-06-06 15:24:41,615 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/19_labeled.csv - 'utf-8' codec can't decode byte 0xb1 in position 11: invalid start byte
+2025-06-06 15:24:41,751 - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-06 15:24:41,751 - INFO -    파일 수: 41
+2025-06-06 15:24:41,751 - INFO -    총 시퀀스: 1,624개
+2025-06-06 15:24:41,751 - INFO -    배치 수: 51개
+2025-06-06 15:24:41,788 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case2/13_labeled.csv - 'utf-8' codec can't decode byte 0xac in position 11: invalid start byte
+2025-06-06 15:24:42,073 - WARNING - 파일 읽기 실패로 스킵: ../csi_data/case3/7_labeled.csv - 'utf-8' codec can't decode byte 0xae in position 11: invalid start byte
+2025-06-06 15:24:42,073 - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-06 15:24:42,073 - INFO -    파일 수: 20
+2025-06-06 15:24:42,073 - INFO -    총 시퀀스: 825개
+2025-06-06 15:24:42,073 - INFO -    배치 수: 26개
+2025-06-06 15:24:42,073 - INFO - 🔄 예상 시퀀스:
+2025-06-06 15:24:42,073 - INFO -    훈련: 5,931개
+2025-06-06 15:24:42,073 - INFO -    검증: 1,624개
+2025-06-06 15:24:42,073 - INFO -    테스트: 825개
+2025-06-06 15:24:42,073 - INFO - 🏗️ cnn_lstm_hybrid 모델 구축...
+2025-06-06 15:24:42,073 - INFO - 🏗️ 모델 빌더 초기화: 입력 형태 (144, 245)
+2025-06-06 15:24:42,073 - INFO - 🏗️ 모델 구축 시작: cnn_lstm_hybrid
+2025-06-06 15:24:42,073 - INFO - 🚀 CNN+LSTM 하이브리드 모델 구축...
+2025-06-06 15:24:42,282 - INFO - ✅ CNN+LSTM 하이브리드 모델 구축 완료: 122,881 파라미터
+2025-06-06 15:24:42,283 - INFO - 📋 모델 요약:
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv1d_1 (Conv1D)           (None, 140, 64)           78464     
+                                                                 
+ batch_normalization (Batch  (None, 140, 64)           256       
+ Normalization)                                                  
+                                                                 
+ max_pooling1d (MaxPooling1  (None, 70, 64)            0         
+ D)                                                              
+                                                                 
+ dropout (Dropout)           (None, 70, 64)            0         
+                                                                 
+ conv1d_2 (Conv1D)           (None, 68, 32)            6176      
+                                                                 
+ batch_normalization_1 (Bat  (None, 68, 32)            128       
+ chNormalization)                                                
+                                                                 
+ dropout_1 (Dropout)         (None, 68, 32)            0         
+                                                                 
+ lstm_1 (LSTM)               (None, 68, 64)            24832     
+                                                                 
+ dropout_2 (Dropout)         (None, 68, 64)            0         
+                                                                 
+ lstm_2 (LSTM)               (None, 32)                12416     
+                                                                 
+ dropout_3 (Dropout)         (None, 32)                0         
+                                                                 
+ dense_1 (Dense)             (None, 16)                528       
+                                                                 
+ batch_normalization_2 (Bat  (None, 16)                64        
+ chNormalization)                                                
+                                                                 
+ dropout_4 (Dropout)         (None, 16)                0         
+                                                                 
+ output (Dense)              (None, 1)                 17        
+                                                                 
+=================================================================
+Total params: 122881 (480.00 KB)
+Trainable params: 122657 (479.13 KB)
+Non-trainable params: 224 (896.00 Byte)
+_________________________________________________________________
+2025-06-06 15:24:42,283 - INFO - 📚 학습 시작: 50 에포크
