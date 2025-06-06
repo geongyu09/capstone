@@ -549,7 +549,7 @@ if __name__ == "__main__":
     else:
         # 테스트 파일들
         test_files = [
-            "../csi_data/case1/12_labeled.csv",
+            "../csi_data/case1/44.csv",
         ]
         
         csv_file = None
