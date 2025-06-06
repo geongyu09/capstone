@@ -77,10 +77,29 @@ class FallTimelineAnalyzer:
         
         self.logger.info(f"📥 모델 시스템 로딩: {os.path.basename(model_path)}")
         
+        # 1. 모델 로드 (호환성 개선)
         try:
-            # 1. 모델 로드
+            # 첫 번째 시도: 기본 로드
             self.model = load_model(model_path)
             self.logger.info("   ✅ 모델 로드 완료")
+        except Exception as e1:
+            self.logger.warning(f"   ⚠️ 기본 로드 실패, 호환성 모드 시도: {e1}")
+            try:
+                # 두 번째 시도: compile=False로 로드
+                self.model = load_model(model_path, compile=False)
+                
+                # 수동으로 컴파일 (옵티마이저, 손실함수 다시 설정)
+                from tensorflow.keras.optimizers import Adam
+                self.model.compile(
+                    optimizer=Adam(learning_rate=0.001),
+                    loss='binary_crossentropy',
+                    metrics=['accuracy']
+                )
+                self.logger.info("   ✅ 호환성 모드로 모델 로드 완료")
+                
+            except Exception as e2:
+                self.logger.error(f"   ❌ 모든 로드 방법 실패: {e2}")
+                return False
             
             # 2. 스케일러 로드
             scaler_path = model_path.replace('.keras', '_scaler.pkl')
@@ -350,6 +369,9 @@ class FallTimelineAnalyzer:
             # 6. 예측 수행
             self.logger.info("   🔮 예측 수행 중...")
             probabilities = self.model.predict(X_seq, verbose=0).flatten()
+
+            # 온도 스케일링으로 과신 보정
+            probabilities = self.temperature_scaling(probabilities)
             
             self.logger.info(f"   📊 예측 완료 - 확률 범위: {probabilities.min():.3f} ~ {probabilities.max():.3f}")
             
@@ -662,6 +684,36 @@ class FallTimelineAnalyzer:
         except Exception as e:
             print(f"❌ 종합 분석 실패: {e}")
             return []
+
+    def temperature_scaling(self, probabilities, temperature=7):
+        """온도 스케일링으로 과신된 확률 보정"""
+        
+        # 과신 여부 체크
+        high_conf_ratio = np.mean(probabilities > 0.95)
+        
+        if high_conf_ratio > 0.3:  # 30% 이상이 95% 넘으면 과신
+            self.logger.warning(f"   ⚠️ 모델 과신 감지: {high_conf_ratio:.1%}가 95% 이상")
+            self.logger.info(f"   🌡️ 온도 스케일링 적용 (T={temperature})")
+            
+            # 확률을 로짓으로 변환
+            logits = np.log(probabilities / (1 - probabilities + 1e-8))
+            
+            # 온도로 나누기 (부드럽게 만들기)
+            scaled_logits = logits / temperature
+            
+            # 다시 확률로 변환
+            calibrated_probs = 1 / (1 + np.exp(-scaled_logits))
+            
+            # 결과 출력
+            new_high_conf_ratio = np.mean(calibrated_probs > 0.95)
+            self.logger.info(f"   📊 보정 결과: 95% 이상 {high_conf_ratio:.1%} → {new_high_conf_ratio:.1%}")
+            self.logger.info(f"   📊 평균 확률: {np.mean(probabilities):.3f} → {np.mean(calibrated_probs):.3f}")
+            
+            return calibrated_probs
+        
+        else:
+            self.logger.info(f"   ✅ 정상적인 확률 분포 (99% 이상: {high_conf_ratio:.1%})")
+            return probabilities
 
 if __name__ == "__main__":
     import sys

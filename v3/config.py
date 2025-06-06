@@ -18,7 +18,7 @@ class CSIConfig:
     ACTIVE_FEATURE_COUNT = 242  # 실제 활성 특성 수
     
     # ========== 윈도우 설정 (고주파 데이터 최적화) ==========
-    WINDOW_SIZE = 144  # 0.5초 @ 288Hz - 낙상 감지에 최적
+    WINDOW_SIZE = 72  # 0.5초 @ 288Hz - 낙상 감지에 최적
     STRIDE = 14        # 50ms 간격 - 실시간 처리 가능
     OVERLAP_THRESHOLD = 0.2  # 더 민감한 낙상 감지
     
@@ -31,7 +31,7 @@ class CSIConfig:
     TEST_SPLIT = 0.1
     
     # ========== 파일 경로 설정 ==========
-    DEFAULT_DATA_DIR = './csi_data'
+    DEFAULT_DATA_DIR = '../csi_data'
     MODEL_SAVE_DIR = './models'
     LOG_DIR = './logs'
     RESULTS_DIR = './results'

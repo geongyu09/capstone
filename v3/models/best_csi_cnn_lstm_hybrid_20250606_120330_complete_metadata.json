@@ -1,0 +1,67 @@
+{
+  "system_info": {
+    "version": "2.0",
+    "created_at": "2025-06-06T13:05:08.721887",
+    "model_type": "cnn_lstm_hybrid"
+  },
+  "model_config": {
+    "window_size": 144,
+    "stride": 14,
+    "active_range": [
+      6,
+      250
+    ],
+    "overlap_threshold": 0.2,
+    "input_shape": [
+      144,
+      245
+    ]
+  },
+  "training_config": {
+    "sampling_rate": 288,
+    "active_range": [
+      6,
+      250
+    ],
+    "window_size": 144,
+    "stride": 14,
+    "overlap_threshold": 0.2,
+    "batch_size": 32
+  },
+  "training_stats": {
+    "model_type": "cnn_lstm_hybrid",
+    "model_params": 122881,
+    "data_stats": {
+      "total_files_analyzed": 10,
+      "total_samples": 5000,
+      "total_fall_samples": "3919",
+      "fall_ratio": 0.7838,
+      "avg_sampling_rate": 4.174443712487191,
+      "avg_active_features": 242.0,
+      "total_duration_seconds": 612.0,
+      "avg_file_duration": 122.4
+    },
+    "train_sequences": 5968,
+    "val_sequences": 1786,
+    "test_sequences": 626,
+    "epochs_trained": 30,
+    "best_val_loss": 0.18592587113380432,
+    "final_train_loss": 0.09823039919137955,
+    "final_val_loss": 0.2651124894618988,
+    "test_results": {
+      "loss": 0.3158942461013794,
+      "compile_metrics": 0.8801916837692261
+    },
+    "training_time": "2025-06-06T13:05:08.655057"
+  },
+  "data_stats": {
+    "total_files_analyzed": 10,
+    "total_samples": 5000,
+    "total_fall_samples": "3919",
+    "fall_ratio": 0.7838,
+    "avg_sampling_rate": 4.174443712487191,
+    "avg_active_features": 242.0,
+    "total_duration_seconds": 612.0,
+    "avg_file_duration": 122.4
+  }
+}

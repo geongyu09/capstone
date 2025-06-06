@@ -28,6 +28,12 @@ cd csi-fall-detection
 
 # 필요 패키지 설치
 pip install -r requirements.txt
+
+# 만약 호환성 문제 발생 시
+pip install numpy==1.26.4
+pip install pandas==2.2.0
+pip install tensorflow==2.18.0
+pip install scikit-learn matplotlib
 ```
 
 ### 2. 빠른 데모
@@ -49,6 +55,31 @@ python main.py train --data-dir ./csi_data --epochs 50
 # 빠른 테스트 (단일 파일)
 python main.py train --quick --csv-file 35.csv --epochs 10
 ```
+
+📁 생성되는 4개 파일 설명
+1. best_csi_cnn_lstm_hybrid_YYYYMMDD_HHMMSS.keras
+
+역할: 학습 중 가장 좋은 성능을 보인 모델
+용도: 실제 예측에 사용하는 메인 모델
+크기: 보통 5-20MB
+
+2. best_csi_cnn_lstm_hybrid_YYYYMMDD_HHMMSS_complete.keras
+
+역할: 완전한 시스템용 최종 모델 (권장)
+용도: analyzer에서 자동으로 찾아서 사용
+크기: 메인 모델과 동일
+
+3. best_csi_cnn_lstm_hybrid_YYYYMMDD_HHMMSS_complete_scaler.pkl
+
+역할: 데이터 정규화에 사용된 스케일러
+용도: 새로운 데이터 분석할 때 동일한 정규화 적용
+크기: 보통 수 KB
+
+4. best_csi_cnn_lstm_hybrid_YYYYMMDD_HHMMSS_complete_metadata.json
+
+역할: 모델 설정, 학습 통계, 성능 정보
+용도: 모델 정보 확인, 재현성 보장
+크기: 1-2KB
 
 ### 4. 데이터 분석
 

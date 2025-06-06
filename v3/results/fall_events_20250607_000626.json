@@ -1,0 +1,46 @@
+{
+  "analysis_info": {
+    "analysis_time": "2025-06-07T00:06:26.568571",
+    "model_info": {
+      "confidence_threshold": 0.7,
+      "window_size": 72,
+      "stride": 14,
+      "active_range": [
+        6,
+        250
+      ]
+    },
+    "file_info": {
+      "filename": "40_labeled.csv",
+      "total_samples": 800,
+      "total_sequences": 53,
+      "measurement_duration": 3.08,
+      "confidence_threshold": 0.7
+    }
+  },
+  "summary": {
+    "total_events": 1,
+    "total_fall_time": 0,
+    "max_probability": "0.8859443",
+    "avg_probability": "0.87024224",
+    "confidence_distribution": {
+      "high": 1,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "events": [
+    {
+      "event_id": 1,
+      "start_time": "2025-06-01T18:37:40.001000000",
+      "end_time": "2025-06-01T18:37:42.621000000",
+      "duration_seconds": 0,
+      "max_probability": 0.8859443068504333,
+      "avg_probability": 0.8702422380447388,
+      "sequence_count": 47,
+      "confidence_level": "high",
+      "start_index": 6,
+      "end_index": 52
+    }
+  ]
+}

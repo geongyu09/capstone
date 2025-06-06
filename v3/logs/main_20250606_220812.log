@@ -1,0 +1,7 @@
+2025-06-06 22:08:12,247 - INFO - 🔍 CSI 데이터 분석 시작
+2025-06-06 22:08:12,247 - INFO - 📥 모델 시스템 로딩: best_csi_cnn_lstm_hybrid_20250606_120330_complete.keras
+2025-06-06 22:08:12,271 - ERROR - ❌ 모델 로드 실패: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 144, 245], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-06-06 22:08:12,271 - INFO - 📊 타임라인 분석: 1_labeled copy.csv
+2025-06-06 22:08:12,271 - INFO - ✅ 분석 완료! 감지된 이벤트: 0개
