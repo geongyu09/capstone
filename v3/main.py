@@ -256,25 +256,25 @@ def create_parser():
         description='CSI 기반 낙상 감지 시스템',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
-사용 예시:
-  # 모델 훈련
-  python main.py train --data-dir ./csi_data --epochs 50
-  python main.py train --model-type cnn_lstm_hybrid --epochs 50 --data-dir ../csi_data
-  
-  # 빠른 테스트 훈련
-  python main.py train --quick --csv-file 35.csv --epochs 10
-  
-  # 데이터 분석
-  python main.py analyze 35.csv --confidence 0.5 --visualize
+        사용 예시:
+        # 모델 훈련
+        python main.py train --data-dir ./csi_data --epochs 50
+        python main.py train --model-type cnn_lstm_hybrid --epochs 50 --data-dir ../csi_data
+        
+        # 빠른 테스트 훈련
+        python main.py train --quick --csv-file 35.csv --epochs 10
+        
+        # 데이터 분석
+        python main.py analyze 35.csv --confidence 0.5 --visualize
 
-  
-  # 시스템 테스트
-  python main.py test --include-training
-  
-  # 설정 정보
-  python main.py config
-        """
-    )
+        
+        # 시스템 테스트
+        python main.py test --include-training
+        
+        # 설정 정보
+        python main.py config
+                """
+            )
     
     subparsers = parser.add_subparsers(dest='command', help='사용 가능한 명령')
     
