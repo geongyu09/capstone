@@ -173,8 +173,26 @@ def save_metadata(metadata: Dict[str, Any], file_path: str) -> None:
     """메타데이터 저장"""
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
     
+    # numpy 타입을 Python 기본 타입으로 변환하는 함수
+    def convert_numpy_types(obj):
+        if isinstance(obj, np.integer):
+            return int(obj)
+        elif isinstance(obj, np.floating):
+            return float(obj)
+        elif isinstance(obj, np.ndarray):
+            return obj.tolist()
+        elif isinstance(obj, dict):
+            return {key: convert_numpy_types(value) for key, value in obj.items()}
+        elif isinstance(obj, list):
+            return [convert_numpy_types(item) for item in obj]
+        else:
+            return obj
+    
+    # 메타데이터 변환
+    converted_metadata = convert_numpy_types(metadata)
+    
     with open(file_path, 'w', encoding='utf-8') as f:
-        json.dump(metadata, f, indent=2, ensure_ascii=False, default=str)
+        json.dump(converted_metadata, f, indent=2, ensure_ascii=False, default=str)
 
 
 def load_metadata(file_path: str) -> Dict[str, Any]:

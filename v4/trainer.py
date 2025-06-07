@@ -241,11 +241,17 @@ class CSIModelTrainer:
         # 학습 히스토리 추가
         if self.history:
             metadata['training_history'] = {
-                'epochs': len(self.history.history['loss']),
+                'epochs': int(len(self.history.history['loss'])),
                 'final_train_loss': float(self.history.history['loss'][-1]),
                 'final_val_loss': float(self.history.history['val_loss'][-1]),
                 'best_val_loss': float(np.min(self.history.history['val_loss'])),
                 'best_epoch': int(np.argmin(self.history.history['val_loss']) + 1)
+            }
+            
+            # 전체 히스토리도 저장 (float 변환)
+            metadata['full_history'] = {
+                key: [float(val) for val in values] 
+                for key, values in self.history.history.items()
             }
         
         # 파일 저장 (스케일러는 전처리 단계에서 이미 저장됨)
