@@ -1,0 +1,5 @@
+2025-06-08 19:09:47,403 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_190947.log
+2025-06-08 19:09:47,403 - CSIFallDetection - INFO - 🚀 향상된 모델 학습 시작
+2025-06-08 19:09:47,403 - CSIFallDetection - INFO - 📊 데이터 제너레이터 준비 중...
+2025-06-08 19:09:47,405 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_190947.log
+2025-06-08 19:09:47,405 - CSIFallDetection - ERROR - ❌ 학습 실패: 전처리된 파일을 찾을 수 없습니다: ./processed_data

@@ -324,7 +324,7 @@ def plot_training_history(history: Dict[str, List[float]],
     
     system = platform.system()
     if system == "Darwin":
-        plt.rcParams['font.family'] = 'AppleSDGothicNeo-Regular'
+        plt.rcParams['font.family'] = 'DejaVu Sans'
     elif system == "Windows":
         plt.rcParams['font.family'] = 'Malgun Gothic'
     else:
@@ -396,7 +396,7 @@ def plot_confusion_matrix(y_true: np.ndarray, y_pred: np.ndarray,
     
     system = platform.system()
     if system == "Darwin":
-        plt.rcParams['font.family'] = 'AppleSDGothicNeo-Regular'
+        plt.rcParams['font.family'] = 'DejaVu Sans'
     elif system == "Windows":
         plt.rcParams['font.family'] = 'Malgun Gothic'
     else:
@@ -432,7 +432,7 @@ def plot_roc_curve(y_true: np.ndarray, y_scores: np.ndarray,
     
     system = platform.system()
     if system == "Darwin":
-        plt.rcParams['font.family'] = 'AppleSDGothicNeo-Regular'
+        plt.rcParams['font.family'] = 'DejaVu Sans'
     elif system == "Windows":
         plt.rcParams['font.family'] = 'Malgun Gothic'
     else:

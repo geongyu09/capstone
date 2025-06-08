@@ -1,0 +1,65 @@
+2025-06-08 18:49:34,090 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_184934.log
+2025-06-08 18:49:34,091 - CSIFallDetection - INFO - 전처리된 파일 634개 발견
+2025-06-08 18:49:34,091 - CSIFallDetection - INFO - 데이터 분할: 훈련 443개, 검증 95개, 테스트 96개
+2025-06-08 18:49:38,545 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 18:49:38,545 - CSIFallDetection - INFO -    파일 수: 443
+2025-06-08 18:49:38,546 - CSIFallDetection - INFO -    총 시퀀스: 32,198개
+2025-06-08 18:49:38,546 - CSIFallDetection - INFO -    배치 수: 1007개
+2025-06-08 18:49:38,924 - CSIFallDetection - WARNING - 파일 크기 부족으로 스킵: ./processed_data/23_labeled_jitter_1_processed.csv (0 < 50)
+2025-06-08 18:49:39,492 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 18:49:39,492 - CSIFallDetection - INFO -    파일 수: 95
+2025-06-08 18:49:39,492 - CSIFallDetection - INFO -    총 시퀀스: 6,754개
+2025-06-08 18:49:39,492 - CSIFallDetection - INFO -    배치 수: 212개
+2025-06-08 18:49:40,430 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 18:49:40,430 - CSIFallDetection - INFO -    파일 수: 96
+2025-06-08 18:49:40,430 - CSIFallDetection - INFO -    총 시퀀스: 7,056개
+2025-06-08 18:49:40,430 - CSIFallDetection - INFO -    배치 수: 221개
+2025-06-08 18:49:40,432 - CSIFallDetection - INFO - ✅ 테스트 데이터 준비 완료
+2025-06-08 18:49:40,432 - CSIFallDetection - INFO -    테스트 시퀀스: 7,056개
+2025-06-08 18:49:40,432 - CSIFallDetection - INFO - 📈 모델 평가 시작...
+2025-06-08 18:50:22,867 - CSIFallDetection - INFO - 🔬 상세 평가 실행 중...
+2025-06-08 18:50:22,867 - CSIFallDetection - INFO - 🔄 예측 수집 중...
+2025-06-08 18:50:25,583 - CSIFallDetection - INFO -    진행률: 10/221 배치
+2025-06-08 18:50:27,881 - CSIFallDetection - INFO -    진행률: 20/221 배치
+2025-06-08 18:50:30,334 - CSIFallDetection - INFO -    진행률: 30/221 배치
+2025-06-08 18:50:33,360 - CSIFallDetection - INFO -    진행률: 40/221 배치
+2025-06-08 18:50:35,780 - CSIFallDetection - INFO -    진행률: 50/221 배치
+2025-06-08 18:50:37,981 - CSIFallDetection - INFO -    진행률: 60/221 배치
+2025-06-08 18:50:40,229 - CSIFallDetection - INFO -    진행률: 70/221 배치
+2025-06-08 18:50:42,477 - CSIFallDetection - INFO -    진행률: 80/221 배치
+2025-06-08 18:50:44,753 - CSIFallDetection - INFO -    진행률: 90/221 배치
+2025-06-08 18:50:47,044 - CSIFallDetection - INFO -    진행률: 100/221 배치
+2025-06-08 18:50:49,302 - CSIFallDetection - INFO -    진행률: 110/221 배치
+2025-06-08 18:50:51,600 - CSIFallDetection - INFO -    진행률: 120/221 배치
+2025-06-08 18:50:53,913 - CSIFallDetection - INFO -    진행률: 130/221 배치
+2025-06-08 18:50:56,250 - CSIFallDetection - INFO -    진행률: 140/221 배치
+2025-06-08 18:50:58,682 - CSIFallDetection - INFO -    진행률: 150/221 배치
+2025-06-08 18:51:01,099 - CSIFallDetection - INFO -    진행률: 160/221 배치
+2025-06-08 18:51:03,396 - CSIFallDetection - INFO -    진행률: 170/221 배치
+2025-06-08 18:51:05,721 - CSIFallDetection - INFO -    진행률: 180/221 배치
+2025-06-08 18:51:08,142 - CSIFallDetection - INFO -    진행률: 190/221 배치
+2025-06-08 18:51:10,484 - CSIFallDetection - INFO -    진행률: 200/221 배치
+2025-06-08 18:51:12,785 - CSIFallDetection - INFO -    진행률: 210/221 배치
+2025-06-08 18:51:15,080 - CSIFallDetection - INFO -    진행률: 220/221 배치
+2025-06-08 18:51:28,266 - CSIFallDetection - INFO - 📊 시각화 저장 완료
+2025-06-08 18:51:28,268 - CSIFallDetection - INFO -    혼동 행렬: ./logs/hybrid_20250607_143159_best_confusion_matrix.png
+2025-06-08 18:51:28,268 - CSIFallDetection - INFO -    ROC 커브: ./logs/hybrid_20250607_143159_best_roc_curve.png (AUC: 0.677)
+2025-06-08 18:51:28,270 - CSIFallDetection - INFO - 데이터 크기: 7056개
+2025-06-08 18:51:28,270 - CSIFallDetection - INFO - 낙상 비율: 0.255
+2025-06-08 18:51:28,283 - CSIFallDetection - INFO - 임계값 0.10: F1=0.434, Acc=0.415, Prec=0.288, Rec=0.880
+2025-06-08 18:51:28,291 - CSIFallDetection - INFO - 임계값 0.15: F1=0.458, Acc=0.494, Prec=0.315, Rec=0.838
+2025-06-08 18:51:28,299 - CSIFallDetection - INFO - 임계값 0.20: F1=0.465, Acc=0.548, Prec=0.333, Rec=0.769
+2025-06-08 18:51:28,305 - CSIFallDetection - INFO - 임계값 0.25: F1=0.464, Acc=0.576, Prec=0.342, Rec=0.719
+2025-06-08 18:51:28,311 - CSIFallDetection - INFO - 임계값 0.30: F1=0.466, Acc=0.599, Prec=0.353, Rec=0.687
+2025-06-08 18:51:28,316 - CSIFallDetection - INFO - 임계값 0.35: F1=0.470, Acc=0.624, Prec=0.367, Rec=0.655
+2025-06-08 18:51:28,321 - CSIFallDetection - INFO - 임계값 0.40: F1=0.464, Acc=0.638, Prec=0.372, Rec=0.614
+2025-06-08 18:51:28,326 - CSIFallDetection - INFO - 임계값 0.45: F1=0.461, Acc=0.651, Prec=0.380, Rec=0.586
+2025-06-08 18:51:28,330 - CSIFallDetection - INFO - 임계값 0.50: F1=0.463, Acc=0.666, Prec=0.392, Rec=0.565
+2025-06-08 18:51:28,335 - CSIFallDetection - INFO - 임계값 0.55: F1=0.463, Acc=0.682, Prec=0.406, Rec=0.539
+2025-06-08 18:51:28,339 - CSIFallDetection - INFO - 임계값 0.60: F1=0.457, Acc=0.695, Prec=0.418, Rec=0.504
+2025-06-08 18:51:28,343 - CSIFallDetection - INFO - 임계값 0.65: F1=0.451, Acc=0.705, Prec=0.430, Rec=0.475
+2025-06-08 18:51:28,347 - CSIFallDetection - INFO - 임계값 0.70: F1=0.432, Acc=0.715, Prec=0.440, Rec=0.425
+2025-06-08 18:51:28,351 - CSIFallDetection - INFO - 임계값 0.75: F1=0.420, Acc=0.727, Prec=0.458, Rec=0.387
+2025-06-08 18:51:28,355 - CSIFallDetection - INFO - 임계값 0.80: F1=0.403, Acc=0.737, Prec=0.477, Rec=0.349
+2025-06-08 18:51:28,359 - CSIFallDetection - INFO - 임계값 0.85: F1=0.385, Acc=0.745, Prec=0.500, Rec=0.313
+2025-06-08 18:51:28,359 - CSIFallDetection - INFO - 🏆 최적 임계값: 0.35 (F1: 0.470)

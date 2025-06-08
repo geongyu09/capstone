@@ -114,6 +114,34 @@ def train_model(logger):
         return False
 
 
+def realtime_detection(logger):
+    """실시간 낙상 감지 실행"""
+    logger.info("🔴 실시간 낙상 감지 시작")
+    
+    try:
+        from realtime_detector import create_realtime_demo
+        
+        # 실시간 감지 데모 실행
+        detector = create_realtime_demo()
+        
+        if detector:
+            # 모델 로드
+            detector.load_model()
+            
+            logger.info("✅ 실시간 감지 시스템 준비 완료")
+            logger.info("🔥 GUI를 사용하려면: python realtime_gui.py")
+            logger.info("🔥 콘솔 데모를 사용하려면: python realtime_detector.py")
+            
+            return True
+        else:
+            logger.error("실시간 감지기 생성 실패")
+            return False
+            
+    except Exception as e:
+        logger.error(f"실시간 감지 실패: {e}")
+        return False
+
+
 def evaluate_model(logger):
     """모델 평가 실행"""
     logger.info("📊 모델 평가 시작")
@@ -155,7 +183,7 @@ def evaluate_model(logger):
 def main():
     """메인 함수"""
     parser = argparse.ArgumentParser(description="CSI 낙상 감지 v4")
-    parser.add_argument('--mode', choices=['preprocess', 'train', 'evaluate', 'all'], 
+    parser.add_argument('--mode', choices=['preprocess', 'train', 'evaluate', 'realtime', 'gui', 'all'], 
                        default='preprocess', help='실행 모드')
     parser.add_argument('--config', action='store_true', 
                        help='설정 정보만 출력하고 종료')
@@ -189,6 +217,24 @@ def main():
         
         if args.mode in ['evaluate', 'all'] and success:
             success &= evaluate_model(logger)
+            
+        if args.mode == 'realtime':
+            success &= realtime_detection(logger)
+            
+        if args.mode == 'gui':
+            # GUI 실행
+            try:
+                from realtime_gui import RealTimeDetectionGUI
+                app = RealTimeDetectionGUI()
+                app.run()
+                success = True
+            except ImportError as e:
+                logger.error(f"GUI 모듈 로드 실패: {e}")
+                logger.error("tkinter가 설치되어 있는지 확인하세요.")
+                success = False
+            except Exception as e:
+                logger.error(f"GUI 실행 실패: {e}")
+                success = False
         
         if success:
             logger.info("✅ 모든 작업이 성공적으로 완료되었습니다.")

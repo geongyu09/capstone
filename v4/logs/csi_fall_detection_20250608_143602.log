@@ -1,0 +1,19 @@
+2025-06-08 14:36:02,064 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_143602.log
+2025-06-08 14:36:02,064 - CSIFallDetection - INFO - 🚀 CSI 낙상 감지 v4 시작
+2025-06-08 14:36:02,064 - CSIFallDetection - INFO - 실행 시간: 20250608_143602
+2025-06-08 14:36:02,064 - CSIFallDetection - INFO - 실행 모드: realtime
+2025-06-08 14:36:02,064 - CSIFallDetection - INFO - 🔴 실시간 낙상 감지 시작
+2025-06-08 14:36:02,068 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_143602.log
+2025-06-08 14:36:02,068 - CSIFallDetection - INFO - 🚀 실시간 CSI 낙상 감지기 초기화 완료
+2025-06-08 14:36:02,068 - CSIFallDetection - INFO - 📂 모델 로딩: hybrid_20250607_143159_best
+2025-06-08 14:36:02,297 - CSIFallDetection - INFO - CSI Preprocessor 초기화 완료
+2025-06-08 14:36:02,297 - CSIFallDetection - INFO -   Amplitude 컬럼 범위: 8:253
+2025-06-08 14:36:02,297 - CSIFallDetection - INFO -   스케일러 타입: minmax
+2025-06-08 14:36:02,297 - CSIFallDetection - INFO - ✅ 모델 로딩 완료
+2025-06-08 14:36:02,297 - CSIFallDetection - INFO -    입력 형태: Unknown
+2025-06-08 14:36:02,297 - CSIFallDetection - INFO -    임계값: 0.5
+2025-06-08 14:36:02,297 - CSIFallDetection - INFO - ✅ 실시간 감지 시스템 준비 완료
+2025-06-08 14:36:02,297 - CSIFallDetection - INFO - 🔥 GUI를 사용하려면: python realtime_gui.py
+2025-06-08 14:36:02,297 - CSIFallDetection - INFO - 🔥 콘솔 데모를 사용하려면: python realtime_detector.py
+2025-06-08 14:36:02,297 - CSIFallDetection - INFO - ✅ 모든 작업이 성공적으로 완료되었습니다.
+2025-06-08 14:36:02,297 - CSIFallDetection - INFO - 🏁 프로그램 종료: 20250608_143602

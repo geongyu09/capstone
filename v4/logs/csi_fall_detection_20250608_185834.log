@@ -1,0 +1,66 @@
+2025-06-08 18:58:34,322 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_185834.log
+2025-06-08 18:58:34,322 - CSIFallDetection - INFO - 🚀 CSI 낙상 감지 v4 시작
+2025-06-08 18:58:34,322 - CSIFallDetection - INFO - 실행 시간: 20250608_185834
+2025-06-08 18:58:34,322 - CSIFallDetection - INFO - 실행 모드: evaluate
+2025-06-08 18:58:34,322 - CSIFallDetection - INFO - 📊 모델 평가 시작
+2025-06-08 18:58:34,323 - CSIFallDetection - INFO - 평가 대상 모델: hybrid_20250607_143159_best
+2025-06-08 18:58:34,323 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_185834.log
+2025-06-08 18:58:34,323 - CSIFallDetection - INFO - 📊 모델 평가기 초기화
+2025-06-08 18:58:34,323 - CSIFallDetection - INFO -    모델 경로: hybrid_20250607_143159_best
+2025-06-08 18:58:34,323 - CSIFallDetection - INFO - 📂 모델 로딩 중...
+2025-06-08 18:58:34,523 - CSIFallDetection - INFO - ✅ 모델 로딩 완료
+2025-06-08 18:58:34,523 - CSIFallDetection - INFO -    실험 이름: hybrid_20250607_143159_best
+2025-06-08 18:58:34,523 - CSIFallDetection - INFO -    모델 타입: hybrid
+2025-06-08 18:58:34,523 - CSIFallDetection - INFO -    입력 형태: [50, 245]
+2025-06-08 18:58:34,523 - CSIFallDetection - INFO - 🔍 테스트 데이터 준비 중...
+2025-06-08 18:58:34,523 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_185834.log
+2025-06-08 18:58:34,524 - CSIFallDetection - INFO - 전처리된 파일 634개 발견
+2025-06-08 18:58:34,524 - CSIFallDetection - INFO - 데이터 분할: 훈련 443개, 검증 95개, 테스트 96개
+2025-06-08 18:58:39,778 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 18:58:39,778 - CSIFallDetection - INFO -    파일 수: 443
+2025-06-08 18:58:39,778 - CSIFallDetection - INFO -    총 시퀀스: 32,198개
+2025-06-08 18:58:39,778 - CSIFallDetection - INFO -    배치 수: 1007개
+2025-06-08 18:58:40,153 - CSIFallDetection - WARNING - 파일 크기 부족으로 스킵: ./processed_data/23_labeled_jitter_1_processed.csv (0 < 50)
+2025-06-08 18:58:40,749 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 18:58:40,749 - CSIFallDetection - INFO -    파일 수: 95
+2025-06-08 18:58:40,749 - CSIFallDetection - INFO -    총 시퀀스: 6,754개
+2025-06-08 18:58:40,749 - CSIFallDetection - INFO -    배치 수: 212개
+2025-06-08 18:58:41,740 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 18:58:41,740 - CSIFallDetection - INFO -    파일 수: 96
+2025-06-08 18:58:41,740 - CSIFallDetection - INFO -    총 시퀀스: 7,056개
+2025-06-08 18:58:41,740 - CSIFallDetection - INFO -    배치 수: 221개
+2025-06-08 18:58:41,741 - CSIFallDetection - INFO - ✅ 테스트 데이터 준비 완료
+2025-06-08 18:58:41,741 - CSIFallDetection - INFO -    테스트 시퀀스: 7,056개
+2025-06-08 18:58:41,741 - CSIFallDetection - INFO - 📈 모델 평가 시작...
+2025-06-08 18:59:23,280 - CSIFallDetection - INFO - 🔬 상세 평가 실행 중...
+2025-06-08 18:59:23,280 - CSIFallDetection - INFO - 🔄 예측 수집 중...
+2025-06-08 18:59:26,004 - CSIFallDetection - INFO -    진행률: 10/221 배치
+2025-06-08 18:59:28,945 - CSIFallDetection - INFO -    진행률: 20/221 배치
+2025-06-08 18:59:31,506 - CSIFallDetection - INFO -    진행률: 30/221 배치
+2025-06-08 18:59:33,988 - CSIFallDetection - INFO -    진행률: 40/221 배치
+2025-06-08 18:59:36,973 - CSIFallDetection - INFO -    진행률: 50/221 배치
+2025-06-08 18:59:39,535 - CSIFallDetection - INFO -    진행률: 60/221 배치
+2025-06-08 18:59:41,743 - CSIFallDetection - INFO -    진행률: 70/221 배치
+2025-06-08 18:59:44,013 - CSIFallDetection - INFO -    진행률: 80/221 배치
+2025-06-08 18:59:46,269 - CSIFallDetection - INFO -    진행률: 90/221 배치
+2025-06-08 18:59:48,515 - CSIFallDetection - INFO -    진행률: 100/221 배치
+2025-06-08 18:59:50,753 - CSIFallDetection - INFO -    진행률: 110/221 배치
+2025-06-08 18:59:53,151 - CSIFallDetection - INFO -    진행률: 120/221 배치
+2025-06-08 18:59:55,503 - CSIFallDetection - INFO -    진행률: 130/221 배치
+2025-06-08 18:59:57,953 - CSIFallDetection - INFO -    진행률: 140/221 배치
+2025-06-08 19:00:00,362 - CSIFallDetection - INFO -    진행률: 150/221 배치
+2025-06-08 19:00:02,848 - CSIFallDetection - INFO -    진행률: 160/221 배치
+2025-06-08 19:00:05,213 - CSIFallDetection - INFO -    진행률: 170/221 배치
+2025-06-08 19:00:07,556 - CSIFallDetection - INFO -    진행률: 180/221 배치
+2025-06-08 19:00:10,018 - CSIFallDetection - INFO -    진행률: 190/221 배치
+2025-06-08 19:00:12,331 - CSIFallDetection - INFO -    진행률: 200/221 배치
+2025-06-08 19:00:14,594 - CSIFallDetection - INFO -    진행률: 210/221 배치
+2025-06-08 19:00:16,875 - CSIFallDetection - INFO -    진행률: 220/221 배치
+2025-06-08 19:00:27,081 - CSIFallDetection - INFO - 📊 시각화 저장 완료
+2025-06-08 19:00:27,082 - CSIFallDetection - INFO -    혼동 행렬: ./logs/hybrid_20250607_143159_best_confusion_matrix.png
+2025-06-08 19:00:27,082 - CSIFallDetection - INFO -    ROC 커브: ./logs/hybrid_20250607_143159_best_roc_curve.png (AUC: 0.677)
+2025-06-08 19:00:27,083 - CSIFallDetection - INFO - ✅ 평가 완료: hybrid_20250607_143159_best
+2025-06-08 19:00:27,083 - CSIFallDetection - INFO - 정확도: 0.0000
+2025-06-08 19:00:27,083 - CSIFallDetection - INFO - 최고 F1 점수: 0.4662
+2025-06-08 19:00:27,084 - CSIFallDetection - INFO - ✅ 모든 작업이 성공적으로 완료되었습니다.
+2025-06-08 19:00:27,085 - CSIFallDetection - INFO - 🏁 프로그램 종료: 20250608_190027

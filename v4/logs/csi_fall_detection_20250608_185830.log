@@ -1,0 +1,3 @@
+2025-06-08 18:58:30,467 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_185830.log
+2025-06-08 18:58:30,467 - CSIFallDetection - INFO - 🧠 향상된 모델 아키텍처 구축 시작
+2025-06-08 18:58:30,569 - CSIFallDetection - INFO - ✅ 향상된 모델 아키텍처 구축 완료
