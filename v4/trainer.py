@@ -21,7 +21,7 @@ from model_builder import create_model
 
 class CSIModelTrainer:
     """CSI 낙상 감지 모델 학습기"""
-    
+     
     def __init__(self, 
                  model_type: str = 'hybrid',
                  experiment_name: Optional[str] = None,

@@ -1,0 +1,20 @@
+2025-06-08 21:50:22,595 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_215022.log
+2025-06-08 21:50:22,595 - CSIFallDetection - INFO - 🚀 CSI 낙상 감지 v4 시작
+2025-06-08 21:50:22,595 - CSIFallDetection - INFO - 실행 시간: 20250608_215022
+2025-06-08 21:50:22,595 - CSIFallDetection - INFO - 실행 모드: evaluate
+2025-06-08 21:50:22,595 - CSIFallDetection - INFO - 📊 모델 평가 시작
+2025-06-08 21:50:22,596 - CSIFallDetection - INFO - 평가 대상 모델: improved_hybrid_20250608_205322_final
+2025-06-08 21:50:22,596 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_215022.log
+2025-06-08 21:50:22,596 - CSIFallDetection - INFO - 📊 모델 평가기 초기화
+2025-06-08 21:50:22,596 - CSIFallDetection - INFO -    모델 경로: improved_hybrid_20250608_205322_final
+2025-06-08 21:50:22,596 - CSIFallDetection - INFO - 📂 모델 로딩 중...
+2025-06-08 21:50:22,922 - CSIFallDetection - INFO - ✅ 모델 로딩 완료
+2025-06-08 21:50:22,922 - CSIFallDetection - INFO -    실험 이름: Unknown
+2025-06-08 21:50:22,922 - CSIFallDetection - INFO -    모델 타입: Unknown
+2025-06-08 21:50:22,922 - CSIFallDetection - INFO -    입력 형태: Unknown
+2025-06-08 21:50:22,922 - CSIFallDetection - INFO - 🔍 테스트 데이터 준비 중...
+2025-06-08 21:50:22,922 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_215022.log
+2025-06-08 21:50:22,923 - CSIFallDetection - ERROR - ❌ 테스트 데이터 준비 실패: 전처리된 파일을 찾을 수 없습니다: ./processed_data
+2025-06-08 21:50:22,923 - CSIFallDetection - ERROR - 모델 평가 실패: 전처리된 파일을 찾을 수 없습니다: ./processed_data
+2025-06-08 21:50:22,923 - CSIFallDetection - ERROR - ❌ 일부 작업이 실패했습니다.
+2025-06-08 21:50:22,923 - CSIFallDetection - INFO - 🏁 프로그램 종료: 20250608_215022
