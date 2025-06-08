@@ -33,7 +33,7 @@ def weighted_binary_crossentropy_factory(class_weights):
     def loss_function(y_true, y_pred):
         # 클래스 가중치 적용
         weight_0 = class_weights.get(0, 1.0)
-        weight_1 = class_weights.get(1, 1.0)
+        weight_1 = class_weights.get(1, 5.0)
         
         # 가중치 적용
         weights = y_true * weight_1 + (1 - y_true) * weight_0

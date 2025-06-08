@@ -28,7 +28,7 @@ class Config:
     STRIDE = 10             # 슬라이딩 윈도우 스트라이드
     BATCH_SIZE = 32
     EPOCHS = 100
-    LEARNING_RATE = 0.001
+    LEARNING_RATE = 0.003
     
     # 데이터 분할
     TRAIN_RATIO = 0.7
@@ -124,12 +124,12 @@ class ModelConfig:
     # CNN 설정
     CNN_FILTERS = [64, 128, 256]
     CNN_KERNEL_SIZE = 3
-    CNN_DROPOUT = 0.3
+    CNN_DROPOUT = 0.1
     
     # LSTM 설정
     LSTM_UNITS = [128, 64]
-    LSTM_DROPOUT = 0.3
-    LSTM_RECURRENT_DROPOUT = 0.3
+    LSTM_DROPOUT = 0.1
+    LSTM_RECURRENT_DROPOUT = 0.2
     
     # Dense 설정
     DENSE_UNITS = [64, 32]

@@ -1,0 +1,15 @@
+2025-06-08 21:08:37,516 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_210837.log
+2025-06-08 21:08:37,516 - CSIFallDetection - INFO - 전처리된 파일 34개 발견
+2025-06-08 21:08:37,517 - CSIFallDetection - INFO - 데이터 분할: 훈련 23개, 검증 5개, 테스트 6개
+2025-06-08 21:08:37,794 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 21:08:37,794 - CSIFallDetection - INFO -    파일 수: 23
+2025-06-08 21:08:37,794 - CSIFallDetection - INFO -    총 시퀀스: 1,248개
+2025-06-08 21:08:37,794 - CSIFallDetection - INFO -    배치 수: 39개
+2025-06-08 21:08:37,839 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 21:08:37,839 - CSIFallDetection - INFO -    파일 수: 5
+2025-06-08 21:08:37,839 - CSIFallDetection - INFO -    총 시퀀스: 230개
+2025-06-08 21:08:37,839 - CSIFallDetection - INFO -    배치 수: 8개
+2025-06-08 21:08:37,894 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 21:08:37,894 - CSIFallDetection - INFO -    파일 수: 6
+2025-06-08 21:08:37,894 - CSIFallDetection - INFO -    총 시퀀스: 336개
+2025-06-08 21:08:37,894 - CSIFallDetection - INFO -    배치 수: 11개

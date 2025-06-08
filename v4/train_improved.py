@@ -72,7 +72,7 @@ def train_with_improved_model():
         # 4. 학습 실행
         logger.info(f"🏋️ 모델 학습 시작 (실험명: {experiment_name})")
         
-        epochs = 50  # 향상된 모델이므로 더 적은 에포크로 시작
+        epochs = 50 
         
         history = model.fit(
             train_gen,

@@ -1,0 +1,9 @@
+2025-06-08 20:53:22,021 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_205322.log
+2025-06-08 20:53:22,021 - CSIFallDetection - INFO - 🧠 향상된 모델 아키텍처 구축 시작
+2025-06-08 20:53:22,159 - CSIFallDetection - INFO - ✅ 향상된 모델 아키텍처 구축 완료
+2025-06-08 20:53:22,182 - CSIFallDetection - INFO - 🏋️ 모델 학습 시작 (실험명: improved_hybrid_20250608_205322)
+2025-06-08 21:00:36,918 - CSIFallDetection - INFO - ✅ 향상된 모델 학습 완료!
+2025-06-08 21:00:36,919 - CSIFallDetection - INFO -    실험명: improved_hybrid_20250608_205322
+2025-06-08 21:00:36,919 - CSIFallDetection - INFO -    최종 모델: ./models/improved_hybrid_20250608_205322_final.keras
+2025-06-08 21:00:36,919 - CSIFallDetection - INFO -    최고 모델: ./models/improved_hybrid_20250608_205322_best.keras
+2025-06-08 21:00:36,919 - CSIFallDetection - INFO -    메타데이터: ./models/improved_hybrid_20250608_205322_metadata.json

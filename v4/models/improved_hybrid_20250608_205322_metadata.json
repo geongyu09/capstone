@@ -1,0 +1,25 @@
+{
+  "experiment_name": "improved_hybrid_20250608_205322",
+  "model_type": "improved_hybrid",
+  "timestamp": "20250608_210036",
+  "architecture": "Multi-scale CNN + Bidirectional LSTM with Attention",
+  "training_info": {
+    "epochs_trained": 50,
+    "best_val_loss": 0.05860915035009384,
+    "final_train_loss": 0.07184967398643494,
+    "final_val_loss": 0.05955927073955536
+  },
+  "config": {
+    "window_size": 50,
+    "total_features": 245,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "loss_function": "focal_loss"
+  },
+  "improvements": [
+    "Multi-scale CNN with residual connections",
+    "Bidirectional LSTM with custom attention",
+    "Focal Loss for class imbalance",
+    "Improved data augmentation strategy"
+  ]
+}
