@@ -14,6 +14,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import classification_report, confusion_matrix, roc_curve, auc
+import tensorflow as tf
 
 
 def setup_logging(log_dir: str = "./logs", log_level: str = "INFO") -> logging.Logger:
@@ -228,72 +229,150 @@ def save_model_artifacts(model, scaler, metadata: Dict[str, Any],
 
 def load_model_artifacts(model_dir: str, model_name: str) -> Tuple[Any, Any, Dict[str, Any]]:
     """모델 관련 파일들 로드"""
+    import tensorflow as tf
     from tensorflow.keras.models import load_model
     
-    paths = {
-        'model': os.path.join(model_dir, f"{model_name}.keras"),
-        'scaler': os.path.join(model_dir, f"{model_name}_scaler.pkl"),
-        'metadata': os.path.join(model_dir, f"{model_name}_metadata.json")
+    # 커스텀 손실 함수들 정의 (기존 모델과의 호환성을 위해)
+    def weighted_binary_crossentropy(y_true, y_pred):
+        """기존 모델과 호환되는 가중치 적용 손실 함수"""
+        # 기본 가중치 설정 (낙상 클래스에 더 높은 가중치)
+        class_weight_1 = 2.0  # 낙상 클래스
+        class_weight_0 = 1.0  # 정상 클래스
+        
+        weights = y_true * class_weight_1 + (1 - y_true) * class_weight_0
+        bce = tf.keras.losses.binary_crossentropy(y_true, y_pred)
+        return bce * weights
+    
+    def simple_weighted_binary_crossentropy(y_true, y_pred):
+        """간단한 가중치 적용 binary crossentropy"""
+        class_weight_1 = 2.0
+        class_weight_0 = 1.0
+        
+        weights = y_true * class_weight_1 + (1 - y_true) * class_weight_0
+        bce = tf.keras.losses.binary_crossentropy(y_true, y_pred)
+        return bce * weights
+    
+    # 커스텀 객체 딕셔너리
+    custom_objects = {
+        'weighted_binary_crossentropy': weighted_binary_crossentropy,
+        'simple_weighted_binary_crossentropy': simple_weighted_binary_crossentropy
     }
     
-    # 모델 로드
-    model = load_model(paths['model'])
-    
-    # 스케일러 로드
-    with open(paths['scaler'], 'rb') as f:
-        scaler = pickle.load(f)
-    
-    # 메타데이터 로드
-    metadata = load_metadata(paths['metadata'])
-    
-    return model, scaler, metadata
+    try:
+        paths = {
+            'model': os.path.join(model_dir, f"{model_name}.keras"),
+            'scaler': os.path.join(model_dir, f"{model_name}_scaler.pkl"),
+            'metadata': os.path.join(model_dir, f"{model_name}_metadata.json")
+        }
+        
+        print(f"🔄 모델 로딩: {paths['model']}")
+        
+        # 모델 파일 존재 확인
+        if not os.path.exists(paths['model']):
+            raise FileNotFoundError(f"모델 파일을 찾을 수 없습니다: {paths['model']}")
+        
+        # 커스텀 객체와 함께 모델 로드
+        try:
+            # 먼저 커스텀 객체와 함께 로드 시도
+            model = load_model(paths['model'], custom_objects=custom_objects)
+        except Exception as e1:
+            print(f"⚠️ 커스텀 객체로 로드 실패, 기본 로드 시도: {e1}")
+            try:
+                # 커스텀 객체 없이 로드 시도
+                model = load_model(paths['model'])
+            except Exception as e2:
+                print(f"⚠️ 기본 로드도 실패: {e2}")
+                # model_builder에서 커스텀 객체 가져오기
+                try:
+                    from model_builder import get_custom_objects
+                    builder_custom_objects = get_custom_objects()
+                    model = load_model(paths['model'], custom_objects=builder_custom_objects)
+                except Exception as e3:
+                    raise Exception(f"모든 로드 방법 실패: {e1}, {e2}, {e3}")
+        
+        print(f"✅ 모델 로딩 완료: {paths['model']}")
+        
+        # 스케일러 로드
+        if os.path.exists(paths['scaler']):
+            with open(paths['scaler'], 'rb') as f:
+                scaler = pickle.load(f)
+        else:
+            print(f"⚠️ 스케일러 파일을 찾을 수 없습니다: {paths['scaler']}")
+            scaler = None
+        
+        # 메타데이터 로드
+        if os.path.exists(paths['metadata']):
+            metadata = load_metadata(paths['metadata'])
+        else:
+            print(f"⚠️ 메타데이터 파일을 찾을 수 없습니다: {paths['metadata']}")
+            metadata = {}
+        
+        return model, scaler, metadata
+        
+    except Exception as e:
+        print(f"⚠️ 모델 아티팩트 로드 실패: {e}")
+        return None, None, {}
 
 
 def plot_training_history(history: Dict[str, List[float]], 
                          save_path: Optional[str] = None) -> None:
     """학습 히스토리 플롯"""
+    
+    # 한글 폰트 설정
+    import matplotlib.font_manager as fm
+    import platform
+    
+    system = platform.system()
+    if system == "Darwin":
+        plt.rcParams['font.family'] = 'AppleSDGothicNeo-Regular'
+    elif system == "Windows":
+        plt.rcParams['font.family'] = 'Malgun Gothic'
+    else:
+        plt.rcParams['font.family'] = 'DejaVu Sans'
+    plt.rcParams['axes.unicode_minus'] = False
+    
     fig, axes = plt.subplots(2, 2, figsize=(15, 10))
     
     # Loss
-    axes[0, 0].plot(history['loss'], label='Training Loss')
+    axes[0, 0].plot(history['loss'], label='학습 손실')
     if 'val_loss' in history:
-        axes[0, 0].plot(history['val_loss'], label='Validation Loss')
-    axes[0, 0].set_title('Model Loss')
-    axes[0, 0].set_xlabel('Epoch')
-    axes[0, 0].set_ylabel('Loss')
+        axes[0, 0].plot(history['val_loss'], label='검증 손실')
+    axes[0, 0].set_title('모델 손실', fontsize=12, fontweight='bold')
+    axes[0, 0].set_xlabel('에포크')
+    axes[0, 0].set_ylabel('손실')
     axes[0, 0].legend()
     axes[0, 0].grid(True)
     
     # Accuracy
     if 'accuracy' in history:
-        axes[0, 1].plot(history['accuracy'], label='Training Accuracy')
+        axes[0, 1].plot(history['accuracy'], label='학습 정확도')
         if 'val_accuracy' in history:
-            axes[0, 1].plot(history['val_accuracy'], label='Validation Accuracy')
-        axes[0, 1].set_title('Model Accuracy')
-        axes[0, 1].set_xlabel('Epoch')
-        axes[0, 1].set_ylabel('Accuracy')
+            axes[0, 1].plot(history['val_accuracy'], label='검증 정확도')
+        axes[0, 1].set_title('모델 정확도', fontsize=12, fontweight='bold')
+        axes[0, 1].set_xlabel('에포크')
+        axes[0, 1].set_ylabel('정확도')
         axes[0, 1].legend()
         axes[0, 1].grid(True)
     
     # Precision
     if 'precision' in history:
-        axes[1, 0].plot(history['precision'], label='Training Precision')
+        axes[1, 0].plot(history['precision'], label='학습 정밀도')
         if 'val_precision' in history:
-            axes[1, 0].plot(history['val_precision'], label='Validation Precision')
-        axes[1, 0].set_title('Model Precision')
-        axes[1, 0].set_xlabel('Epoch')
-        axes[1, 0].set_ylabel('Precision')
+            axes[1, 0].plot(history['val_precision'], label='검증 정밀도')
+        axes[1, 0].set_title('모델 정밀도', fontsize=12, fontweight='bold')
+        axes[1, 0].set_xlabel('에포크')
+        axes[1, 0].set_ylabel('정밀도')
         axes[1, 0].legend()
         axes[1, 0].grid(True)
     
     # Recall
     if 'recall' in history:
-        axes[1, 1].plot(history['recall'], label='Training Recall')
+        axes[1, 1].plot(history['recall'], label='학습 재현율')
         if 'val_recall' in history:
-            axes[1, 1].plot(history['val_recall'], label='Validation Recall')
-        axes[1, 1].set_title('Model Recall')
-        axes[1, 1].set_xlabel('Epoch')
-        axes[1, 1].set_ylabel('Recall')
+            axes[1, 1].plot(history['val_recall'], label='검증 재현율')
+        axes[1, 1].set_title('모델 재현율', fontsize=12, fontweight='bold')
+        axes[1, 1].set_xlabel('에포크')
+        axes[1, 1].set_ylabel('재현율')
         axes[1, 1].legend()
         axes[1, 1].grid(True)
     
@@ -310,17 +389,31 @@ def plot_confusion_matrix(y_true: np.ndarray, y_pred: np.ndarray,
                          labels: List[str] = None,
                          save_path: Optional[str] = None) -> None:
     """혼동 행렬 플롯"""
+    
+    # 한글 폰트 설정
+    import matplotlib.font_manager as fm
+    import platform
+    
+    system = platform.system()
+    if system == "Darwin":
+        plt.rcParams['font.family'] = 'AppleSDGothicNeo-Regular'
+    elif system == "Windows":
+        plt.rcParams['font.family'] = 'Malgun Gothic'
+    else:
+        plt.rcParams['font.family'] = 'DejaVu Sans'
+    plt.rcParams['axes.unicode_minus'] = False
+    
     if labels is None:
-        labels = ['Normal', 'Fall']
+        labels = ['정상', '낙상']
     
     cm = confusion_matrix(y_true, y_pred)
     
     plt.figure(figsize=(8, 6))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', 
                 xticklabels=labels, yticklabels=labels)
-    plt.title('Confusion Matrix')
-    plt.xlabel('Predicted')
-    plt.ylabel('Actual')
+    plt.title('혼동 행렬', fontsize=14, fontweight='bold')
+    plt.xlabel('예측값')
+    plt.ylabel('실제값')
     
     if save_path:
         plt.savefig(save_path, dpi=300, bbox_inches='tight')
@@ -331,19 +424,33 @@ def plot_confusion_matrix(y_true: np.ndarray, y_pred: np.ndarray,
 
 def plot_roc_curve(y_true: np.ndarray, y_scores: np.ndarray,
                   save_path: Optional[str] = None) -> float:
-    """ROC 커브 플롯"""
+    """로크 커브 플롯"""
+    
+    # 한글 폰트 설정
+    import matplotlib.font_manager as fm
+    import platform
+    
+    system = platform.system()
+    if system == "Darwin":
+        plt.rcParams['font.family'] = 'AppleSDGothicNeo-Regular'
+    elif system == "Windows":
+        plt.rcParams['font.family'] = 'Malgun Gothic'
+    else:
+        plt.rcParams['font.family'] = 'DejaVu Sans'
+    plt.rcParams['axes.unicode_minus'] = False
+    
     fpr, tpr, _ = roc_curve(y_true, y_scores)
     roc_auc = auc(fpr, tpr)
     
     plt.figure(figsize=(8, 6))
     plt.plot(fpr, tpr, color='darkorange', lw=2, 
-             label=f'ROC curve (AUC = {roc_auc:.3f})')
+             label=f'ROC 커브 (AUC = {roc_auc:.3f})')
     plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
     plt.xlim([0.0, 1.0])
     plt.ylim([0.0, 1.05])
-    plt.xlabel('False Positive Rate')
-    plt.ylabel('True Positive Rate')
-    plt.title('Receiver Operating Characteristic (ROC) Curve')
+    plt.xlabel('거짓 양성률 (False Positive Rate)')
+    plt.ylabel('참 양성률 (True Positive Rate)')
+    plt.title('ROC 커브 (수신자 동작 특성)', fontsize=14, fontweight='bold')
     plt.legend(loc="lower right")
     plt.grid(True)
     

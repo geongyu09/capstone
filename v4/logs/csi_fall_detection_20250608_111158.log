@@ -1,0 +1,20 @@
+2025-06-08 11:11:58,163 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_111158.log
+2025-06-08 11:11:58,165 - CSIFallDetection - INFO - 전처리된 파일 285개 발견
+2025-06-08 11:11:58,166 - CSIFallDetection - INFO - 데이터 분할: 훈련 199개, 검증 42개, 테스트 44개
+2025-06-08 11:11:59,986 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 11:11:59,986 - CSIFallDetection - INFO -    파일 수: 199
+2025-06-08 11:11:59,986 - CSIFallDetection - INFO -    총 시퀀스: 12,484개
+2025-06-08 11:11:59,986 - CSIFallDetection - INFO -    배치 수: 391개
+2025-06-08 11:12:00,391 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 11:12:00,392 - CSIFallDetection - INFO -    파일 수: 42
+2025-06-08 11:12:00,392 - CSIFallDetection - INFO -    총 시퀀스: 2,682개
+2025-06-08 11:12:00,392 - CSIFallDetection - INFO -    배치 수: 84개
+2025-06-08 11:12:00,799 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 11:12:00,799 - CSIFallDetection - INFO -    파일 수: 44
+2025-06-08 11:12:00,799 - CSIFallDetection - INFO -    총 시퀀스: 2,714개
+2025-06-08 11:12:00,799 - CSIFallDetection - INFO -    배치 수: 85개
+2025-06-08 11:12:00,800 - CSIFallDetection - INFO - ✅ 테스트 데이터 준비 완료
+2025-06-08 11:12:00,800 - CSIFallDetection - INFO -    테스트 시퀀스: 2,714개
+2025-06-08 11:12:00,800 - CSIFallDetection - ERROR - 모델 평가 실패: 모델이 로드되지 않았습니다. load_model()을 먼저 호출하세요.
+2025-06-08 11:12:00,800 - CSIFallDetection - ERROR - ❌ 일부 작업이 실패했습니다.
+2025-06-08 11:12:00,800 - CSIFallDetection - INFO - 🏁 프로그램 종료: 20250608_111200

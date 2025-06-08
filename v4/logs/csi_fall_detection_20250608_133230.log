@@ -1,0 +1,36 @@
+2025-06-08 13:32:30,004 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_133230.log
+2025-06-08 13:32:30,005 - CSIFallDetection - INFO - 전처리된 파일 285개 발견
+2025-06-08 13:32:30,005 - CSIFallDetection - INFO - 데이터 분할: 훈련 199개, 검증 42개, 테스트 44개
+2025-06-08 13:32:31,778 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 13:32:31,778 - CSIFallDetection - INFO -    파일 수: 199
+2025-06-08 13:32:31,778 - CSIFallDetection - INFO -    총 시퀀스: 12,484개
+2025-06-08 13:32:31,778 - CSIFallDetection - INFO -    배치 수: 391개
+2025-06-08 13:32:32,194 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 13:32:32,194 - CSIFallDetection - INFO -    파일 수: 42
+2025-06-08 13:32:32,194 - CSIFallDetection - INFO -    총 시퀀스: 2,682개
+2025-06-08 13:32:32,194 - CSIFallDetection - INFO -    배치 수: 84개
+2025-06-08 13:32:32,653 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 13:32:32,653 - CSIFallDetection - INFO -    파일 수: 44
+2025-06-08 13:32:32,653 - CSIFallDetection - INFO -    총 시퀀스: 2,714개
+2025-06-08 13:32:32,653 - CSIFallDetection - INFO -    배치 수: 85개
+2025-06-08 13:32:32,654 - CSIFallDetection - INFO - ✅ 테스트 데이터 준비 완료
+2025-06-08 13:32:32,654 - CSIFallDetection - INFO -    테스트 시퀀스: 2,714개
+2025-06-08 13:32:32,654 - CSIFallDetection - INFO - 📈 모델 평가 시작...
+2025-06-08 13:32:48,014 - CSIFallDetection - INFO - 🔬 상세 평가 실행 중...
+2025-06-08 13:32:48,014 - CSIFallDetection - INFO - 🔄 예측 수집 중...
+2025-06-08 13:32:50,617 - CSIFallDetection - INFO -    진행률: 10/85 배치
+2025-06-08 13:32:52,888 - CSIFallDetection - INFO -    진행률: 20/85 배치
+2025-06-08 13:32:54,980 - CSIFallDetection - INFO -    진행률: 30/85 배치
+2025-06-08 13:32:56,994 - CSIFallDetection - INFO -    진행률: 40/85 배치
+2025-06-08 13:32:59,351 - CSIFallDetection - INFO -    진행률: 50/85 배치
+2025-06-08 13:33:01,936 - CSIFallDetection - INFO -    진행률: 60/85 배치
+2025-06-08 13:33:04,696 - CSIFallDetection - INFO -    진행률: 70/85 배치
+2025-06-08 13:33:07,302 - CSIFallDetection - INFO -    진행률: 80/85 배치
+2025-06-08 13:33:29,329 - CSIFallDetection - INFO - 📊 시각화 저장 완료
+2025-06-08 13:33:29,330 - CSIFallDetection - INFO -    혼동 행렬: ./logs/unknown_confusion_matrix.png
+2025-06-08 13:33:29,330 - CSIFallDetection - INFO -    ROC 커브: ./logs/unknown_roc_curve.png (AUC: 0.763)
+2025-06-08 13:33:29,331 - CSIFallDetection - INFO - ✅ 평가 완료: Unknown
+2025-06-08 13:33:29,331 - CSIFallDetection - INFO - 정확도: 0.0000
+2025-06-08 13:33:29,331 - CSIFallDetection - INFO - 최고 F1 점수: 0.7613
+2025-06-08 13:33:29,332 - CSIFallDetection - INFO - ✅ 모든 작업이 성공적으로 완료되었습니다.
+2025-06-08 13:33:29,332 - CSIFallDetection - INFO - 🏁 프로그램 종료: 20250608_133329

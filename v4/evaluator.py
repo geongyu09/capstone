@@ -39,6 +39,8 @@ class CSIModelEvaluator:
     def load_model(self) -> None:
         """모델 및 관련 파일들 로드"""
         self.logger.info("📂 모델 로딩 중...")
+        print( self.model_path)
+        print("=============================================================")
         
         try:
             # 모델 파일 경로 결정
@@ -49,15 +51,20 @@ class CSIModelEvaluator:
             else:
                 # 실험 이름인 경우
                 model_name = self.model_path
+                print(f"모델 이름: {model_name}")
                 model_file = os.path.join(Config.MODEL_DIR, f"{model_name}.keras")
+                print("==============================================================")
+                print( os.path.exists(model_file))
             
-            if not os.path.exists(model_file):
-                raise FileNotFoundError(f"모델 파일을 찾을 수 없습니다: {model_file}")
+                if not os.path.exists(model_file):
+                    raise FileNotFoundError(f"모델 파일을 찾을 수 없습니다: {model_file}")
             
             # 모델 아티팩트 로드
             self.model, self.scaler, self.metadata = load_model_artifacts(
                 Config.MODEL_DIR, model_name
             )
+
+            print(f"모델 로딩 완료: {model_file}")
             
             self.logger.info("✅ 모델 로딩 완료")
             self.logger.info(f"   실험 이름: {self.metadata.get('experiment_name', 'Unknown')}")
@@ -146,16 +153,34 @@ class CSIModelEvaluator:
         threshold_results = {}
         
         for threshold in thresholds:
-            eval_result = evaluate_model(
-                model=self.model,
-                X_test=None,  # 이미 예측이 완료됨
-                y_test=y_true,
-                threshold=threshold
-            )
+            y_pred = (y_scores > threshold).astype(int)
             
-            # 예측값 직접 설정
-            eval_result['predictions']['y_scores'] = y_scores.tolist()
-            eval_result['predictions']['y_pred'] = (y_scores > threshold).astype(int).tolist()
+            # 분류 리포트
+            from sklearn.metrics import classification_report, confusion_matrix, roc_curve, auc
+            report = classification_report(y_true, y_pred, output_dict=True)
+            
+            # 혼동 행렬
+            cm = confusion_matrix(y_true, y_pred)
+            
+            # ROC AUC
+            roc_auc = auc(*roc_curve(y_true, y_scores)[:2])
+            
+            # 결과 정리
+            eval_result = {
+                'classification_report': report,
+                'confusion_matrix': cm.tolist(),
+                'roc_auc': roc_auc,
+                'accuracy': report['accuracy'],
+                'precision': report['1']['precision'],
+                'recall': report['1']['recall'],
+                'f1_score': report['1']['f1-score'],
+                'threshold': threshold,
+                'predictions': {
+                    'y_true': y_true.tolist(),
+                    'y_scores': y_scores.tolist(),
+                    'y_pred': y_pred.tolist()
+                }
+            }
             
             threshold_results[f'threshold_{threshold}'] = eval_result
         

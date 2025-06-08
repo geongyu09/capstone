@@ -1,0 +1,6 @@
+2025-06-08 10:53:45,748 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_105345.log
+2025-06-08 10:53:45,748 - CSIFallDetection - INFO - 🚀 CSI 낙상 감지 v4 시작
+2025-06-08 10:53:45,748 - CSIFallDetection - INFO - 실행 시간: 20250608_105345
+2025-06-08 10:53:45,748 - CSIFallDetection - INFO - 실행 모드: evaluate
+2025-06-08 10:53:45,748 - CSIFallDetection - INFO - 📊 모델 평가 시작
+2025-06-08 10:53:47,694 - CSIFallDetection - INFO - 평가 대상 모델: hybrid_20250607_143159

@@ -1,0 +1,34 @@
+{
+  "experiment_name": "hybrid_20250607_143159",
+  "model_type": "hybrid",
+  "timestamp": "20250607_145144",
+  "config": {
+    "window_size": 50,
+    "stride": 10,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "total_features": 245
+  },
+  "model_config": {
+    "cnn_filters": [
+      64,
+      128,
+      256
+    ],
+    "cnn_kernel_size": 3,
+    "cnn_dropout": 0.3,
+    "lstm_units": [
+      128,
+      64
+    ],
+    "lstm_dropout": 0.3,
+    "lstm_recurrent_dropout": 0.3,
+    "dense_units": [
+      64,
+      32
+    ],
+    "dense_dropout": 0.5,
+    "output_activation": "sigmoid"
+  },
+  "class_weights": {
+    

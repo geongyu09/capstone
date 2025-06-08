@@ -1,0 +1,1151 @@
+2025-06-08 10:30:40,818 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_103040.log
+2025-06-08 10:30:40,818 - CSIFallDetection - INFO - 🚀 CSI 낙상 감지 v4 시작
+2025-06-08 10:30:40,818 - CSIFallDetection - INFO - 실행 시간: 20250608_103040
+2025-06-08 10:30:40,818 - CSIFallDetection - INFO - 실행 모드: preprocess
+2025-06-08 10:30:40,818 - CSIFallDetection - INFO - 🔧 데이터 전처리 시작
+2025-06-08 10:30:40,821 - CSIFallDetection - INFO - 수집된 CSV 파일: 2564개
+2025-06-08 10:30:40,821 - CSIFallDetection - INFO - 📊 데이터 분포 분석 중...
+2025-06-08 10:31:20,388 - CSIFallDetection - INFO - CSI Preprocessor 초기화 완료
+2025-06-08 10:31:20,388 - CSIFallDetection - INFO -   Amplitude 컬럼 범위: 8:253
+2025-06-08 10:31:20,388 - CSIFallDetection - INFO -   스케일러 타입: minmax
+2025-06-08 10:31:20,388 - CSIFallDetection - INFO - ⚡ 배치 전처리 시작...
+2025-06-08 10:31:20,388 - CSIFallDetection - INFO - 배치 전처리 시작: 2564개 파일
+2025-06-08 10:31:20,389 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/34_labeled_warped.csv
+2025-06-08 10:31:20,550 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/34_labeled_warped_processed.csv
+2025-06-08 10:31:20,550 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/34_labeled_warped.csv
+2025-06-08 10:31:20,551 - CSIFallDetection - INFO - 진행률: 1/2564 (0.0%)
+2025-06-08 10:31:20,551 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/11_labeled_warped_3.csv
+2025-06-08 10:31:20,639 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/11_labeled_warped_3_processed.csv
+2025-06-08 10:31:20,639 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/11_labeled_warped_3.csv
+2025-06-08 10:31:20,640 - CSIFallDetection - INFO - 진행률: 2/2564 (0.1%)
+2025-06-08 10:31:20,640 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/39_labeled_warped.csv
+2025-06-08 10:31:20,783 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/39_labeled_warped_processed.csv
+2025-06-08 10:31:20,783 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/39_labeled_warped.csv
+2025-06-08 10:31:20,783 - CSIFallDetection - INFO - 진행률: 3/2564 (0.1%)
+2025-06-08 10:31:20,783 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/11_labeled_warped_2.csv
+2025-06-08 10:31:20,890 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/11_labeled_warped_2_processed.csv
+2025-06-08 10:31:20,890 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/11_labeled_warped_2.csv
+2025-06-08 10:31:20,890 - CSIFallDetection - INFO - 진행률: 4/2564 (0.2%)
+2025-06-08 10:31:20,890 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/29_labeled_warped.csv
+2025-06-08 10:31:20,979 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/29_labeled_warped_processed.csv
+2025-06-08 10:31:20,979 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/29_labeled_warped.csv
+2025-06-08 10:31:20,980 - CSIFallDetection - INFO - 진행률: 5/2564 (0.2%)
+2025-06-08 10:31:20,980 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/47_labeled_warped.csv
+2025-06-08 10:31:21,155 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/47_labeled_warped_processed.csv
+2025-06-08 10:31:21,155 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/47_labeled_warped.csv
+2025-06-08 10:31:21,156 - CSIFallDetection - INFO - 진행률: 6/2564 (0.2%)
+2025-06-08 10:31:21,156 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/19_labeled_warped.csv
+2025-06-08 10:31:21,248 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/19_labeled_warped_processed.csv
+2025-06-08 10:31:21,248 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/19_labeled_warped.csv
+2025-06-08 10:31:21,249 - CSIFallDetection - INFO - 진행률: 7/2564 (0.3%)
+2025-06-08 10:31:21,249 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/11_labeled_warped_1.csv
+2025-06-08 10:31:21,340 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/11_labeled_warped_1_processed.csv
+2025-06-08 10:31:21,340 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/11_labeled_warped_1.csv
+2025-06-08 10:31:21,341 - CSIFallDetection - INFO - 진행률: 8/2564 (0.3%)
+2025-06-08 10:31:21,341 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/12_labeled_warped_8.csv
+2025-06-08 10:31:21,431 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/12_labeled_warped_8_processed.csv
+2025-06-08 10:31:21,431 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/12_labeled_warped_8.csv
+2025-06-08 10:31:21,431 - CSIFallDetection - INFO - 진행률: 9/2564 (0.4%)
+2025-06-08 10:31:21,431 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/11_labeled_warped_5.csv
+2025-06-08 10:31:21,521 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/11_labeled_warped_5_processed.csv
+2025-06-08 10:31:21,521 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/11_labeled_warped_5.csv
+2025-06-08 10:31:21,521 - CSIFallDetection - INFO - 진행률: 10/2564 (0.4%)
+2025-06-08 10:31:21,521 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/17_labeled_warped.csv
+2025-06-08 10:31:21,609 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/17_labeled_warped_processed.csv
+2025-06-08 10:31:21,609 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/17_labeled_warped.csv
+2025-06-08 10:31:21,610 - CSIFallDetection - INFO - 진행률: 11/2564 (0.4%)
+2025-06-08 10:31:21,610 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/11_labeled_warped_4.csv
+2025-06-08 10:31:21,703 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/11_labeled_warped_4_processed.csv
+2025-06-08 10:31:21,703 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/11_labeled_warped_4.csv
+2025-06-08 10:31:21,703 - CSIFallDetection - INFO - 진행률: 12/2564 (0.5%)
+2025-06-08 10:31:21,703 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/9_labeled_warped.csv
+2025-06-08 10:31:21,808 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/9_labeled_warped_processed.csv
+2025-06-08 10:31:21,808 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/9_labeled_warped.csv
+2025-06-08 10:31:21,809 - CSIFallDetection - INFO - 진행률: 13/2564 (0.5%)
+2025-06-08 10:31:21,809 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/12_labeled_warped_9.csv
+2025-06-08 10:31:21,899 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/12_labeled_warped_9_processed.csv
+2025-06-08 10:31:21,899 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/12_labeled_warped_9.csv
+2025-06-08 10:31:21,899 - CSIFallDetection - INFO - 진행률: 14/2564 (0.5%)
+2025-06-08 10:31:21,899 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/27_labeled_warped.csv
+2025-06-08 10:31:21,985 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/27_labeled_warped_processed.csv
+2025-06-08 10:31:21,985 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/27_labeled_warped.csv
+2025-06-08 10:31:21,986 - CSIFallDetection - INFO - 진행률: 15/2564 (0.6%)
+2025-06-08 10:31:21,986 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/44_labeled_warped.csv
+2025-06-08 10:31:22,120 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/44_labeled_warped_processed.csv
+2025-06-08 10:31:22,120 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/44_labeled_warped.csv
+2025-06-08 10:31:22,121 - CSIFallDetection - INFO - 진행률: 16/2564 (0.6%)
+2025-06-08 10:31:22,121 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/11_labeled_warped_6.csv
+2025-06-08 10:31:22,207 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/11_labeled_warped_6_processed.csv
+2025-06-08 10:31:22,207 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/11_labeled_warped_6.csv
+2025-06-08 10:31:22,207 - CSIFallDetection - INFO - 진행률: 17/2564 (0.7%)
+2025-06-08 10:31:22,207 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/49_labeled_warped.csv
+2025-06-08 10:31:22,349 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/49_labeled_warped_processed.csv
+2025-06-08 10:31:22,349 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/49_labeled_warped.csv
+2025-06-08 10:31:22,350 - CSIFallDetection - INFO - 진행률: 18/2564 (0.7%)
+2025-06-08 10:31:22,350 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/11_labeled_warped_7.csv
+2025-06-08 10:31:22,439 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/11_labeled_warped_7_processed.csv
+2025-06-08 10:31:22,439 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/11_labeled_warped_7.csv
+2025-06-08 10:31:22,439 - CSIFallDetection - INFO - 진행률: 19/2564 (0.7%)
+2025-06-08 10:31:22,439 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/37_labeled_warped.csv
+2025-06-08 10:31:22,581 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/37_labeled_warped_processed.csv
+2025-06-08 10:31:22,581 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/37_labeled_warped.csv
+2025-06-08 10:31:22,581 - CSIFallDetection - INFO - 진행률: 20/2564 (0.8%)
+2025-06-08 10:31:22,581 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/42_labeled_warped.csv
+2025-06-08 10:31:22,719 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/42_labeled_warped_processed.csv
+2025-06-08 10:31:22,719 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/42_labeled_warped.csv
+2025-06-08 10:31:22,719 - CSIFallDetection - INFO - 진행률: 21/2564 (0.8%)
+2025-06-08 10:31:22,719 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/21_labeled_warped.csv
+2025-06-08 10:31:22,809 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/21_labeled_warped_processed.csv
+2025-06-08 10:31:22,809 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/21_labeled_warped.csv
+2025-06-08 10:31:22,809 - CSIFallDetection - INFO - 진행률: 22/2564 (0.9%)
+2025-06-08 10:31:22,809 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/15_labeled_warped_1.csv
+2025-06-08 10:31:22,898 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/15_labeled_warped_1_processed.csv
+2025-06-08 10:31:22,898 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/15_labeled_warped_1.csv
+2025-06-08 10:31:22,898 - CSIFallDetection - INFO - 진행률: 23/2564 (0.9%)
+2025-06-08 10:31:22,898 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/31_labeled_warped.csv
+2025-06-08 10:31:23,037 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/31_labeled_warped_processed.csv
+2025-06-08 10:31:23,038 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/31_labeled_warped.csv
+2025-06-08 10:31:23,038 - CSIFallDetection - INFO - 진행률: 24/2564 (0.9%)
+2025-06-08 10:31:23,038 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/15_labeled_warped_2.csv
+2025-06-08 10:31:23,128 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/15_labeled_warped_2_processed.csv
+2025-06-08 10:31:23,128 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/15_labeled_warped_2.csv
+2025-06-08 10:31:23,128 - CSIFallDetection - INFO - 진행률: 25/2564 (1.0%)
+2025-06-08 10:31:23,128 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/15_labeled_warped_3.csv
+2025-06-08 10:31:23,217 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/15_labeled_warped_3_processed.csv
+2025-06-08 10:31:23,217 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/15_labeled_warped_3.csv
+2025-06-08 10:31:23,217 - CSIFallDetection - INFO - 진행률: 26/2564 (1.0%)
+2025-06-08 10:31:23,217 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/2_labeled_warped.csv
+2025-06-08 10:31:23,305 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/2_labeled_warped_processed.csv
+2025-06-08 10:31:23,305 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/2_labeled_warped.csv
+2025-06-08 10:31:23,305 - CSIFallDetection - INFO - 진행률: 27/2564 (1.1%)
+2025-06-08 10:31:23,305 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/15_labeled_warped_7.csv
+2025-06-08 10:31:23,397 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/15_labeled_warped_7_processed.csv
+2025-06-08 10:31:23,397 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/15_labeled_warped_7.csv
+2025-06-08 10:31:23,397 - CSIFallDetection - INFO - 진행률: 28/2564 (1.1%)
+2025-06-08 10:31:23,397 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/1_labeled_warped.csv
+2025-06-08 10:31:23,484 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/1_labeled_warped_processed.csv
+2025-06-08 10:31:23,484 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/1_labeled_warped.csv
+2025-06-08 10:31:23,485 - CSIFallDetection - INFO - 진행률: 29/2564 (1.1%)
+2025-06-08 10:31:23,485 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/32_labeled_warped.csv
+2025-06-08 10:31:23,617 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/32_labeled_warped_processed.csv
+2025-06-08 10:31:23,617 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/32_labeled_warped.csv
+2025-06-08 10:31:23,618 - CSIFallDetection - INFO - 진행률: 30/2564 (1.2%)
+2025-06-08 10:31:23,618 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/15_labeled_warped_4.csv
+2025-06-08 10:31:23,703 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/15_labeled_warped_4_processed.csv
+2025-06-08 10:31:23,703 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/15_labeled_warped_4.csv
+2025-06-08 10:31:23,703 - CSIFallDetection - INFO - 진행률: 31/2564 (1.2%)
+2025-06-08 10:31:23,703 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/13_labeled_warped_8.csv
+2025-06-08 10:31:23,787 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/13_labeled_warped_8_processed.csv
+2025-06-08 10:31:23,787 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/13_labeled_warped_8.csv
+2025-06-08 10:31:23,787 - CSIFallDetection - INFO - 진행률: 32/2564 (1.2%)
+2025-06-08 10:31:23,787 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/13_labeled_warped_9.csv
+2025-06-08 10:31:23,882 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/13_labeled_warped_9_processed.csv
+2025-06-08 10:31:23,882 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/13_labeled_warped_9.csv
+2025-06-08 10:31:23,882 - CSIFallDetection - INFO - 진행률: 33/2564 (1.3%)
+2025-06-08 10:31:23,882 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/41_labeled_warped.csv
+2025-06-08 10:31:24,025 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/41_labeled_warped_processed.csv
+2025-06-08 10:31:24,025 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/41_labeled_warped.csv
+2025-06-08 10:31:24,026 - CSIFallDetection - INFO - 진행률: 34/2564 (1.3%)
+2025-06-08 10:31:24,026 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/15_labeled_warped_5.csv
+2025-06-08 10:31:24,128 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/15_labeled_warped_5_processed.csv
+2025-06-08 10:31:24,128 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/15_labeled_warped_5.csv
+2025-06-08 10:31:24,128 - CSIFallDetection - INFO - 진행률: 35/2564 (1.4%)
+2025-06-08 10:31:24,128 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/11_labeled_warped_10.csv
+2025-06-08 10:31:24,220 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/11_labeled_warped_10_processed.csv
+2025-06-08 10:31:24,220 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/11_labeled_warped_10.csv
+2025-06-08 10:31:24,220 - CSIFallDetection - INFO - 진행률: 36/2564 (1.4%)
+2025-06-08 10:31:24,220 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/16_labeled_warped_5.csv
+2025-06-08 10:31:24,311 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/16_labeled_warped_5_processed.csv
+2025-06-08 10:31:24,311 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/16_labeled_warped_5.csv
+2025-06-08 10:31:24,311 - CSIFallDetection - INFO - 진행률: 37/2564 (1.4%)
+2025-06-08 10:31:24,311 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/15_labeled_warped_8.csv
+2025-06-08 10:31:24,399 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/15_labeled_warped_8_processed.csv
+2025-06-08 10:31:24,399 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/15_labeled_warped_8.csv
+2025-06-08 10:31:24,399 - CSIFallDetection - INFO - 진행률: 38/2564 (1.5%)
+2025-06-08 10:31:24,399 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/13_labeled_warped_4.csv
+2025-06-08 10:31:24,489 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/13_labeled_warped_4_processed.csv
+2025-06-08 10:31:24,489 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/13_labeled_warped_4.csv
+2025-06-08 10:31:24,489 - CSIFallDetection - INFO - 진행률: 39/2564 (1.5%)
+2025-06-08 10:31:24,489 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/13_labeled_warped_5.csv
+2025-06-08 10:31:24,575 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/13_labeled_warped_5_processed.csv
+2025-06-08 10:31:24,575 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/13_labeled_warped_5.csv
+2025-06-08 10:31:24,575 - CSIFallDetection - INFO - 진행률: 40/2564 (1.6%)
+2025-06-08 10:31:24,575 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/13_labeled_warped.csv
+2025-06-08 10:31:24,662 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/13_labeled_warped_processed.csv
+2025-06-08 10:31:24,662 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/13_labeled_warped.csv
+2025-06-08 10:31:24,662 - CSIFallDetection - INFO - 진행률: 41/2564 (1.6%)
+2025-06-08 10:31:24,662 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/23_labeled_warped.csv
+2025-06-08 10:31:24,767 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/23_labeled_warped_processed.csv
+2025-06-08 10:31:24,767 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/23_labeled_warped.csv
+2025-06-08 10:31:24,767 - CSIFallDetection - INFO - 진행률: 42/2564 (1.6%)
+2025-06-08 10:31:24,767 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/16_labeled_warped_6.csv
+2025-06-08 10:31:24,857 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/16_labeled_warped_6_processed.csv
+2025-06-08 10:31:24,857 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/16_labeled_warped_6.csv
+2025-06-08 10:31:24,857 - CSIFallDetection - INFO - 진행률: 43/2564 (1.7%)
+2025-06-08 10:31:24,857 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/40_labeled_warped.csv
+2025-06-08 10:31:24,992 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/40_labeled_warped_processed.csv
+2025-06-08 10:31:24,992 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/40_labeled_warped.csv
+2025-06-08 10:31:24,992 - CSIFallDetection - INFO - 진행률: 44/2564 (1.7%)
+2025-06-08 10:31:24,992 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/13_labeled_warped_7.csv
+2025-06-08 10:31:25,082 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/13_labeled_warped_7_processed.csv
+2025-06-08 10:31:25,082 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/13_labeled_warped_7.csv
+2025-06-08 10:31:25,083 - CSIFallDetection - INFO - 진행률: 45/2564 (1.8%)
+2025-06-08 10:31:25,083 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/13_labeled_warped_6.csv
+2025-06-08 10:31:25,172 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/13_labeled_warped_6_processed.csv
+2025-06-08 10:31:25,172 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/13_labeled_warped_6.csv
+2025-06-08 10:31:25,172 - CSIFallDetection - INFO - 진행률: 46/2564 (1.8%)
+2025-06-08 10:31:25,172 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/50_labeled_warped.csv
+2025-06-08 10:31:25,313 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/50_labeled_warped_processed.csv
+2025-06-08 10:31:25,313 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/50_labeled_warped.csv
+2025-06-08 10:31:25,313 - CSIFallDetection - INFO - 진행률: 47/2564 (1.8%)
+2025-06-08 10:31:25,313 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/33_labeled_warped.csv
+2025-06-08 10:31:25,454 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/33_labeled_warped_processed.csv
+2025-06-08 10:31:25,455 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/33_labeled_warped.csv
+2025-06-08 10:31:25,455 - CSIFallDetection - INFO - 진행률: 48/2564 (1.9%)
+2025-06-08 10:31:25,455 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/16_labeled_warped_7.csv
+2025-06-08 10:31:25,548 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/16_labeled_warped_7_processed.csv
+2025-06-08 10:31:25,548 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/16_labeled_warped_7.csv
+2025-06-08 10:31:25,549 - CSIFallDetection - INFO - 진행률: 49/2564 (1.9%)
+2025-06-08 10:31:25,549 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/16_labeled_warped_3.csv
+2025-06-08 10:31:25,636 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/16_labeled_warped_3_processed.csv
+2025-06-08 10:31:25,636 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/16_labeled_warped_3.csv
+2025-06-08 10:31:25,636 - CSIFallDetection - INFO - 진행률: 50/2564 (2.0%)
+2025-06-08 10:31:25,636 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/30_labeled_warped.csv
+2025-06-08 10:31:25,725 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/30_labeled_warped_processed.csv
+2025-06-08 10:31:25,725 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/30_labeled_warped.csv
+2025-06-08 10:31:25,725 - CSIFallDetection - INFO - 진행률: 51/2564 (2.0%)
+2025-06-08 10:31:25,725 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/13_labeled_warped_2.csv
+2025-06-08 10:31:25,815 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/13_labeled_warped_2_processed.csv
+2025-06-08 10:31:25,815 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/13_labeled_warped_2.csv
+2025-06-08 10:31:25,816 - CSIFallDetection - INFO - 진행률: 52/2564 (2.0%)
+2025-06-08 10:31:25,816 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/13_labeled_warped_3.csv
+2025-06-08 10:31:25,902 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/13_labeled_warped_3_processed.csv
+2025-06-08 10:31:25,902 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/13_labeled_warped_3.csv
+2025-06-08 10:31:25,902 - CSIFallDetection - INFO - 진행률: 53/2564 (2.1%)
+2025-06-08 10:31:25,902 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/43_labeled_warped.csv
+2025-06-08 10:31:26,038 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/43_labeled_warped_processed.csv
+2025-06-08 10:31:26,038 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/43_labeled_warped.csv
+2025-06-08 10:31:26,038 - CSIFallDetection - INFO - 진행률: 54/2564 (2.1%)
+2025-06-08 10:31:26,038 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/16_labeled_warped_2.csv
+2025-06-08 10:31:26,126 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/16_labeled_warped_2_processed.csv
+2025-06-08 10:31:26,126 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/16_labeled_warped_2.csv
+2025-06-08 10:31:26,126 - CSIFallDetection - INFO - 진행률: 55/2564 (2.1%)
+2025-06-08 10:31:26,126 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/3_labeled_warped.csv
+2025-06-08 10:31:26,216 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/3_labeled_warped_processed.csv
+2025-06-08 10:31:26,216 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/3_labeled_warped.csv
+2025-06-08 10:31:26,216 - CSIFallDetection - INFO - 진행률: 56/2564 (2.2%)
+2025-06-08 10:31:26,216 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/16_labeled_warped_1.csv
+2025-06-08 10:31:26,331 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/16_labeled_warped_1_processed.csv
+2025-06-08 10:31:26,331 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/16_labeled_warped_1.csv
+2025-06-08 10:31:26,331 - CSIFallDetection - INFO - 진행률: 57/2564 (2.2%)
+2025-06-08 10:31:26,331 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/12_labeled_warped_10.csv
+2025-06-08 10:31:26,420 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/12_labeled_warped_10_processed.csv
+2025-06-08 10:31:26,420 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/12_labeled_warped_10.csv
+2025-06-08 10:31:26,420 - CSIFallDetection - INFO - 진행률: 58/2564 (2.3%)
+2025-06-08 10:31:26,420 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/16_labeled_warped.csv
+2025-06-08 10:31:26,510 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/16_labeled_warped_processed.csv
+2025-06-08 10:31:26,510 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/16_labeled_warped.csv
+2025-06-08 10:31:26,510 - CSIFallDetection - INFO - 진행률: 59/2564 (2.3%)
+2025-06-08 10:31:26,510 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/5_labeled_warped.csv
+2025-06-08 10:31:26,598 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/5_labeled_warped_processed.csv
+2025-06-08 10:31:26,599 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/5_labeled_warped.csv
+2025-06-08 10:31:26,599 - CSIFallDetection - INFO - 진행률: 60/2564 (2.3%)
+2025-06-08 10:31:26,599 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/12_labeled_warped_7.csv
+2025-06-08 10:31:26,687 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/12_labeled_warped_7_processed.csv
+2025-06-08 10:31:26,687 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/12_labeled_warped_7.csv
+2025-06-08 10:31:26,687 - CSIFallDetection - INFO - 진행률: 61/2564 (2.4%)
+2025-06-08 10:31:26,687 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/12_labeled_warped_6.csv
+2025-06-08 10:31:26,773 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/12_labeled_warped_6_processed.csv
+2025-06-08 10:31:26,773 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/12_labeled_warped_6.csv
+2025-06-08 10:31:26,773 - CSIFallDetection - INFO - 진행률: 62/2564 (2.4%)
+2025-06-08 10:31:26,773 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/12_labeled_warped_4.csv
+2025-06-08 10:31:26,859 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/12_labeled_warped_4_processed.csv
+2025-06-08 10:31:26,859 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/12_labeled_warped_4.csv
+2025-06-08 10:31:26,859 - CSIFallDetection - INFO - 진행률: 63/2564 (2.5%)
+2025-06-08 10:31:26,859 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/11_labeled_warped_9.csv
+2025-06-08 10:31:26,946 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/11_labeled_warped_9_processed.csv
+2025-06-08 10:31:26,946 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/11_labeled_warped_9.csv
+2025-06-08 10:31:26,946 - CSIFallDetection - INFO - 진행률: 64/2564 (2.5%)
+2025-06-08 10:31:26,946 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/36_labeled_warped.csv
+2025-06-08 10:31:27,093 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/36_labeled_warped_processed.csv
+2025-06-08 10:31:27,093 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/36_labeled_warped.csv
+2025-06-08 10:31:27,093 - CSIFallDetection - INFO - 진행률: 65/2564 (2.5%)
+2025-06-08 10:31:27,093 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/11_labeled_warped_8.csv
+2025-06-08 10:31:27,190 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/11_labeled_warped_8_processed.csv
+2025-06-08 10:31:27,190 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/11_labeled_warped_8.csv
+2025-06-08 10:31:27,191 - CSIFallDetection - INFO - 진행률: 66/2564 (2.6%)
+2025-06-08 10:31:27,191 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/45_labeled_warped.csv
+2025-06-08 10:31:27,325 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/45_labeled_warped_processed.csv
+2025-06-08 10:31:27,325 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/45_labeled_warped.csv
+2025-06-08 10:31:27,325 - CSIFallDetection - INFO - 진행률: 67/2564 (2.6%)
+2025-06-08 10:31:27,325 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/48_labeled_warped.csv
+2025-06-08 10:31:27,462 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/48_labeled_warped_processed.csv
+2025-06-08 10:31:27,462 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/48_labeled_warped.csv
+2025-06-08 10:31:27,462 - CSIFallDetection - INFO - 진행률: 68/2564 (2.7%)
+2025-06-08 10:31:27,462 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/12_labeled_warped_5.csv
+2025-06-08 10:31:27,549 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/12_labeled_warped_5_processed.csv
+2025-06-08 10:31:27,549 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/12_labeled_warped_5.csv
+2025-06-08 10:31:27,549 - CSIFallDetection - INFO - 진행률: 69/2564 (2.7%)
+2025-06-08 10:31:27,549 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/12_labeled_warped_1.csv
+2025-06-08 10:31:27,635 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/12_labeled_warped_1_processed.csv
+2025-06-08 10:31:27,635 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/12_labeled_warped_1.csv
+2025-06-08 10:31:27,635 - CSIFallDetection - INFO - 진행률: 70/2564 (2.7%)
+2025-06-08 10:31:27,635 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/46_labeled_warped.csv
+2025-06-08 10:31:27,774 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/46_labeled_warped_processed.csv
+2025-06-08 10:31:27,774 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/46_labeled_warped.csv
+2025-06-08 10:31:27,774 - CSIFallDetection - INFO - 진행률: 71/2564 (2.8%)
+2025-06-08 10:31:27,774 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/35_labeled_warped.csv
+2025-06-08 10:31:27,916 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/35_labeled_warped_processed.csv
+2025-06-08 10:31:27,916 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/35_labeled_warped.csv
+2025-06-08 10:31:27,916 - CSIFallDetection - INFO - 진행률: 72/2564 (2.8%)
+2025-06-08 10:31:27,916 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/38_labeled_warped.csv
+2025-06-08 10:31:28,053 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/38_labeled_warped_processed.csv
+2025-06-08 10:31:28,053 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/38_labeled_warped.csv
+2025-06-08 10:31:28,053 - CSIFallDetection - INFO - 진행률: 73/2564 (2.8%)
+2025-06-08 10:31:28,053 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/12_labeled_warped_2.csv
+2025-06-08 10:31:28,143 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/12_labeled_warped_2_processed.csv
+2025-06-08 10:31:28,143 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/12_labeled_warped_2.csv
+2025-06-08 10:31:28,143 - CSIFallDetection - INFO - 진행률: 74/2564 (2.9%)
+2025-06-08 10:31:28,143 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/15_labeled_warped.csv
+2025-06-08 10:31:28,234 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/15_labeled_warped_processed.csv
+2025-06-08 10:31:28,234 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/15_labeled_warped.csv
+2025-06-08 10:31:28,235 - CSIFallDetection - INFO - 진행률: 75/2564 (2.9%)
+2025-06-08 10:31:28,235 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case1/warped/12_labeled_warped_3.csv
+2025-06-08 10:31:28,322 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/12_labeled_warped_3_processed.csv
+2025-06-08 10:31:28,322 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case1/warped/12_labeled_warped_3.csv
+2025-06-08 10:31:28,323 - CSIFallDetection - INFO - 진행률: 76/2564 (3.0%)
+2025-06-08 10:31:28,323 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case3/jitter/1_labeled_jitter_5.csv
+2025-06-08 10:31:28,465 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/1_labeled_jitter_5_processed.csv
+2025-06-08 10:31:28,465 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case3/jitter/1_labeled_jitter_5.csv
+2025-06-08 10:31:28,466 - CSIFallDetection - INFO - 진행률: 77/2564 (3.0%)
+2025-06-08 10:31:28,466 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 2/case3/jitter/1_labeled_jitter_2.csv
+2025-06-08 10:31:28,603 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/1_labeled_jitter_2_processed.csv
+2025-06-08 10:31:28,603 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 2/case3/jitter/1_labeled_jitter_2.csv
+2025-06-08 10:31:28,604 - CSIFallDetection - INFO - 진행률: 78/2564 (3.0%)
+2025-06-08 10:31:28,604 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/1_labeled_jitter_7.csv
+2025-06-08 10:31:28,696 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/1_labeled_jitter_7_processed.csv
+2025-06-08 10:31:28,696 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/1_labeled_jitter_7.csv
+2025-06-08 10:31:28,696 - CSIFallDetection - INFO - 진행률: 79/2564 (3.1%)
+2025-06-08 10:31:28,696 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/5_labeled_jitter.csv
+2025-06-08 10:31:28,788 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/5_labeled_jitter_processed.csv
+2025-06-08 10:31:28,789 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/5_labeled_jitter.csv
+2025-06-08 10:31:28,789 - CSIFallDetection - INFO - 진행률: 80/2564 (3.1%)
+2025-06-08 10:31:28,789 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/41_labeled_jitter_9.csv
+2025-06-08 10:31:28,928 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/41_labeled_jitter_9_processed.csv
+2025-06-08 10:31:28,928 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/41_labeled_jitter_9.csv
+2025-06-08 10:31:28,928 - CSIFallDetection - INFO - 진행률: 81/2564 (3.2%)
+2025-06-08 10:31:28,928 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/29_labeled_jitter_1.csv
+2025-06-08 10:31:29,025 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/29_labeled_jitter_1_processed.csv
+2025-06-08 10:31:29,025 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/29_labeled_jitter_1.csv
+2025-06-08 10:31:29,025 - CSIFallDetection - INFO - 진행률: 82/2564 (3.2%)
+2025-06-08 10:31:29,025 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/11_labeled_jitter_3.csv
+2025-06-08 10:31:29,123 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/11_labeled_jitter_3_processed.csv
+2025-06-08 10:31:29,123 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/11_labeled_jitter_3.csv
+2025-06-08 10:31:29,124 - CSIFallDetection - INFO - 진행률: 83/2564 (3.2%)
+2025-06-08 10:31:29,124 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_8.csv
+2025-06-08 10:31:29,218 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/7_labeled_jitter_8_processed.csv
+2025-06-08 10:31:29,218 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_8.csv
+2025-06-08 10:31:29,219 - CSIFallDetection - INFO - 진행률: 84/2564 (3.3%)
+2025-06-08 10:31:29,219 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/29_labeled_jitter_2.csv
+2025-06-08 10:31:29,318 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/29_labeled_jitter_2_processed.csv
+2025-06-08 10:31:29,319 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/29_labeled_jitter_2.csv
+2025-06-08 10:31:29,319 - CSIFallDetection - INFO - 진행률: 85/2564 (3.3%)
+2025-06-08 10:31:29,319 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_9.csv
+2025-06-08 10:31:29,434 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/7_labeled_jitter_9_processed.csv
+2025-06-08 10:31:29,434 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_9.csv
+2025-06-08 10:31:29,434 - CSIFallDetection - INFO - 진행률: 86/2564 (3.4%)
+2025-06-08 10:31:29,434 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/42_labeled_jitter_6.csv
+2025-06-08 10:31:29,586 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/42_labeled_jitter_6_processed.csv
+2025-06-08 10:31:29,586 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/42_labeled_jitter_6.csv
+2025-06-08 10:31:29,587 - CSIFallDetection - INFO - 진행률: 87/2564 (3.4%)
+2025-06-08 10:31:29,587 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_10.csv
+2025-06-08 10:31:29,679 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/6_labeled_jitter_10_processed.csv
+2025-06-08 10:31:29,679 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_10.csv
+2025-06-08 10:31:29,679 - CSIFallDetection - INFO - 진행률: 88/2564 (3.4%)
+2025-06-08 10:31:29,679 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/23_labeled_jitter_5.csv
+2025-06-08 10:31:29,773 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/23_labeled_jitter_5_processed.csv
+2025-06-08 10:31:29,773 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/23_labeled_jitter_5.csv
+2025-06-08 10:31:29,773 - CSIFallDetection - INFO - 진행률: 89/2564 (3.5%)
+2025-06-08 10:31:29,773 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/50_labeled_jitter_5.csv
+2025-06-08 10:31:29,916 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/50_labeled_jitter_5_processed.csv
+2025-06-08 10:31:29,916 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/50_labeled_jitter_5.csv
+2025-06-08 10:31:29,916 - CSIFallDetection - INFO - 진행률: 90/2564 (3.5%)
+2025-06-08 10:31:29,916 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/27_labeled_jitter_1.csv
+2025-06-08 10:31:30,010 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/27_labeled_jitter_1_processed.csv
+2025-06-08 10:31:30,010 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/27_labeled_jitter_1.csv
+2025-06-08 10:31:30,011 - CSIFallDetection - INFO - 진행률: 91/2564 (3.5%)
+2025-06-08 10:31:30,011 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/30_labeled_jitter_4.csv
+2025-06-08 10:31:30,103 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/30_labeled_jitter_4_processed.csv
+2025-06-08 10:31:30,103 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/30_labeled_jitter_4.csv
+2025-06-08 10:31:30,103 - CSIFallDetection - INFO - 진행률: 92/2564 (3.6%)
+2025-06-08 10:31:30,103 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/5_labeled_jitter_5.csv
+2025-06-08 10:31:30,196 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/5_labeled_jitter_5_processed.csv
+2025-06-08 10:31:30,196 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/5_labeled_jitter_5.csv
+2025-06-08 10:31:30,196 - CSIFallDetection - INFO - 진행률: 93/2564 (3.6%)
+2025-06-08 10:31:30,196 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/15_labeled_jitter_2.csv
+2025-06-08 10:31:30,290 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/15_labeled_jitter_2_processed.csv
+2025-06-08 10:31:30,290 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/15_labeled_jitter_2.csv
+2025-06-08 10:31:30,290 - CSIFallDetection - INFO - 진행률: 94/2564 (3.7%)
+2025-06-08 10:31:30,290 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_8.csv
+2025-06-08 10:31:30,390 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/6_labeled_jitter_8_processed.csv
+2025-06-08 10:31:30,390 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_8.csv
+2025-06-08 10:31:30,390 - CSIFallDetection - INFO - 진행률: 95/2564 (3.7%)
+2025-06-08 10:31:30,390 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_9.csv
+2025-06-08 10:31:30,487 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/6_labeled_jitter_9_processed.csv
+2025-06-08 10:31:30,488 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_9.csv
+2025-06-08 10:31:30,488 - CSIFallDetection - INFO - 진행률: 96/2564 (3.7%)
+2025-06-08 10:31:30,488 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/23_labeled_jitter_10.csv
+2025-06-08 10:31:30,597 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/23_labeled_jitter_10_processed.csv
+2025-06-08 10:31:30,597 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/23_labeled_jitter_10.csv
+2025-06-08 10:31:30,598 - CSIFallDetection - INFO - 진행률: 97/2564 (3.8%)
+2025-06-08 10:31:30,598 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/30_labeled_jitter_5.csv
+2025-06-08 10:31:30,700 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/30_labeled_jitter_5_processed.csv
+2025-06-08 10:31:30,700 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/30_labeled_jitter_5.csv
+2025-06-08 10:31:30,701 - CSIFallDetection - INFO - 진행률: 98/2564 (3.8%)
+2025-06-08 10:31:30,701 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/5_labeled_jitter_6.csv
+2025-06-08 10:31:30,806 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/5_labeled_jitter_6_processed.csv
+2025-06-08 10:31:30,806 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/5_labeled_jitter_6.csv
+2025-06-08 10:31:30,806 - CSIFallDetection - INFO - 진행률: 99/2564 (3.9%)
+2025-06-08 10:31:30,806 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_9.csv
+2025-06-08 10:31:30,911 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/9_labeled_jitter_9_processed.csv
+2025-06-08 10:31:30,912 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_9.csv
+2025-06-08 10:31:30,912 - CSIFallDetection - INFO - 진행률: 100/2564 (3.9%)
+2025-06-08 10:31:30,912 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_8.csv
+2025-06-08 10:31:31,011 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/9_labeled_jitter_8_processed.csv
+2025-06-08 10:31:31,011 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_8.csv
+2025-06-08 10:31:31,012 - CSIFallDetection - INFO - 진행률: 101/2564 (3.9%)
+2025-06-08 10:31:31,012 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/49_labeled_jitter_2.csv
+2025-06-08 10:31:31,165 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/49_labeled_jitter_2_processed.csv
+2025-06-08 10:31:31,165 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/49_labeled_jitter_2.csv
+2025-06-08 10:31:31,166 - CSIFallDetection - INFO - 진행률: 102/2564 (4.0%)
+2025-06-08 10:31:31,166 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/16_labeled_jitter_8.csv
+2025-06-08 10:31:31,263 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/16_labeled_jitter_8_processed.csv
+2025-06-08 10:31:31,263 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/16_labeled_jitter_8.csv
+2025-06-08 10:31:31,263 - CSIFallDetection - INFO - 진행률: 103/2564 (4.0%)
+2025-06-08 10:31:31,263 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/13_labeled_jitter_7.csv
+2025-06-08 10:31:31,362 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/13_labeled_jitter_7_processed.csv
+2025-06-08 10:31:31,362 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/13_labeled_jitter_7.csv
+2025-06-08 10:31:31,362 - CSIFallDetection - INFO - 진행률: 104/2564 (4.1%)
+2025-06-08 10:31:31,362 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_1.csv
+2025-06-08 10:31:31,462 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/6_labeled_jitter_1_processed.csv
+2025-06-08 10:31:31,463 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_1.csv
+2025-06-08 10:31:31,463 - CSIFallDetection - INFO - 진행률: 105/2564 (4.1%)
+2025-06-08 10:31:31,463 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_3.csv
+2025-06-08 10:31:31,559 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/9_labeled_jitter_3_processed.csv
+2025-06-08 10:31:31,560 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_3.csv
+2025-06-08 10:31:31,560 - CSIFallDetection - INFO - 진행률: 106/2564 (4.1%)
+2025-06-08 10:31:31,560 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_2.csv
+2025-06-08 10:31:31,654 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/9_labeled_jitter_2_processed.csv
+2025-06-08 10:31:31,654 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_2.csv
+2025-06-08 10:31:31,654 - CSIFallDetection - INFO - 진행률: 107/2564 (4.2%)
+2025-06-08 10:31:31,654 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/30_labeled_jitter_10.csv
+2025-06-08 10:31:31,752 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/30_labeled_jitter_10_processed.csv
+2025-06-08 10:31:31,752 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/30_labeled_jitter_10.csv
+2025-06-08 10:31:31,753 - CSIFallDetection - INFO - 진행률: 108/2564 (4.2%)
+2025-06-08 10:31:31,753 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_10.csv
+2025-06-08 10:31:31,850 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/7_labeled_jitter_10_processed.csv
+2025-06-08 10:31:31,850 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_10.csv
+2025-06-08 10:31:31,850 - CSIFallDetection - INFO - 진행률: 109/2564 (4.3%)
+2025-06-08 10:31:31,850 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/3_labeled_jitter_1.csv
+2025-06-08 10:31:31,950 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/3_labeled_jitter_1_processed.csv
+2025-06-08 10:31:31,950 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/3_labeled_jitter_1.csv
+2025-06-08 10:31:31,951 - CSIFallDetection - INFO - 진행률: 110/2564 (4.3%)
+2025-06-08 10:31:31,951 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/3_labeled_jitter_3.csv
+2025-06-08 10:31:32,051 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/3_labeled_jitter_3_processed.csv
+2025-06-08 10:31:32,051 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/3_labeled_jitter_3.csv
+2025-06-08 10:31:32,052 - CSIFallDetection - INFO - 진행률: 111/2564 (4.3%)
+2025-06-08 10:31:32,052 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_1.csv
+2025-06-08 10:31:32,146 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/9_labeled_jitter_1_processed.csv
+2025-06-08 10:31:32,146 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_1.csv
+2025-06-08 10:31:32,146 - CSIFallDetection - INFO - 진행률: 112/2564 (4.4%)
+2025-06-08 10:31:32,146 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_3.csv
+2025-06-08 10:31:32,242 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/6_labeled_jitter_3_processed.csv
+2025-06-08 10:31:32,243 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_3.csv
+2025-06-08 10:31:32,244 - CSIFallDetection - INFO - 진행률: 113/2564 (4.4%)
+2025-06-08 10:31:32,244 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/15_labeled_jitter_9.csv
+2025-06-08 10:31:32,344 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/15_labeled_jitter_9_processed.csv
+2025-06-08 10:31:32,344 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/15_labeled_jitter_9.csv
+2025-06-08 10:31:32,344 - CSIFallDetection - INFO - 진행률: 114/2564 (4.4%)
+2025-06-08 10:31:32,344 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/5_labeled_jitter_10.csv
+2025-06-08 10:31:32,440 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/5_labeled_jitter_10_processed.csv
+2025-06-08 10:31:32,440 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/5_labeled_jitter_10.csv
+2025-06-08 10:31:32,441 - CSIFallDetection - INFO - 진행률: 115/2564 (4.5%)
+2025-06-08 10:31:32,441 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_7.csv
+2025-06-08 10:31:32,539 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/6_labeled_jitter_7_processed.csv
+2025-06-08 10:31:32,539 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_7.csv
+2025-06-08 10:31:32,539 - CSIFallDetection - INFO - 진행률: 116/2564 (4.5%)
+2025-06-08 10:31:32,539 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_5.csv
+2025-06-08 10:31:32,636 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/9_labeled_jitter_5_processed.csv
+2025-06-08 10:31:32,636 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_5.csv
+2025-06-08 10:31:32,636 - CSIFallDetection - INFO - 진행률: 117/2564 (4.6%)
+2025-06-08 10:31:32,636 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_4.csv
+2025-06-08 10:31:32,733 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/9_labeled_jitter_4_processed.csv
+2025-06-08 10:31:32,733 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_4.csv
+2025-06-08 10:31:32,733 - CSIFallDetection - INFO - 진행률: 118/2564 (4.6%)
+2025-06-08 10:31:32,733 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_6.csv
+2025-06-08 10:31:32,827 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/6_labeled_jitter_6_processed.csv
+2025-06-08 10:31:32,827 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_6.csv
+2025-06-08 10:31:32,828 - CSIFallDetection - INFO - 진행률: 119/2564 (4.6%)
+2025-06-08 10:31:32,828 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/32_labeled_jitter.csv
+2025-06-08 10:31:33,012 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/32_labeled_jitter_processed.csv
+2025-06-08 10:31:33,012 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/32_labeled_jitter.csv
+2025-06-08 10:31:33,013 - CSIFallDetection - INFO - 진행률: 120/2564 (4.7%)
+2025-06-08 10:31:33,013 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/5_labeled_jitter_9.csv
+2025-06-08 10:31:33,108 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/5_labeled_jitter_9_processed.csv
+2025-06-08 10:31:33,108 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/5_labeled_jitter_9.csv
+2025-06-08 10:31:33,109 - CSIFallDetection - INFO - 진행률: 121/2564 (4.7%)
+2025-06-08 10:31:33,109 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_4.csv
+2025-06-08 10:31:33,206 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/6_labeled_jitter_4_processed.csv
+2025-06-08 10:31:33,206 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_4.csv
+2025-06-08 10:31:33,206 - CSIFallDetection - INFO - 진행률: 122/2564 (4.8%)
+2025-06-08 10:31:33,206 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/19_labeled_jitter_1.csv
+2025-06-08 10:31:33,300 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/19_labeled_jitter_1_processed.csv
+2025-06-08 10:31:33,300 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/19_labeled_jitter_1.csv
+2025-06-08 10:31:33,301 - CSIFallDetection - INFO - 진행률: 123/2564 (4.8%)
+2025-06-08 10:31:33,301 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_6.csv
+2025-06-08 10:31:33,394 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/9_labeled_jitter_6_processed.csv
+2025-06-08 10:31:33,394 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_6.csv
+2025-06-08 10:31:33,395 - CSIFallDetection - INFO - 진행률: 124/2564 (4.8%)
+2025-06-08 10:31:33,395 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_7.csv
+2025-06-08 10:31:33,490 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/9_labeled_jitter_7_processed.csv
+2025-06-08 10:31:33,490 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_7.csv
+2025-06-08 10:31:33,490 - CSIFallDetection - INFO - 진행률: 125/2564 (4.9%)
+2025-06-08 10:31:33,490 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_5.csv
+2025-06-08 10:31:33,584 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/6_labeled_jitter_5_processed.csv
+2025-06-08 10:31:33,584 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/6_labeled_jitter_5.csv
+2025-06-08 10:31:33,584 - CSIFallDetection - INFO - 진행률: 126/2564 (4.9%)
+2025-06-08 10:31:33,584 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/16_labeled_jitter_10.csv
+2025-06-08 10:31:33,679 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/16_labeled_jitter_10_processed.csv
+2025-06-08 10:31:33,679 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/16_labeled_jitter_10.csv
+2025-06-08 10:31:33,679 - CSIFallDetection - INFO - 진행률: 127/2564 (5.0%)
+2025-06-08 10:31:33,679 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/5_labeled_jitter_8.csv
+2025-06-08 10:31:33,774 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/5_labeled_jitter_8_processed.csv
+2025-06-08 10:31:33,774 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/5_labeled_jitter_8.csv
+2025-06-08 10:31:33,774 - CSIFallDetection - INFO - 진행률: 128/2564 (5.0%)
+2025-06-08 10:31:33,774 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/13_labeled_jitter_3.csv
+2025-06-08 10:31:33,869 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/13_labeled_jitter_3_processed.csv
+2025-06-08 10:31:33,869 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/13_labeled_jitter_3.csv
+2025-06-08 10:31:33,869 - CSIFallDetection - INFO - 진행률: 129/2564 (5.0%)
+2025-06-08 10:31:33,869 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/11_labeled_jitter_9.csv
+2025-06-08 10:31:33,963 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/11_labeled_jitter_9_processed.csv
+2025-06-08 10:31:33,964 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/11_labeled_jitter_9.csv
+2025-06-08 10:31:33,964 - CSIFallDetection - INFO - 진행률: 130/2564 (5.1%)
+2025-06-08 10:31:33,964 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_2.csv
+2025-06-08 10:31:34,057 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/7_labeled_jitter_2_processed.csv
+2025-06-08 10:31:34,057 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_2.csv
+2025-06-08 10:31:34,058 - CSIFallDetection - INFO - 진행률: 131/2564 (5.1%)
+2025-06-08 10:31:34,058 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/34_labeled_jitter.csv
+2025-06-08 10:31:34,203 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/34_labeled_jitter_processed.csv
+2025-06-08 10:31:34,203 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/34_labeled_jitter.csv
+2025-06-08 10:31:34,203 - CSIFallDetection - INFO - 진행률: 132/2564 (5.1%)
+2025-06-08 10:31:34,203 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/29_labeled_jitter_9.csv
+2025-06-08 10:31:34,302 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/29_labeled_jitter_9_processed.csv
+2025-06-08 10:31:34,302 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/29_labeled_jitter_9.csv
+2025-06-08 10:31:34,302 - CSIFallDetection - INFO - 진행률: 133/2564 (5.2%)
+2025-06-08 10:31:34,302 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/2_labeled_jitter_3.csv
+2025-06-08 10:31:34,398 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/2_labeled_jitter_3_processed.csv
+2025-06-08 10:31:34,398 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/2_labeled_jitter_3.csv
+2025-06-08 10:31:34,398 - CSIFallDetection - INFO - 진행률: 134/2564 (5.2%)
+2025-06-08 10:31:34,399 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_3.csv
+2025-06-08 10:31:34,493 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/7_labeled_jitter_3_processed.csv
+2025-06-08 10:31:34,493 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_3.csv
+2025-06-08 10:31:34,493 - CSIFallDetection - INFO - 진행률: 135/2564 (5.3%)
+2025-06-08 10:31:34,493 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/17_labeled_jitter_4.csv
+2025-06-08 10:31:34,588 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/17_labeled_jitter_4_processed.csv
+2025-06-08 10:31:34,588 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/17_labeled_jitter_4.csv
+2025-06-08 10:31:34,588 - CSIFallDetection - INFO - 진행률: 136/2564 (5.3%)
+2025-06-08 10:31:34,588 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_1.csv
+2025-06-08 10:31:34,682 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/7_labeled_jitter_1_processed.csv
+2025-06-08 10:31:34,682 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_1.csv
+2025-06-08 10:31:34,683 - CSIFallDetection - INFO - 진행률: 137/2564 (5.3%)
+2025-06-08 10:31:34,683 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/41_labeled_jitter_2.csv
+2025-06-08 10:31:34,825 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/41_labeled_jitter_2_processed.csv
+2025-06-08 10:31:34,825 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/41_labeled_jitter_2.csv
+2025-06-08 10:31:34,825 - CSIFallDetection - INFO - 진행률: 138/2564 (5.4%)
+2025-06-08 10:31:34,825 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/22_labeled_jitter_10.csv
+2025-06-08 10:31:34,918 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/22_labeled_jitter_10_processed.csv
+2025-06-08 10:31:34,918 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/22_labeled_jitter_10.csv
+2025-06-08 10:31:34,918 - CSIFallDetection - INFO - 진행률: 139/2564 (5.4%)
+2025-06-08 10:31:34,919 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_4.csv
+2025-06-08 10:31:35,011 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/7_labeled_jitter_4_processed.csv
+2025-06-08 10:31:35,011 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_4.csv
+2025-06-08 10:31:35,011 - CSIFallDetection - INFO - 진행률: 140/2564 (5.5%)
+2025-06-08 10:31:35,011 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/20_labeled_jitter_1.csv
+2025-06-08 10:31:35,105 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/20_labeled_jitter_1_processed.csv
+2025-06-08 10:31:35,105 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/20_labeled_jitter_1.csv
+2025-06-08 10:31:35,106 - CSIFallDetection - INFO - 진행률: 141/2564 (5.5%)
+2025-06-08 10:31:35,106 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/12_labeled_jitter_2.csv
+2025-06-08 10:31:35,199 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/12_labeled_jitter_2_processed.csv
+2025-06-08 10:31:35,199 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/12_labeled_jitter_2.csv
+2025-06-08 10:31:35,199 - CSIFallDetection - INFO - 진행률: 142/2564 (5.5%)
+2025-06-08 10:31:35,199 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_10.csv
+2025-06-08 10:31:35,291 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/9_labeled_jitter_10_processed.csv
+2025-06-08 10:31:35,291 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/9_labeled_jitter_10.csv
+2025-06-08 10:31:35,291 - CSIFallDetection - INFO - 진행률: 143/2564 (5.6%)
+2025-06-08 10:31:35,291 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_5.csv
+2025-06-08 10:31:35,386 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/7_labeled_jitter_5_processed.csv
+2025-06-08 10:31:35,386 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_5.csv
+2025-06-08 10:31:35,386 - CSIFallDetection - INFO - 진행률: 144/2564 (5.6%)
+2025-06-08 10:31:35,386 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/1_labeled_jitter_10.csv
+2025-06-08 10:31:35,481 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/1_labeled_jitter_10_processed.csv
+2025-06-08 10:31:35,481 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/1_labeled_jitter_10.csv
+2025-06-08 10:31:35,481 - CSIFallDetection - INFO - 진행률: 145/2564 (5.7%)
+2025-06-08 10:31:35,481 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_7.csv
+2025-06-08 10:31:35,580 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/7_labeled_jitter_7_processed.csv
+2025-06-08 10:31:35,580 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_7.csv
+2025-06-08 10:31:35,580 - CSIFallDetection - INFO - 진행률: 146/2564 (5.7%)
+2025-06-08 10:31:35,580 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_6.csv
+2025-06-08 10:31:35,673 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/7_labeled_jitter_6_processed.csv
+2025-06-08 10:31:35,673 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/jitter/7_labeled_jitter_6.csv
+2025-06-08 10:31:35,673 - CSIFallDetection - INFO - 진행률: 147/2564 (5.7%)
+2025-06-08 10:31:35,673 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/31_labeled_warped_4.csv
+2025-06-08 10:31:35,809 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/31_labeled_warped_4_processed.csv
+2025-06-08 10:31:35,809 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/31_labeled_warped_4.csv
+2025-06-08 10:31:35,809 - CSIFallDetection - INFO - 진행률: 148/2564 (5.8%)
+2025-06-08 10:31:35,809 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/37_labeled_warped_8.csv
+2025-06-08 10:31:35,970 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/37_labeled_warped_8_processed.csv
+2025-06-08 10:31:35,970 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/37_labeled_warped_8.csv
+2025-06-08 10:31:35,971 - CSIFallDetection - INFO - 진행률: 149/2564 (5.8%)
+2025-06-08 10:31:35,971 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/34_labeled_warped_5.csv
+2025-06-08 10:31:36,116 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/34_labeled_warped_5_processed.csv
+2025-06-08 10:31:36,116 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/34_labeled_warped_5.csv
+2025-06-08 10:31:36,116 - CSIFallDetection - INFO - 진행률: 150/2564 (5.9%)
+2025-06-08 10:31:36,116 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/32_labeled_warped_9.csv
+2025-06-08 10:31:36,259 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/32_labeled_warped_9_processed.csv
+2025-06-08 10:31:36,259 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/32_labeled_warped_9.csv
+2025-06-08 10:31:36,259 - CSIFallDetection - INFO - 진행률: 151/2564 (5.9%)
+2025-06-08 10:31:36,259 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/42_labeled_warped_7.csv
+2025-06-08 10:31:36,400 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/42_labeled_warped_7_processed.csv
+2025-06-08 10:31:36,400 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/42_labeled_warped_7.csv
+2025-06-08 10:31:36,400 - CSIFallDetection - INFO - 진행률: 152/2564 (5.9%)
+2025-06-08 10:31:36,400 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/42_labeled_warped_6.csv
+2025-06-08 10:31:36,537 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/42_labeled_warped_6_processed.csv
+2025-06-08 10:31:36,537 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/42_labeled_warped_6.csv
+2025-06-08 10:31:36,538 - CSIFallDetection - INFO - 진행률: 153/2564 (6.0%)
+2025-06-08 10:31:36,538 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/32_labeled_warped_8.csv
+2025-06-08 10:31:36,675 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/32_labeled_warped_8_processed.csv
+2025-06-08 10:31:36,675 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/32_labeled_warped_8.csv
+2025-06-08 10:31:36,675 - CSIFallDetection - INFO - 진행률: 154/2564 (6.0%)
+2025-06-08 10:31:36,675 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/34_labeled_warped_4.csv
+2025-06-08 10:31:36,811 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/34_labeled_warped_4_processed.csv
+2025-06-08 10:31:36,811 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/34_labeled_warped_4.csv
+2025-06-08 10:31:36,811 - CSIFallDetection - INFO - 진행률: 155/2564 (6.0%)
+2025-06-08 10:31:36,811 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/37_labeled_warped_9.csv
+2025-06-08 10:31:36,946 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/37_labeled_warped_9_processed.csv
+2025-06-08 10:31:36,946 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/37_labeled_warped_9.csv
+2025-06-08 10:31:36,946 - CSIFallDetection - INFO - 진행률: 156/2564 (6.1%)
+2025-06-08 10:31:36,946 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/31_labeled_warped_5.csv
+2025-06-08 10:31:37,081 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/31_labeled_warped_5_processed.csv
+2025-06-08 10:31:37,081 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/31_labeled_warped_5.csv
+2025-06-08 10:31:37,081 - CSIFallDetection - INFO - 진행률: 157/2564 (6.1%)
+2025-06-08 10:31:37,081 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/43_labeled_warped_10.csv
+2025-06-08 10:31:37,222 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/43_labeled_warped_10_processed.csv
+2025-06-08 10:31:37,223 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/43_labeled_warped_10.csv
+2025-06-08 10:31:37,223 - CSIFallDetection - INFO - 진행률: 158/2564 (6.2%)
+2025-06-08 10:31:37,223 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/31_labeled_warped_7.csv
+2025-06-08 10:31:37,395 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/31_labeled_warped_7_processed.csv
+2025-06-08 10:31:37,395 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/31_labeled_warped_7.csv
+2025-06-08 10:31:37,395 - CSIFallDetection - INFO - 진행률: 159/2564 (6.2%)
+2025-06-08 10:31:37,395 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/38_labeled_warped_9.csv
+2025-06-08 10:31:37,538 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/38_labeled_warped_9_processed.csv
+2025-06-08 10:31:37,538 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/38_labeled_warped_9.csv
+2025-06-08 10:31:37,538 - CSIFallDetection - INFO - 진행률: 160/2564 (6.2%)
+2025-06-08 10:31:37,538 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/41_labeled_warped_9.csv
+2025-06-08 10:31:37,679 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/41_labeled_warped_9_processed.csv
+2025-06-08 10:31:37,679 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/41_labeled_warped_9.csv
+2025-06-08 10:31:37,679 - CSIFallDetection - INFO - 진행률: 161/2564 (6.3%)
+2025-06-08 10:31:37,680 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/34_labeled_warped_6.csv
+2025-06-08 10:31:37,819 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/34_labeled_warped_6_processed.csv
+2025-06-08 10:31:37,819 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/34_labeled_warped_6.csv
+2025-06-08 10:31:37,819 - CSIFallDetection - INFO - 진행률: 162/2564 (6.3%)
+2025-06-08 10:31:37,819 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/42_labeled_warped_5.csv
+2025-06-08 10:31:37,953 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/42_labeled_warped_5_processed.csv
+2025-06-08 10:31:37,953 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/42_labeled_warped_5.csv
+2025-06-08 10:31:37,953 - CSIFallDetection - INFO - 진행률: 163/2564 (6.4%)
+2025-06-08 10:31:37,953 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/34_labeled_warped_7.csv
+2025-06-08 10:31:38,095 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/34_labeled_warped_7_processed.csv
+2025-06-08 10:31:38,095 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/34_labeled_warped_7.csv
+2025-06-08 10:31:38,096 - CSIFallDetection - INFO - 진행률: 164/2564 (6.4%)
+2025-06-08 10:31:38,096 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/41_labeled_warped_8.csv
+2025-06-08 10:31:38,237 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/41_labeled_warped_8_processed.csv
+2025-06-08 10:31:38,237 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/41_labeled_warped_8.csv
+2025-06-08 10:31:38,237 - CSIFallDetection - INFO - 진행률: 165/2564 (6.4%)
+2025-06-08 10:31:38,237 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/38_labeled_warped_8.csv
+2025-06-08 10:31:38,374 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/38_labeled_warped_8_processed.csv
+2025-06-08 10:31:38,374 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/38_labeled_warped_8.csv
+2025-06-08 10:31:38,375 - CSIFallDetection - INFO - 진행률: 166/2564 (6.5%)
+2025-06-08 10:31:38,375 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/31_labeled_warped_6.csv
+2025-06-08 10:31:38,510 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/31_labeled_warped_6_processed.csv
+2025-06-08 10:31:38,510 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/31_labeled_warped_6.csv
+2025-06-08 10:31:38,510 - CSIFallDetection - INFO - 진행률: 167/2564 (6.5%)
+2025-06-08 10:31:38,510 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/33_labeled_warped_10.csv
+2025-06-08 10:31:38,647 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/33_labeled_warped_10_processed.csv
+2025-06-08 10:31:38,647 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/33_labeled_warped_10.csv
+2025-06-08 10:31:38,647 - CSIFallDetection - INFO - 진행률: 168/2564 (6.6%)
+2025-06-08 10:31:38,647 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/31_labeled_warped_2.csv
+2025-06-08 10:31:38,812 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/31_labeled_warped_2_processed.csv
+2025-06-08 10:31:38,812 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/31_labeled_warped_2.csv
+2025-06-08 10:31:38,813 - CSIFallDetection - INFO - 진행률: 169/2564 (6.6%)
+2025-06-08 10:31:38,813 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/39_labeled_warped_10.csv
+2025-06-08 10:31:38,957 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/39_labeled_warped_10_processed.csv
+2025-06-08 10:31:38,957 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/39_labeled_warped_10.csv
+2025-06-08 10:31:38,957 - CSIFallDetection - INFO - 진행률: 170/2564 (6.6%)
+2025-06-08 10:31:38,957 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/34_labeled_warped_3.csv
+2025-06-08 10:31:39,091 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/34_labeled_warped_3_processed.csv
+2025-06-08 10:31:39,091 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/34_labeled_warped_3.csv
+2025-06-08 10:31:39,092 - CSIFallDetection - INFO - 진행률: 171/2564 (6.7%)
+2025-06-08 10:31:39,092 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/41_labeled_warped_10.csv
+2025-06-08 10:31:39,226 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/41_labeled_warped_10_processed.csv
+2025-06-08 10:31:39,226 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/41_labeled_warped_10.csv
+2025-06-08 10:31:39,227 - CSIFallDetection - INFO - 진행률: 172/2564 (6.7%)
+2025-06-08 10:31:39,227 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/42_labeled_warped_1.csv
+2025-06-08 10:31:39,362 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/42_labeled_warped_1_processed.csv
+2025-06-08 10:31:39,362 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/42_labeled_warped_1.csv
+2025-06-08 10:31:39,363 - CSIFallDetection - INFO - 진행률: 173/2564 (6.7%)
+2025-06-08 10:31:39,363 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/34_labeled_warped_2.csv
+2025-06-08 10:31:39,499 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/34_labeled_warped_2_processed.csv
+2025-06-08 10:31:39,499 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/34_labeled_warped_2.csv
+2025-06-08 10:31:39,500 - CSIFallDetection - INFO - 진행률: 174/2564 (6.8%)
+2025-06-08 10:31:39,500 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/31_labeled_warped_3.csv
+2025-06-08 10:31:39,639 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/31_labeled_warped_3_processed.csv
+2025-06-08 10:31:39,639 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/31_labeled_warped_3.csv
+2025-06-08 10:31:39,639 - CSIFallDetection - INFO - 진행률: 175/2564 (6.8%)
+2025-06-08 10:31:39,639 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/31_labeled_warped_1.csv
+2025-06-08 10:31:39,777 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/31_labeled_warped_1_processed.csv
+2025-06-08 10:31:39,777 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/31_labeled_warped_1.csv
+2025-06-08 10:31:39,778 - CSIFallDetection - INFO - 진행률: 176/2564 (6.9%)
+2025-06-08 10:31:39,778 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/31_labeled_warped_10.csv
+2025-06-08 10:31:39,916 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/31_labeled_warped_10_processed.csv
+2025-06-08 10:31:39,916 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/31_labeled_warped_10.csv
+2025-06-08 10:31:39,916 - CSIFallDetection - INFO - 진행률: 177/2564 (6.9%)
+2025-06-08 10:31:39,916 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/42_labeled_warped_2.csv
+2025-06-08 10:31:40,059 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/42_labeled_warped_2_processed.csv
+2025-06-08 10:31:40,059 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/42_labeled_warped_2.csv
+2025-06-08 10:31:40,059 - CSIFallDetection - INFO - 진행률: 178/2564 (6.9%)
+2025-06-08 10:31:40,059 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/42_labeled_warped_3.csv
+2025-06-08 10:31:40,203 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/42_labeled_warped_3_processed.csv
+2025-06-08 10:31:40,203 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/42_labeled_warped_3.csv
+2025-06-08 10:31:40,203 - CSIFallDetection - INFO - 진행률: 179/2564 (7.0%)
+2025-06-08 10:31:40,203 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/34_labeled_warped_1.csv
+2025-06-08 10:31:40,345 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/34_labeled_warped_1_processed.csv
+2025-06-08 10:31:40,345 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/34_labeled_warped_1.csv
+2025-06-08 10:31:40,345 - CSIFallDetection - INFO - 진행률: 180/2564 (7.0%)
+2025-06-08 10:31:40,345 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/43_labeled_warped_4.csv
+2025-06-08 10:31:40,482 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/43_labeled_warped_4_processed.csv
+2025-06-08 10:31:40,482 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/43_labeled_warped_4.csv
+2025-06-08 10:31:40,482 - CSIFallDetection - INFO - 진행률: 181/2564 (7.1%)
+2025-06-08 10:31:40,482 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/35_labeled_warped_6.csv
+2025-06-08 10:31:40,627 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/35_labeled_warped_6_processed.csv
+2025-06-08 10:31:40,627 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/35_labeled_warped_6.csv
+2025-06-08 10:31:40,627 - CSIFallDetection - INFO - 진행률: 182/2564 (7.1%)
+2025-06-08 10:31:40,627 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/39_labeled_warped_9.csv
+2025-06-08 10:31:40,768 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/39_labeled_warped_9_processed.csv
+2025-06-08 10:31:40,769 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/39_labeled_warped_9.csv
+2025-06-08 10:31:40,769 - CSIFallDetection - INFO - 진행률: 183/2564 (7.1%)
+2025-06-08 10:31:40,769 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/40_labeled_warped_9.csv
+2025-06-08 10:31:40,906 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/40_labeled_warped_9_processed.csv
+2025-06-08 10:31:40,906 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/40_labeled_warped_9.csv
+2025-06-08 10:31:40,906 - CSIFallDetection - INFO - 진행률: 184/2564 (7.2%)
+2025-06-08 10:31:40,906 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/40_labeled_warped_8.csv
+2025-06-08 10:31:41,044 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/40_labeled_warped_8_processed.csv
+2025-06-08 10:31:41,044 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/40_labeled_warped_8.csv
+2025-06-08 10:31:41,044 - CSIFallDetection - INFO - 진행률: 185/2564 (7.2%)
+2025-06-08 10:31:41,044 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/46_labeled_warped_4.csv
+2025-06-08 10:31:41,182 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/46_labeled_warped_4_processed.csv
+2025-06-08 10:31:41,182 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/46_labeled_warped_4.csv
+2025-06-08 10:31:41,182 - CSIFallDetection - INFO - 진행률: 186/2564 (7.3%)
+2025-06-08 10:31:41,182 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/37_labeled_warped_10.csv
+2025-06-08 10:31:41,323 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/37_labeled_warped_10_processed.csv
+2025-06-08 10:31:41,323 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/37_labeled_warped_10.csv
+2025-06-08 10:31:41,323 - CSIFallDetection - INFO - 진행률: 187/2564 (7.3%)
+2025-06-08 10:31:41,323 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/35_labeled_warped_7.csv
+2025-06-08 10:31:41,470 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/35_labeled_warped_7_processed.csv
+2025-06-08 10:31:41,470 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/35_labeled_warped_7.csv
+2025-06-08 10:31:41,471 - CSIFallDetection - INFO - 진행률: 188/2564 (7.3%)
+2025-06-08 10:31:41,471 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/43_labeled_warped_5.csv
+2025-06-08 10:31:41,611 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/43_labeled_warped_5_processed.csv
+2025-06-08 10:31:41,611 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/43_labeled_warped_5.csv
+2025-06-08 10:31:41,611 - CSIFallDetection - INFO - 진행률: 189/2564 (7.4%)
+2025-06-08 10:31:41,611 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/43_labeled_warped_7.csv
+2025-06-08 10:31:41,748 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/43_labeled_warped_7_processed.csv
+2025-06-08 10:31:41,748 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/43_labeled_warped_7.csv
+2025-06-08 10:31:41,749 - CSIFallDetection - INFO - 진행률: 190/2564 (7.4%)
+2025-06-08 10:31:41,749 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/33_labeled_warped_9.csv
+2025-06-08 10:31:41,888 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/33_labeled_warped_9_processed.csv
+2025-06-08 10:31:41,889 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/33_labeled_warped_9.csv
+2025-06-08 10:31:41,889 - CSIFallDetection - INFO - 진행률: 191/2564 (7.4%)
+2025-06-08 10:31:41,889 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/35_labeled_warped_5.csv
+2025-06-08 10:31:42,027 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/35_labeled_warped_5_processed.csv
+2025-06-08 10:31:42,027 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/35_labeled_warped_5.csv
+2025-06-08 10:31:42,027 - CSIFallDetection - INFO - 진행률: 192/2564 (7.5%)
+2025-06-08 10:31:42,027 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/36_labeled_warped_8.csv
+2025-06-08 10:31:42,162 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/36_labeled_warped_8_processed.csv
+2025-06-08 10:31:42,162 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/36_labeled_warped_8.csv
+2025-06-08 10:31:42,162 - CSIFallDetection - INFO - 진행률: 193/2564 (7.5%)
+2025-06-08 10:31:42,162 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/3_labeled_warped_9.csv
+2025-06-08 10:31:42,250 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/3_labeled_warped_9_processed.csv
+2025-06-08 10:31:42,250 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/3_labeled_warped_9.csv
+2025-06-08 10:31:42,250 - CSIFallDetection - INFO - 진행률: 194/2564 (7.6%)
+2025-06-08 10:31:42,250 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/36_labeled_warped_9.csv
+2025-06-08 10:31:42,403 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/36_labeled_warped_9_processed.csv
+2025-06-08 10:31:42,403 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/36_labeled_warped_9.csv
+2025-06-08 10:31:42,404 - CSIFallDetection - INFO - 진행률: 195/2564 (7.6%)
+2025-06-08 10:31:42,404 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/35_labeled_warped_4.csv
+2025-06-08 10:31:42,540 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/35_labeled_warped_4_processed.csv
+2025-06-08 10:31:42,540 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/35_labeled_warped_4.csv
+2025-06-08 10:31:42,541 - CSIFallDetection - INFO - 진행률: 196/2564 (7.6%)
+2025-06-08 10:31:42,541 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/33_labeled_warped_8.csv
+2025-06-08 10:31:42,681 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/33_labeled_warped_8_processed.csv
+2025-06-08 10:31:42,681 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/33_labeled_warped_8.csv
+2025-06-08 10:31:42,681 - CSIFallDetection - INFO - 진행률: 197/2564 (7.7%)
+2025-06-08 10:31:42,681 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/43_labeled_warped_6.csv
+2025-06-08 10:31:42,830 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/43_labeled_warped_6_processed.csv
+2025-06-08 10:31:42,830 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/43_labeled_warped_6.csv
+2025-06-08 10:31:42,830 - CSIFallDetection - INFO - 진행률: 198/2564 (7.7%)
+2025-06-08 10:31:42,830 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/43_labeled_warped_2.csv
+2025-06-08 10:31:42,979 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/43_labeled_warped_2_processed.csv
+2025-06-08 10:31:42,979 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/43_labeled_warped_2.csv
+2025-06-08 10:31:42,980 - CSIFallDetection - INFO - 진행률: 199/2564 (7.8%)
+2025-06-08 10:31:42,980 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/35_labeled_warped_10.csv
+2025-06-08 10:31:43,129 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/35_labeled_warped_10_processed.csv
+2025-06-08 10:31:43,129 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/35_labeled_warped_10.csv
+2025-06-08 10:31:43,129 - CSIFallDetection - INFO - 진행률: 200/2564 (7.8%)
+2025-06-08 10:31:43,129 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/35_labeled_warped_1.csv
+2025-06-08 10:31:43,273 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/35_labeled_warped_1_processed.csv
+2025-06-08 10:31:43,273 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/35_labeled_warped_1.csv
+2025-06-08 10:31:43,274 - CSIFallDetection - INFO - 진행률: 201/2564 (7.8%)
+2025-06-08 10:31:43,274 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/43_labeled_warped_3.csv
+2025-06-08 10:31:43,421 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/43_labeled_warped_3_processed.csv
+2025-06-08 10:31:43,421 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/43_labeled_warped_3.csv
+2025-06-08 10:31:43,421 - CSIFallDetection - INFO - 진행률: 202/2564 (7.9%)
+2025-06-08 10:31:43,421 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/43_labeled_warped_1.csv
+2025-06-08 10:31:43,557 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/43_labeled_warped_1_processed.csv
+2025-06-08 10:31:43,557 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/43_labeled_warped_1.csv
+2025-06-08 10:31:43,557 - CSIFallDetection - INFO - 진행률: 203/2564 (7.9%)
+2025-06-08 10:31:43,557 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/35_labeled_warped_3.csv
+2025-06-08 10:31:43,694 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/35_labeled_warped_3_processed.csv
+2025-06-08 10:31:43,694 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/35_labeled_warped_3.csv
+2025-06-08 10:31:43,694 - CSIFallDetection - INFO - 진행률: 204/2564 (8.0%)
+2025-06-08 10:31:43,694 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/35_labeled_warped_2.csv
+2025-06-08 10:31:43,829 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/35_labeled_warped_2_processed.csv
+2025-06-08 10:31:43,829 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/35_labeled_warped_2.csv
+2025-06-08 10:31:43,829 - CSIFallDetection - INFO - 진행률: 205/2564 (8.0%)
+2025-06-08 10:31:43,829 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/33_labeled_warped_3.csv
+2025-06-08 10:31:43,968 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/33_labeled_warped_3_processed.csv
+2025-06-08 10:31:43,968 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/33_labeled_warped_3.csv
+2025-06-08 10:31:43,968 - CSIFallDetection - INFO - 진행률: 206/2564 (8.0%)
+2025-06-08 10:31:43,968 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/36_labeled_warped_2.csv
+2025-06-08 10:31:44,105 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/36_labeled_warped_2_processed.csv
+2025-06-08 10:31:44,105 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/36_labeled_warped_2.csv
+2025-06-08 10:31:44,106 - CSIFallDetection - INFO - 진행률: 207/2564 (8.1%)
+2025-06-08 10:31:44,106 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/3_labeled_warped_3.csv
+2025-06-08 10:31:44,196 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/3_labeled_warped_3_processed.csv
+2025-06-08 10:31:44,196 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/3_labeled_warped_3.csv
+2025-06-08 10:31:44,196 - CSIFallDetection - INFO - 진행률: 208/2564 (8.1%)
+2025-06-08 10:31:44,196 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/39_labeled_warped_1.csv
+2025-06-08 10:31:44,334 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/39_labeled_warped_1_processed.csv
+2025-06-08 10:31:44,334 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/39_labeled_warped_1.csv
+2025-06-08 10:31:44,335 - CSIFallDetection - INFO - 진행률: 209/2564 (8.2%)
+2025-06-08 10:31:44,335 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/40_labeled_warped_1.csv
+2025-06-08 10:31:44,473 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/40_labeled_warped_1_processed.csv
+2025-06-08 10:31:44,473 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/40_labeled_warped_1.csv
+2025-06-08 10:31:44,473 - CSIFallDetection - INFO - 진행률: 210/2564 (8.2%)
+2025-06-08 10:31:44,473 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/36_labeled_warped_3.csv
+2025-06-08 10:31:44,616 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/36_labeled_warped_3_processed.csv
+2025-06-08 10:31:44,616 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/36_labeled_warped_3.csv
+2025-06-08 10:31:44,616 - CSIFallDetection - INFO - 진행률: 211/2564 (8.2%)
+2025-06-08 10:31:44,616 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/32_labeled_warped_10.csv
+2025-06-08 10:31:44,755 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/32_labeled_warped_10_processed.csv
+2025-06-08 10:31:44,755 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/32_labeled_warped_10.csv
+2025-06-08 10:31:44,756 - CSIFallDetection - INFO - 진행률: 212/2564 (8.3%)
+2025-06-08 10:31:44,756 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/33_labeled_warped_2.csv
+2025-06-08 10:31:44,910 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/33_labeled_warped_2_processed.csv
+2025-06-08 10:31:44,910 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/33_labeled_warped_2.csv
+2025-06-08 10:31:44,910 - CSIFallDetection - INFO - 진행률: 213/2564 (8.3%)
+2025-06-08 10:31:44,910 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/36_labeled_warped_1.csv
+2025-06-08 10:31:45,053 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/36_labeled_warped_1_processed.csv
+2025-06-08 10:31:45,053 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/36_labeled_warped_1.csv
+2025-06-08 10:31:45,054 - CSIFallDetection - INFO - 진행률: 214/2564 (8.3%)
+2025-06-08 10:31:45,054 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/40_labeled_warped_3.csv
+2025-06-08 10:31:45,194 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/40_labeled_warped_3_processed.csv
+2025-06-08 10:31:45,194 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/40_labeled_warped_3.csv
+2025-06-08 10:31:45,194 - CSIFallDetection - INFO - 진행률: 215/2564 (8.4%)
+2025-06-08 10:31:45,194 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/39_labeled_warped_3.csv
+2025-06-08 10:31:45,341 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/39_labeled_warped_3_processed.csv
+2025-06-08 10:31:45,341 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/39_labeled_warped_3.csv
+2025-06-08 10:31:45,342 - CSIFallDetection - INFO - 진행률: 216/2564 (8.4%)
+2025-06-08 10:31:45,342 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/39_labeled_warped_2.csv
+2025-06-08 10:31:45,501 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/39_labeled_warped_2_processed.csv
+2025-06-08 10:31:45,501 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/39_labeled_warped_2.csv
+2025-06-08 10:31:45,501 - CSIFallDetection - INFO - 진행률: 217/2564 (8.5%)
+2025-06-08 10:31:45,501 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/40_labeled_warped_2.csv
+2025-06-08 10:31:45,642 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/40_labeled_warped_2_processed.csv
+2025-06-08 10:31:45,642 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/40_labeled_warped_2.csv
+2025-06-08 10:31:45,642 - CSIFallDetection - INFO - 진행률: 218/2564 (8.5%)
+2025-06-08 10:31:45,642 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/42_labeled_warped_10.csv
+2025-06-08 10:31:45,783 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/42_labeled_warped_10_processed.csv
+2025-06-08 10:31:45,784 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/42_labeled_warped_10.csv
+2025-06-08 10:31:45,784 - CSIFallDetection - INFO - 진행률: 219/2564 (8.5%)
+2025-06-08 10:31:45,784 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/33_labeled_warped_1.csv
+2025-06-08 10:31:45,923 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/33_labeled_warped_1_processed.csv
+2025-06-08 10:31:45,923 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/33_labeled_warped_1.csv
+2025-06-08 10:31:45,924 - CSIFallDetection - INFO - 진행률: 220/2564 (8.6%)
+2025-06-08 10:31:45,924 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/33_labeled_warped_5.csv
+2025-06-08 10:31:46,063 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/33_labeled_warped_5_processed.csv
+2025-06-08 10:31:46,063 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/33_labeled_warped_5.csv
+2025-06-08 10:31:46,063 - CSIFallDetection - INFO - 진행률: 221/2564 (8.6%)
+2025-06-08 10:31:46,063 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/45_labeled_warped_7.csv
+2025-06-08 10:31:46,200 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/45_labeled_warped_7_processed.csv
+2025-06-08 10:31:46,200 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/45_labeled_warped_7.csv
+2025-06-08 10:31:46,201 - CSIFallDetection - INFO - 진행률: 222/2564 (8.7%)
+2025-06-08 10:31:46,201 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/35_labeled_warped_9.csv
+2025-06-08 10:31:46,344 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/35_labeled_warped_9_processed.csv
+2025-06-08 10:31:46,344 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/35_labeled_warped_9.csv
+2025-06-08 10:31:46,344 - CSIFallDetection - INFO - 진행률: 223/2564 (8.7%)
+2025-06-08 10:31:46,344 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/36_labeled_warped_4.csv
+2025-06-08 10:31:46,486 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/36_labeled_warped_4_processed.csv
+2025-06-08 10:31:46,486 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/36_labeled_warped_4.csv
+2025-06-08 10:31:46,486 - CSIFallDetection - INFO - 진행률: 224/2564 (8.7%)
+2025-06-08 10:31:46,486 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/39_labeled_warped_6.csv
+2025-06-08 10:31:46,628 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/39_labeled_warped_6_processed.csv
+2025-06-08 10:31:46,628 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/39_labeled_warped_6.csv
+2025-06-08 10:31:46,628 - CSIFallDetection - INFO - 진행률: 225/2564 (8.8%)
+2025-06-08 10:31:46,628 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/40_labeled_warped_6.csv
+2025-06-08 10:31:46,766 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/40_labeled_warped_6_processed.csv
+2025-06-08 10:31:46,767 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/40_labeled_warped_6.csv
+2025-06-08 10:31:46,767 - CSIFallDetection - INFO - 진행률: 226/2564 (8.8%)
+2025-06-08 10:31:46,767 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/3_labeled_warped_5.csv
+2025-06-08 10:31:46,855 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/3_labeled_warped_5_processed.csv
+2025-06-08 10:31:46,855 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/3_labeled_warped_5.csv
+2025-06-08 10:31:46,855 - CSIFallDetection - INFO - 진행률: 227/2564 (8.9%)
+2025-06-08 10:31:46,855 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/3_labeled_warped_4.csv
+2025-06-08 10:31:46,944 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/3_labeled_warped_4_processed.csv
+2025-06-08 10:31:46,944 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/3_labeled_warped_4.csv
+2025-06-08 10:31:46,945 - CSIFallDetection - INFO - 진행률: 228/2564 (8.9%)
+2025-06-08 10:31:46,945 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/40_labeled_warped_7.csv
+2025-06-08 10:31:47,086 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/40_labeled_warped_7_processed.csv
+2025-06-08 10:31:47,086 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/40_labeled_warped_7.csv
+2025-06-08 10:31:47,087 - CSIFallDetection - INFO - 진행률: 229/2564 (8.9%)
+2025-06-08 10:31:47,087 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/39_labeled_warped_7.csv
+2025-06-08 10:31:47,225 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/39_labeled_warped_7_processed.csv
+2025-06-08 10:31:47,225 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/39_labeled_warped_7.csv
+2025-06-08 10:31:47,226 - CSIFallDetection - INFO - 진행률: 230/2564 (9.0%)
+2025-06-08 10:31:47,226 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/36_labeled_warped_5.csv
+2025-06-08 10:31:47,364 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/36_labeled_warped_5_processed.csv
+2025-06-08 10:31:47,364 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/36_labeled_warped_5.csv
+2025-06-08 10:31:47,365 - CSIFallDetection - INFO - 진행률: 231/2564 (9.0%)
+2025-06-08 10:31:47,365 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/35_labeled_warped_8.csv
+2025-06-08 10:31:47,505 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/35_labeled_warped_8_processed.csv
+2025-06-08 10:31:47,505 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/35_labeled_warped_8.csv
+2025-06-08 10:31:47,505 - CSIFallDetection - INFO - 진행률: 232/2564 (9.0%)
+2025-06-08 10:31:47,505 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/33_labeled_warped_4.csv
+2025-06-08 10:31:47,646 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/33_labeled_warped_4_processed.csv
+2025-06-08 10:31:47,646 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/33_labeled_warped_4.csv
+2025-06-08 10:31:47,647 - CSIFallDetection - INFO - 진행률: 233/2564 (9.1%)
+2025-06-08 10:31:47,647 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/33_labeled_warped_6.csv
+2025-06-08 10:31:47,804 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/33_labeled_warped_6_processed.csv
+2025-06-08 10:31:47,804 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/33_labeled_warped_6.csv
+2025-06-08 10:31:47,804 - CSIFallDetection - INFO - 진행률: 234/2564 (9.1%)
+2025-06-08 10:31:47,804 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/40_labeled_warped_10.csv
+2025-06-08 10:31:47,947 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/40_labeled_warped_10_processed.csv
+2025-06-08 10:31:47,947 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/40_labeled_warped_10.csv
+2025-06-08 10:31:47,947 - CSIFallDetection - INFO - 진행률: 235/2564 (9.2%)
+2025-06-08 10:31:47,947 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/36_labeled_warped_7.csv
+2025-06-08 10:31:48,090 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/36_labeled_warped_7_processed.csv
+2025-06-08 10:31:48,090 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/36_labeled_warped_7.csv
+2025-06-08 10:31:48,090 - CSIFallDetection - INFO - 진행률: 236/2564 (9.2%)
+2025-06-08 10:31:48,090 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/38_labeled_warped_10.csv
+2025-06-08 10:31:48,231 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/38_labeled_warped_10_processed.csv
+2025-06-08 10:31:48,231 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/38_labeled_warped_10.csv
+2025-06-08 10:31:48,231 - CSIFallDetection - INFO - 진행률: 237/2564 (9.2%)
+2025-06-08 10:31:48,231 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/39_labeled_warped_5.csv
+2025-06-08 10:31:48,368 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/39_labeled_warped_5_processed.csv
+2025-06-08 10:31:48,368 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/39_labeled_warped_5.csv
+2025-06-08 10:31:48,368 - CSIFallDetection - INFO - 진행률: 238/2564 (9.3%)
+2025-06-08 10:31:48,368 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/40_labeled_warped_5.csv
+2025-06-08 10:31:48,510 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/40_labeled_warped_5_processed.csv
+2025-06-08 10:31:48,510 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/40_labeled_warped_5.csv
+2025-06-08 10:31:48,510 - CSIFallDetection - INFO - 진행률: 239/2564 (9.3%)
+2025-06-08 10:31:48,510 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/3_labeled_warped_7.csv
+2025-06-08 10:31:48,602 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/3_labeled_warped_7_processed.csv
+2025-06-08 10:31:48,602 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/3_labeled_warped_7.csv
+2025-06-08 10:31:48,602 - CSIFallDetection - INFO - 진행률: 240/2564 (9.4%)
+2025-06-08 10:31:48,602 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/40_labeled_warped_4.csv
+2025-06-08 10:31:48,744 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/40_labeled_warped_4_processed.csv
+2025-06-08 10:31:48,744 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/40_labeled_warped_4.csv
+2025-06-08 10:31:48,744 - CSIFallDetection - INFO - 진행률: 241/2564 (9.4%)
+2025-06-08 10:31:48,744 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/36_labeled_warped_6.csv
+2025-06-08 10:31:48,885 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/36_labeled_warped_6_processed.csv
+2025-06-08 10:31:48,885 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/36_labeled_warped_6.csv
+2025-06-08 10:31:48,885 - CSIFallDetection - INFO - 진행률: 242/2564 (9.4%)
+2025-06-08 10:31:48,885 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/33_labeled_warped_7.csv
+2025-06-08 10:31:49,023 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/33_labeled_warped_7_processed.csv
+2025-06-08 10:31:49,023 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/33_labeled_warped_7.csv
+2025-06-08 10:31:49,024 - CSIFallDetection - INFO - 진행률: 243/2564 (9.5%)
+2025-06-08 10:31:49,024 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/43_labeled_warped_9.csv
+2025-06-08 10:31:49,164 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/43_labeled_warped_9_processed.csv
+2025-06-08 10:31:49,165 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/43_labeled_warped_9.csv
+2025-06-08 10:31:49,165 - CSIFallDetection - INFO - 진행률: 244/2564 (9.5%)
+2025-06-08 10:31:49,165 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/41_labeled_warped_3.csv
+2025-06-08 10:31:49,306 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/41_labeled_warped_3_processed.csv
+2025-06-08 10:31:49,306 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/41_labeled_warped_3.csv
+2025-06-08 10:31:49,306 - CSIFallDetection - INFO - 진행률: 245/2564 (9.6%)
+2025-06-08 10:31:49,306 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/38_labeled_warped_3.csv
+2025-06-08 10:31:49,446 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/38_labeled_warped_3_processed.csv
+2025-06-08 10:31:49,446 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/38_labeled_warped_3.csv
+2025-06-08 10:31:49,446 - CSIFallDetection - INFO - 진행률: 246/2564 (9.6%)
+2025-06-08 10:31:49,446 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/37_labeled_warped_1.csv
+2025-06-08 10:31:49,589 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/37_labeled_warped_1_processed.csv
+2025-06-08 10:31:49,589 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/37_labeled_warped_1.csv
+2025-06-08 10:31:49,590 - CSIFallDetection - INFO - 진행률: 247/2564 (9.6%)
+2025-06-08 10:31:49,590 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/44_labeled_warped_2.csv
+2025-06-08 10:31:49,736 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/44_labeled_warped_2_processed.csv
+2025-06-08 10:31:49,737 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/44_labeled_warped_2.csv
+2025-06-08 10:31:49,737 - CSIFallDetection - INFO - 진행률: 248/2564 (9.7%)
+2025-06-08 10:31:49,737 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/32_labeled_warped_1.csv
+2025-06-08 10:31:49,873 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/32_labeled_warped_1_processed.csv
+2025-06-08 10:31:49,873 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/32_labeled_warped_1.csv
+2025-06-08 10:31:49,873 - CSIFallDetection - INFO - 진행률: 249/2564 (9.7%)
+2025-06-08 10:31:49,873 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/44_labeled_warped_3.csv
+2025-06-08 10:31:50,012 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/44_labeled_warped_3_processed.csv
+2025-06-08 10:31:50,013 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/44_labeled_warped_3.csv
+2025-06-08 10:31:50,013 - CSIFallDetection - INFO - 진행률: 250/2564 (9.8%)
+2025-06-08 10:31:50,013 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/38_labeled_warped_2.csv
+2025-06-08 10:31:50,154 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/38_labeled_warped_2_processed.csv
+2025-06-08 10:31:50,154 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/38_labeled_warped_2.csv
+2025-06-08 10:31:50,154 - CSIFallDetection - INFO - 진행률: 251/2564 (9.8%)
+2025-06-08 10:31:50,154 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/41_labeled_warped_2.csv
+2025-06-08 10:31:50,292 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/41_labeled_warped_2_processed.csv
+2025-06-08 10:31:50,292 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/41_labeled_warped_2.csv
+2025-06-08 10:31:50,293 - CSIFallDetection - INFO - 진행률: 252/2564 (9.8%)
+2025-06-08 10:31:50,293 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/37_labeled_warped_2.csv
+2025-06-08 10:31:50,435 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/37_labeled_warped_2_processed.csv
+2025-06-08 10:31:50,435 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/37_labeled_warped_2.csv
+2025-06-08 10:31:50,435 - CSIFallDetection - INFO - 진행률: 253/2564 (9.9%)
+2025-06-08 10:31:50,435 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/44_labeled_warped_1.csv
+2025-06-08 10:31:50,568 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/44_labeled_warped_1_processed.csv
+2025-06-08 10:31:50,568 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/44_labeled_warped_1.csv
+2025-06-08 10:31:50,569 - CSIFallDetection - INFO - 진행률: 254/2564 (9.9%)
+2025-06-08 10:31:50,569 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/32_labeled_warped_3.csv
+2025-06-08 10:31:50,707 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/32_labeled_warped_3_processed.csv
+2025-06-08 10:31:50,707 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/32_labeled_warped_3.csv
+2025-06-08 10:31:50,707 - CSIFallDetection - INFO - 진행률: 255/2564 (9.9%)
+2025-06-08 10:31:50,707 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/36_labeled_warped_10.csv
+2025-06-08 10:31:50,846 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/36_labeled_warped_10_processed.csv
+2025-06-08 10:31:50,847 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/36_labeled_warped_10.csv
+2025-06-08 10:31:50,847 - CSIFallDetection - INFO - 진행률: 256/2564 (10.0%)
+2025-06-08 10:31:50,847 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/32_labeled_warped_2.csv
+2025-06-08 10:31:50,994 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/32_labeled_warped_2_processed.csv
+2025-06-08 10:31:50,994 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/32_labeled_warped_2.csv
+2025-06-08 10:31:50,994 - CSIFallDetection - INFO - 진행률: 257/2564 (10.0%)
+2025-06-08 10:31:50,994 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/37_labeled_warped_3.csv
+2025-06-08 10:31:51,132 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/37_labeled_warped_3_processed.csv
+2025-06-08 10:31:51,132 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/37_labeled_warped_3.csv
+2025-06-08 10:31:51,132 - CSIFallDetection - INFO - 진행률: 258/2564 (10.1%)
+2025-06-08 10:31:51,133 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/38_labeled_warped_1.csv
+2025-06-08 10:31:51,274 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/38_labeled_warped_1_processed.csv
+2025-06-08 10:31:51,274 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/38_labeled_warped_1.csv
+2025-06-08 10:31:51,275 - CSIFallDetection - INFO - 진행률: 259/2564 (10.1%)
+2025-06-08 10:31:51,275 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/41_labeled_warped_1.csv
+2025-06-08 10:31:51,411 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/41_labeled_warped_1_processed.csv
+2025-06-08 10:31:51,411 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/41_labeled_warped_1.csv
+2025-06-08 10:31:51,411 - CSIFallDetection - INFO - 진행률: 260/2564 (10.1%)
+2025-06-08 10:31:51,411 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/38_labeled_warped_5.csv
+2025-06-08 10:31:51,554 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/38_labeled_warped_5_processed.csv
+2025-06-08 10:31:51,554 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/38_labeled_warped_5.csv
+2025-06-08 10:31:51,554 - CSIFallDetection - INFO - 진행률: 261/2564 (10.2%)
+2025-06-08 10:31:51,554 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/41_labeled_warped_5.csv
+2025-06-08 10:31:51,692 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/41_labeled_warped_5_processed.csv
+2025-06-08 10:31:51,692 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/41_labeled_warped_5.csv
+2025-06-08 10:31:51,692 - CSIFallDetection - INFO - 진행률: 262/2564 (10.2%)
+2025-06-08 10:31:51,692 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/37_labeled_warped_7.csv
+2025-06-08 10:31:51,831 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/37_labeled_warped_7_processed.csv
+2025-06-08 10:31:51,831 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/37_labeled_warped_7.csv
+2025-06-08 10:31:51,831 - CSIFallDetection - INFO - 진행률: 263/2564 (10.3%)
+2025-06-08 10:31:51,831 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/32_labeled_warped_6.csv
+2025-06-08 10:31:51,965 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/32_labeled_warped_6_processed.csv
+2025-06-08 10:31:51,965 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/32_labeled_warped_6.csv
+2025-06-08 10:31:51,965 - CSIFallDetection - INFO - 진행률: 264/2564 (10.3%)
+2025-06-08 10:31:51,965 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/42_labeled_warped_8.csv
+2025-06-08 10:31:52,135 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/42_labeled_warped_8_processed.csv
+2025-06-08 10:31:52,135 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/42_labeled_warped_8.csv
+2025-06-08 10:31:52,135 - CSIFallDetection - INFO - 진행률: 265/2564 (10.3%)
+2025-06-08 10:31:52,135 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/42_labeled_warped_9.csv
+2025-06-08 10:31:52,276 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/42_labeled_warped_9_processed.csv
+2025-06-08 10:31:52,277 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/42_labeled_warped_9.csv
+2025-06-08 10:31:52,277 - CSIFallDetection - INFO - 진행률: 266/2564 (10.4%)
+2025-06-08 10:31:52,277 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/32_labeled_warped_7.csv
+2025-06-08 10:31:52,414 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/32_labeled_warped_7_processed.csv
+2025-06-08 10:31:52,414 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/32_labeled_warped_7.csv
+2025-06-08 10:31:52,414 - CSIFallDetection - INFO - 진행률: 267/2564 (10.4%)
+2025-06-08 10:31:52,414 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/37_labeled_warped_6.csv
+2025-06-08 10:31:52,556 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/37_labeled_warped_6_processed.csv
+2025-06-08 10:31:52,556 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/37_labeled_warped_6.csv
+2025-06-08 10:31:52,557 - CSIFallDetection - INFO - 진행률: 268/2564 (10.5%)
+2025-06-08 10:31:52,557 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/41_labeled_warped_4.csv
+2025-06-08 10:31:52,694 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/41_labeled_warped_4_processed.csv
+2025-06-08 10:31:52,694 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/41_labeled_warped_4.csv
+2025-06-08 10:31:52,694 - CSIFallDetection - INFO - 진행률: 269/2564 (10.5%)
+2025-06-08 10:31:52,694 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/38_labeled_warped_4.csv
+2025-06-08 10:31:52,838 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/38_labeled_warped_4_processed.csv
+2025-06-08 10:31:52,838 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/38_labeled_warped_4.csv
+2025-06-08 10:31:52,838 - CSIFallDetection - INFO - 진행률: 270/2564 (10.5%)
+2025-06-08 10:31:52,838 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/31_labeled_warped_8.csv
+2025-06-08 10:31:52,981 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/31_labeled_warped_8_processed.csv
+2025-06-08 10:31:52,981 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/31_labeled_warped_8.csv
+2025-06-08 10:31:52,981 - CSIFallDetection - INFO - 진행률: 271/2564 (10.6%)
+2025-06-08 10:31:52,981 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/38_labeled_warped_6.csv
+2025-06-08 10:31:53,119 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/38_labeled_warped_6_processed.csv
+2025-06-08 10:31:53,119 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/38_labeled_warped_6.csv
+2025-06-08 10:31:53,120 - CSIFallDetection - INFO - 진행률: 272/2564 (10.6%)
+2025-06-08 10:31:53,120 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/3_labeled_warped_10.csv
+2025-06-08 10:31:53,214 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/3_labeled_warped_10_processed.csv
+2025-06-08 10:31:53,214 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/3_labeled_warped_10.csv
+2025-06-08 10:31:53,214 - CSIFallDetection - INFO - 진행률: 273/2564 (10.6%)
+2025-06-08 10:31:53,214 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/34_labeled_warped_10.csv
+2025-06-08 10:31:53,364 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/34_labeled_warped_10_processed.csv
+2025-06-08 10:31:53,364 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/34_labeled_warped_10.csv
+2025-06-08 10:31:53,364 - CSIFallDetection - INFO - 진행률: 274/2564 (10.7%)
+2025-06-08 10:31:53,364 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/41_labeled_warped_6.csv
+2025-06-08 10:31:53,502 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/41_labeled_warped_6_processed.csv
+2025-06-08 10:31:53,502 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/41_labeled_warped_6.csv
+2025-06-08 10:31:53,502 - CSIFallDetection - INFO - 진행률: 275/2564 (10.7%)
+2025-06-08 10:31:53,502 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/37_labeled_warped_4.csv
+2025-06-08 10:31:53,660 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/37_labeled_warped_4_processed.csv
+2025-06-08 10:31:53,660 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/37_labeled_warped_4.csv
+2025-06-08 10:31:53,660 - CSIFallDetection - INFO - 진행률: 276/2564 (10.8%)
+2025-06-08 10:31:53,660 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/34_labeled_warped_9.csv
+2025-06-08 10:31:53,804 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/34_labeled_warped_9_processed.csv
+2025-06-08 10:31:53,804 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/34_labeled_warped_9.csv
+2025-06-08 10:31:53,804 - CSIFallDetection - INFO - 진행률: 277/2564 (10.8%)
+2025-06-08 10:31:53,804 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/32_labeled_warped_5.csv
+2025-06-08 10:31:53,943 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/32_labeled_warped_5_processed.csv
+2025-06-08 10:31:53,943 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/32_labeled_warped_5.csv
+2025-06-08 10:31:53,943 - CSIFallDetection - INFO - 진행률: 278/2564 (10.8%)
+2025-06-08 10:31:53,943 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/32_labeled_warped_4.csv
+2025-06-08 10:31:54,083 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/32_labeled_warped_4_processed.csv
+2025-06-08 10:31:54,083 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/32_labeled_warped_4.csv
+2025-06-08 10:31:54,083 - CSIFallDetection - INFO - 진행률: 279/2564 (10.9%)
+2025-06-08 10:31:54,083 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/34_labeled_warped_8.csv
+2025-06-08 10:31:54,228 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/34_labeled_warped_8_processed.csv
+2025-06-08 10:31:54,228 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/34_labeled_warped_8.csv
+2025-06-08 10:31:54,229 - CSIFallDetection - INFO - 진행률: 280/2564 (10.9%)
+2025-06-08 10:31:54,229 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/37_labeled_warped_5.csv
+2025-06-08 10:31:54,371 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/37_labeled_warped_5_processed.csv
+2025-06-08 10:31:54,371 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/37_labeled_warped_5.csv
+2025-06-08 10:31:54,372 - CSIFallDetection - INFO - 진행률: 281/2564 (11.0%)
+2025-06-08 10:31:54,372 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/38_labeled_warped_7.csv
+2025-06-08 10:31:54,514 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/38_labeled_warped_7_processed.csv
+2025-06-08 10:31:54,514 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/38_labeled_warped_7.csv
+2025-06-08 10:31:54,514 - CSIFallDetection - INFO - 진행률: 282/2564 (11.0%)
+2025-06-08 10:31:54,514 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case1/warped/31_labeled_warped_9.csv
+2025-06-08 10:31:54,659 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/31_labeled_warped_9_processed.csv
+2025-06-08 10:31:54,659 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case1/warped/31_labeled_warped_9.csv
+2025-06-08 10:31:54,659 - CSIFallDetection - INFO - 진행률: 283/2564 (11.0%)
+2025-06-08 10:31:54,659 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case2/warped/2_labeled_warped_9.csv
+2025-06-08 10:31:54,801 - CSIFallDetection - INFO - 전처리된 데이터 저장: ./processed_data/2_labeled_warped_9_processed.csv
+2025-06-08 10:31:54,801 - CSIFallDetection - INFO - 파일 전처리 완료: ../csi_data/낙상 3/case2/warped/2_labeled_warped_9.csv
+2025-06-08 10:31:54,801 - CSIFallDetection - INFO - 진행률: 284/2564 (11.1%)
+2025-06-08 10:31:54,801 - CSIFallDetection - INFO - 파일 전처리 시작: ../csi_data/낙상 3/case2/warped/4_labeled_warped_5.csv
+2025-06-08 10:31:54,875 - CSIFallDetection - INFO - ⏹️ 사용자에 의해 중단되었습니다.
+2025-06-08 10:31:54,877 - CSIFallDetection - INFO - 🏁 프로그램 종료: 20250608_103154

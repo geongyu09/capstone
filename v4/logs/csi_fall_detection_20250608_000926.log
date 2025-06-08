@@ -1,0 +1,34 @@
+2025-06-08 00:09:26,241 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_000926.log
+2025-06-08 00:09:26,241 - CSIFallDetection - INFO - 📊 수정된 모델 평가기 초기화
+2025-06-08 00:09:26,241 - CSIFallDetection - INFO -    모델 경로: hybrid_20250607_143159
+2025-06-08 00:09:26,241 - CSIFallDetection - INFO - 📂 모델 로딩 중...
+2025-06-08 00:09:26,241 - CSIFallDetection - INFO - 모델 로드 시도: ./models/hybrid_20250607_143159.keras
+2025-06-08 00:09:26,434 - CSIFallDetection - INFO - ✅ 모델 로딩 완료
+2025-06-08 00:09:26,435 - CSIFallDetection - INFO -    모델 이름: hybrid_20250607_143159
+2025-06-08 00:09:26,435 - CSIFallDetection - INFO -    총 파라미터: 747,649
+2025-06-08 00:09:26,435 - CSIFallDetection - INFO - 🔍 테스트 데이터 준비 중...
+2025-06-08 00:09:26,435 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_000926.log
+2025-06-08 00:09:26,435 - CSIFallDetection - INFO - 전처리된 파일 76개 발견
+2025-06-08 00:09:26,436 - CSIFallDetection - INFO - 데이터 분할: 훈련 53개, 검증 11개, 테스트 12개
+2025-06-08 00:09:27,083 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 00:09:27,083 - CSIFallDetection - INFO -    파일 수: 53
+2025-06-08 00:09:27,083 - CSIFallDetection - INFO -    총 시퀀스: 2,828개
+2025-06-08 00:09:27,083 - CSIFallDetection - INFO -    배치 수: 89개
+2025-06-08 00:09:27,191 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 00:09:27,191 - CSIFallDetection - INFO -    파일 수: 11
+2025-06-08 00:09:27,191 - CSIFallDetection - INFO -    총 시퀀스: 566개
+2025-06-08 00:09:27,191 - CSIFallDetection - INFO -    배치 수: 18개
+2025-06-08 00:09:27,335 - CSIFallDetection - INFO - 📊 데이터 제너레이터 초기화 완료
+2025-06-08 00:09:27,335 - CSIFallDetection - INFO -    파일 수: 12
+2025-06-08 00:09:27,335 - CSIFallDetection - INFO -    총 시퀀스: 702개
+2025-06-08 00:09:27,335 - CSIFallDetection - INFO -    배치 수: 22개
+2025-06-08 00:09:27,336 - CSIFallDetection - INFO - ✅ 테스트 데이터 준비 완료
+2025-06-08 00:09:27,336 - CSIFallDetection - INFO -    테스트 시퀀스: 702개
+2025-06-08 00:09:27,336 - CSIFallDetection - INFO - 📈 모델 평가 시작...
+2025-06-08 00:09:27,336 - CSIFallDetection - INFO - 🔄 기본 성능 평가 중...
+2025-06-08 00:09:33,770 - CSIFallDetection - INFO - 🔬 상세 평가 실행 중...
+2025-06-08 00:09:37,297 - CSIFallDetection - INFO -    진행률: 10/22 배치
+2025-06-08 00:09:39,974 - CSIFallDetection - INFO -    진행률: 20/22 배치
+2025-06-08 00:10:01,393 - CSIFallDetection - INFO - 📊 시각화 저장 완료
+2025-06-08 00:10:01,394 - CSIFallDetection - INFO -    혼동 행렬: ./logs/hybrid_20250607_143159_confusion_matrix.png
+2025-06-08 00:10:01,394 - CSIFallDetection - INFO -    ROC 커브: ./logs/hybrid_20250607_143159_roc_curve.png (AUC: 0.804)

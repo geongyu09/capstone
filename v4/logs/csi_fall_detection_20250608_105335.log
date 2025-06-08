@@ -1,0 +1,8 @@
+2025-06-08 10:53:35,145 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_105335.log
+2025-06-08 10:53:35,145 - CSIFallDetection - INFO - 📊 모델 평가기 초기화
+2025-06-08 10:53:35,145 - CSIFallDetection - INFO -    모델 경로: hybrid_20250607_143159
+2025-06-08 10:53:35,145 - CSIFallDetection - INFO - 📂 모델 로딩 중...
+2025-06-08 10:53:35,145 - CSIFallDetection - ERROR - ❌ 모델 로딩 실패: 모델 파일을 찾을 수 없습니다: ./models/hybrid_20250607_143159.keras
+2025-06-08 10:53:35,145 - CSIFallDetection - ERROR - 모델 평가 실패: 모델 파일을 찾을 수 없습니다: ./models/hybrid_20250607_143159.keras
+2025-06-08 10:53:35,145 - CSIFallDetection - ERROR - ❌ 일부 작업이 실패했습니다.
+2025-06-08 10:53:35,145 - CSIFallDetection - INFO - 🏁 프로그램 종료: 20250608_105335

@@ -1,0 +1,9 @@
+2025-06-07 23:59:58,910 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250607_235958.log
+2025-06-07 23:59:58,910 - CSIFallDetection - INFO - 📊 수정된 모델 평가기 초기화
+2025-06-07 23:59:58,910 - CSIFallDetection - INFO -    모델 경로: hybrid_20250607_143159
+2025-06-07 23:59:58,910 - CSIFallDetection - INFO - 📂 모델 로딩 중...
+2025-06-07 23:59:58,910 - CSIFallDetection - INFO - 모델 로드 시도: ./models/hybrid_20250607_143159.keras
+2025-06-07 23:59:59,083 - CSIFallDetection - INFO - ✅ 모델 로딩 완료
+2025-06-07 23:59:59,083 - CSIFallDetection - INFO -    모델 이름: hybrid_20250607_143159
+2025-06-07 23:59:59,083 - CSIFallDetection - INFO -    총 파라미터: 747,649
+2025-06-07 23:59:59,083 - CSIFallDetection - INFO - 🔍 테스트 데이터 준비 중...

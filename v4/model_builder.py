@@ -19,6 +19,55 @@ from config import Config, ModelConfig
 from utils import setup_logging
 
 
+# TensorFlow 2.x 호환 커스텀 손실 함수들
+def weighted_binary_crossentropy_factory(class_weights):
+    """
+    클래스 가중치를 적용한 binary crossentropy 손실 함수를 반환하는 팩토리 함수
+    
+    Args:
+        class_weights: {0: weight_for_class_0, 1: weight_for_class_1} 형태의 딕셔너리
+    
+    Returns:
+        가중치가 적용된 손실 함수
+    """
+    def loss_function(y_true, y_pred):
+        # 클래스 가중치 적용
+        weight_0 = class_weights.get(0, 1.0)
+        weight_1 = class_weights.get(1, 1.0)
+        
+        # 가중치 적용
+        weights = y_true * weight_1 + (1 - y_true) * weight_0
+        
+        # Binary crossentropy with weights
+        bce = tf.keras.losses.binary_crossentropy(y_true, y_pred)
+        return bce * weights
+    
+    # 함수에 이름 속성 추가 (저장/로드를 위해)
+    loss_function.__name__ = 'weighted_binary_crossentropy'
+    return loss_function
+
+
+def simple_weighted_binary_crossentropy(y_true, y_pred):
+    """
+    간단한 가중치 적용 binary crossentropy
+    기본적으로 클래스 1에 더 높은 가중치를 적용 (낙상 감지를 위해)
+    """
+    # 낙상(1)에 더 높은 가중치 적용
+    class_weight_1 = 2.0  # 낙상 클래스에 2배 가중치
+    class_weight_0 = 1.0  # 정상 클래스
+    
+    weights = y_true * class_weight_1 + (1 - y_true) * class_weight_0
+    bce = tf.keras.losses.binary_crossentropy(y_true, y_pred)
+    return bce * weights
+
+
+# 전역 커스텀 객체 딕셔너리 (모델 로드시 사용)
+CUSTOM_OBJECTS = {
+    'weighted_binary_crossentropy': simple_weighted_binary_crossentropy,
+    'simple_weighted_binary_crossentropy': simple_weighted_binary_crossentropy
+}
+
+
 class CSIFallDetectionModel:
     """CSI 낙상 감지 모델 빌더"""
     
@@ -181,22 +230,13 @@ class CSIFallDetectionModel:
         
         # 손실 함수 (클래스 불균형 고려)
         if class_weights:
-            # 가중치가 있는 경우 weighted binary crossentropy 사용
-            def weighted_binary_crossentropy(y_true, y_pred):
-                # 클래스 가중치 적용
-                weight_0 = class_weights.get(0, 1.0)
-                weight_1 = class_weights.get(1, 1.0)
-                
-                # 가중치 적용
-                weights = y_true * weight_1 + (1 - y_true) * weight_0
-                
-                # Binary crossentropy with weights
-                bce = tf.keras.losses.binary_crossentropy(y_true, y_pred)
-                return bce * weights
-            
-            loss = weighted_binary_crossentropy
+            # 팩토리 함수 사용
+            loss = weighted_binary_crossentropy_factory(class_weights)
+            loss_name = "weighted_binary_crossentropy"
         else:
-            loss = 'binary_crossentropy'
+            # 간단한 가중치 적용 함수 사용
+            loss = simple_weighted_binary_crossentropy
+            loss_name = "simple_weighted_binary_crossentropy"
         
         # 메트릭
         metrics = [
@@ -214,7 +254,7 @@ class CSIFallDetectionModel:
         
         self.logger.info(f"✅ 모델 컴파일 완료")
         self.logger.info(f"   옵티마이저: Adam (lr={learning_rate})")
-        self.logger.info(f"   손실 함수: {loss}")
+        self.logger.info(f"   손실 함수: {loss_name}")
         self.logger.info(f"   메트릭: {[m.name if hasattr(m, 'name') else str(m) for m in metrics]}")
     
     def get_callbacks(self, 
@@ -339,6 +379,12 @@ def create_model(model_type: str = 'hybrid',
     logger.info(f"✅ {model_type} 모델 생성 완료")
     
     return model, model_builder
+
+
+# 모델 로드를 위한 커스텀 객체 getter 함수
+def get_custom_objects():
+    """모델 로드시 사용할 커스텀 객체들 반환"""
+    return CUSTOM_OBJECTS.copy()
 
 
 if __name__ == "__main__":

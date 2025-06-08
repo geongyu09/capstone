@@ -1,0 +1,2 @@
+2025-06-07 23:59:59,083 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250607_235959.log
+2025-06-07 23:59:59,083 - CSIFallDetection - ERROR - ❌ 테스트 데이터 준비 실패: 전처리된 파일을 찾을 수 없습니다: ./processed_data

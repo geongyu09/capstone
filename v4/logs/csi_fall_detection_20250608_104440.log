@@ -1,0 +1,8 @@
+2025-06-08 10:44:40,789 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_104440.log
+2025-06-08 10:44:40,789 - CSIFallDetection - INFO - 📊 모델 평가기 초기화
+2025-06-08 10:44:40,789 - CSIFallDetection - INFO -    모델 경로: hybrid_20250607_143159
+2025-06-08 10:44:40,789 - CSIFallDetection - INFO - 📂 모델 로딩 중...
+2025-06-08 10:44:40,927 - CSIFallDetection - ERROR - ❌ 모델 로딩 실패: Could not locate function 'weighted_binary_crossentropy'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'builtins', 'class_name': 'function', 'config': 'weighted_binary_crossentropy', 'registered_name': 'function'}
+2025-06-08 10:44:40,927 - CSIFallDetection - ERROR - 모델 평가 실패: Could not locate function 'weighted_binary_crossentropy'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'builtins', 'class_name': 'function', 'config': 'weighted_binary_crossentropy', 'registered_name': 'function'}
+2025-06-08 10:44:40,928 - CSIFallDetection - ERROR - ❌ 일부 작업이 실패했습니다.
+2025-06-08 10:44:40,928 - CSIFallDetection - INFO - 🏁 프로그램 종료: 20250608_104440

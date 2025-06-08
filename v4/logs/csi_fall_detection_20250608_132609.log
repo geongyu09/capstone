@@ -1,0 +1,8 @@
+2025-06-08 13:26:09,322 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_132609.log
+2025-06-08 13:26:09,322 - CSIFallDetection - INFO - 🚀 CSI 낙상 감지 v4 시작
+2025-06-08 13:26:09,322 - CSIFallDetection - INFO - 실행 시간: 20250608_132609
+2025-06-08 13:26:09,322 - CSIFallDetection - INFO - 실행 모드: train
+2025-06-08 13:26:09,322 - CSIFallDetection - INFO - 🤖 모델 학습 시작
+2025-06-08 13:26:09,327 - CSIFallDetection - ERROR - 모델 학습 실패: module 'tensorflow.keras' has no attribute 'saving'
+2025-06-08 13:26:09,327 - CSIFallDetection - ERROR - ❌ 일부 작업이 실패했습니다.
+2025-06-08 13:26:09,327 - CSIFallDetection - INFO - 🏁 프로그램 종료: 20250608_132609

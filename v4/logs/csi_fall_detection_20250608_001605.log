@@ -1,0 +1,8 @@
+2025-06-08 00:16:05,448 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_001605.log
+2025-06-08 00:16:05,448 - CSIFallDetection - INFO - 📅 낙상 타임라인 분석기 초기화
+2025-06-08 00:16:05,448 - CSIFallDetection - INFO - 📊 낙상 시점 분석 시작
+2025-06-08 00:16:05,448 - CSIFallDetection - INFO -    데이터 길이: 800개 샘플
+2025-06-08 00:16:05,448 - CSIFallDetection - INFO -    윈도우 크기: 50, 스트라이드: 10
+2025-06-08 00:16:08,836 - CSIFallDetection - INFO - ✅ 분석 완료: 1개 낙상 이벤트 감지
+2025-06-08 00:16:08,836 - CSIFallDetection - INFO - 📊 낙상 타임라인 시각화 생성
+2025-06-08 00:16:09,531 - CSIFallDetection - INFO - 📊 타임라인 시각화 저장: ./logs/real_model_fall_timeline.png

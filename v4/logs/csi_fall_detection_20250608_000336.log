@@ -1,0 +1,9 @@
+2025-06-08 00:03:36,044 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_000336.log
+2025-06-08 00:03:36,044 - CSIFallDetection - INFO - 🚀 CSI 낙상 감지 v4 시작
+2025-06-08 00:03:36,044 - CSIFallDetection - INFO - 실행 시간: 20250608_000336
+2025-06-08 00:03:36,044 - CSIFallDetection - INFO - 실행 모드: preprocess
+2025-06-08 00:03:36,044 - CSIFallDetection - INFO - 🔧 데이터 전처리 시작
+2025-06-08 00:03:36,044 - CSIFallDetection - INFO - 수집된 CSV 파일: 0개
+2025-06-08 00:03:36,044 - CSIFallDetection - ERROR - 처리할 CSV 파일이 없습니다.
+2025-06-08 00:03:36,044 - CSIFallDetection - ERROR - ❌ 일부 작업이 실패했습니다.
+2025-06-08 00:03:36,044 - CSIFallDetection - INFO - 🏁 프로그램 종료: 20250608_000336

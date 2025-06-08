@@ -1,0 +1,9 @@
+2025-06-08 10:53:25,267 - CSIFallDetection - INFO - 로깅 시작 - 로그 파일: ./logs/csi_fall_detection_20250608_105325.log
+2025-06-08 10:53:25,267 - CSIFallDetection - INFO - 🚀 CSI 낙상 감지 v4 시작
+2025-06-08 10:53:25,267 - CSIFallDetection - INFO - 실행 시간: 20250608_105325
+2025-06-08 10:53:25,267 - CSIFallDetection - INFO - 실행 모드: preprocess
+2025-06-08 10:53:25,267 - CSIFallDetection - INFO - 🔧 데이터 전처리 시작
+2025-06-08 10:53:25,270 - CSIFallDetection - INFO - 수집된 CSV 파일: 2564개
+2025-06-08 10:53:25,270 - CSIFallDetection - INFO - 📊 데이터 분포 분석 중...
+2025-06-08 10:53:29,957 - CSIFallDetection - INFO - ⏹️ 사용자에 의해 중단되었습니다.
+2025-06-08 10:53:29,958 - CSIFallDetection - INFO - 🏁 프로그램 종료: 20250608_105329
